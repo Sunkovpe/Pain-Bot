@@ -248,6 +248,10 @@ let handler = async (m, { conn, usedPrefix }) => {
 │   • ${usedPrefix}antidocument on/off
 │   • ${usedPrefix}anticaracter on/off <limite>
 │   • ${usedPrefix}soloadmin on/off
+│   • ${usedPrefix}welcome on/off
+│   • ${usedPrefix}savep
+│   • ${usedPrefix}publicg on/off
+│   • ${usedPrefix}publicg time <tiempo>
 │   • ${usedPrefix}modoia on/off
 │   • ${usedPrefix}modohot on/off
 │   • ${usedPrefix}modoilegal on/off

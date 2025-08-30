@@ -1,4 +1,4 @@
-console.log('⧉ Inicializando Anya...')
+console.log('⧉ Inicializando Pain...')
 
 import { join, dirname } from 'path'
 import { createRequire } from 'module'

@@ -96,6 +96,8 @@ global.loadDatabase = async function loadDatabase() {
     settings: {},
     botGroups: {},
     antiImg: {},
+    bienvenidas: {},
+    publicaciones: {},
     ...(global.db.data || {}),
   }
   global.db.chain = lodash.chain(global.db.data) 
@@ -158,7 +160,7 @@ async function handleLogin() {
 
   if (loginMethod === 'code') {
     let phoneNumber = await question(chalk.blue('Ingresa el número de WhatsApp donde estará el bot (incluye código país, ej: 521XXXXXXXXXX):\n'))
-    phoneNumber = phoneNumber.replace(/\D/g, '') // Solo números
+    phoneNumber = phoneNumber.replace(/\D/g, '')
 
     
     if (phoneNumber.startsWith('52') && phoneNumber.length === 12) {
@@ -505,3 +507,100 @@ setTimeout(() => {
     global.reconnectSubBots().catch(console.error)
   }
 }, 10000) 
+
+const publicationTimers = new Map()
+const publicationQueue = new Map()
+
+function startPublicationTimer(chatId, config) {
+  if (publicationTimers.has(chatId)) {
+    clearInterval(publicationTimers.get(chatId))
+  }
+  
+  const timer = setInterval(async () => {
+    try {
+      if (!global.conn || !global.conn.user) return
+      
+      const currentConfig = global.db.data.publicaciones[chatId]
+      if (!currentConfig || !currentConfig.enabled || !currentConfig.image) {
+        clearInterval(timer)
+        publicationTimers.delete(chatId)
+        publicationQueue.delete(chatId)
+        return
+      }
+      
+      if (publicationQueue.has(chatId)) {
+        console.log(chalk.yellow(`⏳ Publicación pendiente para ${chatId}, saltando...`))
+        return
+      }
+      
+      publicationQueue.set(chatId, true)
+      
+      const imageBuffer = Buffer.from(currentConfig.image, 'base64')
+      
+      if (currentConfig.imageType === 'image') {
+        await global.conn.sendMessage(chatId, {
+          image: imageBuffer,
+          caption: currentConfig.text
+        })
+      } else if (currentConfig.imageType === 'video') {
+        await global.conn.sendMessage(chatId, {
+          video: imageBuffer,
+          caption: currentConfig.text
+        })
+      }
+      
+      console.log(chalk.green(`✅ Publicación automática enviada a ${chatId} (${Math.round(currentConfig.interval / 60000)}m)`))
+      
+      setTimeout(() => {
+        publicationQueue.delete(chatId)
+      }, 5000)
+      
+    } catch (error) {
+      console.log(chalk.red(`❌ Error enviando publicación a ${chatId}:`, error.message))
+      publicationQueue.delete(chatId)
+    }
+  }, config.interval || 600000)
+  
+  publicationTimers.set(chatId, timer)
+}
+
+function stopPublicationTimer(chatId) {
+  if (publicationTimers.has(chatId)) {
+    clearInterval(publicationTimers.get(chatId))
+    publicationTimers.delete(chatId)
+  }
+  publicationQueue.delete(chatId)
+}
+
+global.startPublicationTimer = startPublicationTimer
+global.stopPublicationTimer = stopPublicationTimer
+
+setInterval(async () => {
+  try {
+    if (!global.conn || !global.conn.user) return
+    if (!global.db.data.publicaciones) return
+    
+    const activeChats = new Set()
+    
+    for (const [chatId, config] of Object.entries(global.db.data.publicaciones)) {
+      if (config && typeof config === 'object') {
+        if (config.enabled === true && config.image && config.image.trim() !== '') {
+          activeChats.add(chatId)
+          if (!publicationTimers.has(chatId)) {
+            startPublicationTimer(chatId, config)
+            console.log(chalk.cyan(`🔄 Timer iniciado para ${chatId} (${Math.round(config.interval / 60000)}m)`))
+          }
+        }
+      }
+    }
+    
+    for (const [chatId, timer] of publicationTimers.entries()) {
+      if (!activeChats.has(chatId)) {
+        stopPublicationTimer(chatId)
+        console.log(chalk.yellow(`⏹️ Timer detenido para ${chatId}`))
+      }
+    }
+  } catch (error) {
+    console.log(chalk.red('Error en sistema de publicaciones automáticas:', error.message))
+  }
+}, 15000) 
