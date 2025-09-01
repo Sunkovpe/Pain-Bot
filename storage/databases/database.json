@@ -18,7 +18,7 @@
       "prem": false
     },
     "114263544885392@lid": {
-      "exp": 136,
+      "exp": 154,
       "limit": 10,
       "registered": true,
       "name": "Sunkovv",
@@ -3035,10 +3035,10 @@
   },
   "stats": {
     "main-menu.js": {
-      "total": 50,
-      "success": 50,
-      "last": 1756701996176,
-      "lastSuccess": 1756701996176
+      "total": 51,
+      "success": 51,
+      "last": 1756702707569,
+      "lastSuccess": 1756702707569
     },
     "sub-bots.js": {
       "total": 3,
@@ -3065,10 +3065,10 @@
       "lastSuccess": 1756202187870
     },
     "play.js": {
-      "total": 17,
-      "success": 17,
-      "last": 1756527268954,
-      "lastSuccess": 1756527268954
+      "total": 18,
+      "success": 18,
+      "last": 1756702810616,
+      "lastSuccess": 1756702810616
     },
     "play2.js": {
       "total": 28,
