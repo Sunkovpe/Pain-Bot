@@ -1,8 +1,8 @@
 {
   "users": {
     "51958333972@s.whatsapp.net": {
-      "exp": 1,
-      "limit": 10,
+      "exp": null,
+      "limit": null,
       "registered": false,
       "name": "+51 958 333 972",
       "age": -1,
@@ -12,7 +12,7 @@
       "coins": 0
     },
     "114263544885392@lid": {
-      "exp": 18,
+      "exp": 30,
       "limit": 10,
       "registered": true,
       "name": "Sunkovv",
@@ -829,7 +829,7 @@
       "coins": 0
     },
     "51901437507@s.whatsapp.net": {
-      "exp": 274,
+      "exp": 83,
       "limit": 10,
       "registered": false,
       "name": "𝗦𝘂𝗻𝗸𝗼𝘃𝘃 </>",
@@ -838,7 +838,7 @@
       "banned": false,
       "level": 0,
       "coins": 0,
-      "Subs": 1756536206937
+      "Subs": 1756699163964
     },
     "5359576004@s.whatsapp.net": {
       "exp": 6,
@@ -2840,10 +2840,10 @@
   },
   "stats": {
     "main-menu.js": {
-      "total": 43,
-      "success": 43,
-      "last": 1756536276599,
-      "lastSuccess": 1756536276599
+      "total": 46,
+      "success": 46,
+      "last": 1756699214159,
+      "lastSuccess": 1756699214159
     },
     "sub-bots.js": {
       "total": 3,
@@ -2966,10 +2966,10 @@
       "lastSuccess": 1756339388133
     },
     "serbot-serbot.js": {
-      "total": 35,
-      "success": 35,
-      "last": 1756536206937,
-      "lastSuccess": 1756536206937
+      "total": 36,
+      "success": 36,
+      "last": 1756699163965,
+      "lastSuccess": 1756699163965
     },
     "anti-link.js": {
       "total": 3,
@@ -3032,10 +3032,10 @@
       "lastSuccess": 1756520356709
     },
     "get-id.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1756517294046,
-      "lastSuccess": 1756517294046
+      "total": 7,
+      "success": 7,
+      "last": 1756699134195,
+      "lastSuccess": 1756699134195
     },
     "group-kick.js": {
       "total": 4,
