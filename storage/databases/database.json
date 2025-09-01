@@ -1,18 +1,24 @@
 {
   "users": {
     "51958333972@s.whatsapp.net": {
-      "exp": null,
-      "limit": null,
-      "registered": false,
-      "name": "+51 958 333 972",
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "𝗣𝗮𝗶𝗻 𝗕𝗼𝘁",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1756699760181,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 0,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "114263544885392@lid": {
-      "exp": 30,
+      "exp": 136,
       "limit": 10,
       "registered": true,
       "name": "Sunkovv",
@@ -20,9 +26,11 @@
       "regTime": 1756525758962,
       "banned": false,
       "level": 0,
-      "coins": 50,
+      "coins": 110,
       "dailyStreak": 1,
-      "lastDaily": 1756243293743
+      "lastDaily": 1756243293743,
+      "lastAdivinanza": 1756701812648,
+      "genre": "hombre"
     },
     "58540639154396@lid": {
       "exp": 51,
@@ -2266,6 +2274,177 @@
       "banned": false,
       "level": 0,
       "coins": 0
+    },
+    "5218445421974@s.whatsapp.net": {
+      "exp": 106,
+      "limit": 10,
+      "registered": true,
+      "name": "Fernando",
+      "regTime": 1756699758084,
+      "age": -1,
+      "level": 0,
+      "coins": 0,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false,
+      "Subs": 1756699940977
+    },
+    "50376641411@s.whatsapp.net": {
+      "exp": null,
+      "limit": null,
+      "registered": true,
+      "name": "𝑺𝒉𝒊𝒓𝒊𝒕𝒐 🎀",
+      "regTime": 1756699834013,
+      "age": -1,
+      "level": 0,
+      "coins": 0,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217225026891@s.whatsapp.net": {
+      "exp": null,
+      "limit": null,
+      "registered": true,
+      "name": "Àngel 😎",
+      "regTime": 1756699904600,
+      "age": -1,
+      "level": 0,
+      "coins": 0,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5218448582376@s.whatsapp.net": {
+      "exp": null,
+      "limit": null,
+      "registered": true,
+      "name": "𝙁𝙚𝙧𝙣𝙖𝙣𝙙𝙤",
+      "regTime": 1756699948113,
+      "age": -1,
+      "level": 0,
+      "coins": 0,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217298698653@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "LUIS",
+      "regTime": 1756700303760,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "16692648074@s.whatsapp.net": {
+      "exp": 20,
+      "limit": 10,
+      "registered": true,
+      "name": "Andres",
+      "regTime": 1756700615555,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51978644651@s.whatsapp.net": {
+      "exp": 10,
+      "limit": 10,
+      "registered": true,
+      "name": "Acosta",
+      "regTime": 1756700799388,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5218122996077@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "CT HITORI17",
+      "regTime": 1756701061832,
+      "age": -1,
+      "level": 0,
+      "coins": 0,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "17409724457@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "El Iván",
+      "regTime": 1756701197604,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593981986176@s.whatsapp.net": {
+      "exp": null,
+      "limit": null,
+      "registered": true,
+      "name": "Maykel.",
+      "regTime": 1756701268128,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
     }
   },
   "chats": {
@@ -2836,14 +3015,30 @@
       "onlyLatinos": false,
       "nsfw": false,
       "expired": 0
+    },
+    "5218445421974@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363422376925488@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
     }
   },
   "stats": {
     "main-menu.js": {
-      "total": 46,
-      "success": 46,
-      "last": 1756699214159,
-      "lastSuccess": 1756699214159
+      "total": 50,
+      "success": 50,
+      "last": 1756701996176,
+      "lastSuccess": 1756701996176
     },
     "sub-bots.js": {
       "total": 3,
@@ -2888,10 +3083,10 @@
       "lastSuccess": 1756202371257
     },
     "top-gays.js": {
-      "total": 14,
-      "success": 14,
-      "last": 1756486186187,
-      "lastSuccess": 1756486186187
+      "total": 16,
+      "success": 16,
+      "last": 1756700833520,
+      "lastSuccess": 1756700833520
     },
     "sticker-toimg.js": {
       "total": 3,
@@ -2918,10 +3113,10 @@
       "lastSuccess": 1756202713743
     },
     "subbots-botinfo.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1756491864293,
-      "lastSuccess": 1756491864293
+      "total": 8,
+      "success": 8,
+      "last": 1756702123304,
+      "lastSuccess": 1756702123304
     },
     "modo-ia.js": {
       "total": 6,
@@ -2966,16 +3161,16 @@
       "lastSuccess": 1756339388133
     },
     "serbot-serbot.js": {
-      "total": 36,
-      "success": 36,
-      "last": 1756699163965,
-      "lastSuccess": 1756699163965
+      "total": 38,
+      "success": 38,
+      "last": 1756699940978,
+      "lastSuccess": 1756699940978
     },
     "anti-link.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1756482706269,
-      "lastSuccess": 1756482706269
+      "total": 5,
+      "success": 5,
+      "last": 1756702161927,
+      "lastSuccess": 1756702161927
     },
     "ia-llama3.js": {
       "total": 24,
@@ -2990,10 +3185,10 @@
       "lastSuccess": 1756255155156
     },
     "perfiles-perfil.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1756526781275,
-      "lastSuccess": 1756526781275
+      "total": 17,
+      "success": 17,
+      "last": 1756702497453,
+      "lastSuccess": 1756702497453
     },
     "owner-update.js": {
       "total": 1,
@@ -3108,6 +3303,30 @@
       "success": 13,
       "last": 1756536258931,
       "lastSuccess": 1756536258931
+    },
+    "set-autoread.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1756700018901,
+      "lastSuccess": 1756700018901
+    },
+    "juegos-adivinanza.js": {
+      "total": 1,
+      "success": 1,
+      "last": 1756701397050,
+      "lastSuccess": 1756701397050
+    },
+    "rpg-adivinanza.js": {
+      "total": 4,
+      "success": 4,
+      "last": 1756701812840,
+      "lastSuccess": 1756701812840
+    },
+    "perfiles-setgenre.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1756702491390,
+      "lastSuccess": 1756702491390
     }
   },
   "msgs": {},
@@ -3134,6 +3353,10 @@
       "autoread": true
     },
     "51901437507@s.whatsapp.net": {
+      "self": false,
+      "autoread": true
+    },
+    "5218445421974@s.whatsapp.net": {
       "self": false,
       "autoread": true
     }
@@ -3356,6 +3579,17 @@
       "age": 19,
       "regTime": 1756525535928,
       "name": "Heytan Rodrigo ✌🏻"
+    }
+  },
+  "adivinanzasActivas": {
+    "120363419764426260@g.us": {
+      "pregunta": "¿Qué tiene alas pero no puede volar?",
+      "respuesta": "avion",
+      "activa": false,
+      "creadaPor": "114263544885392@lid",
+      "timestamp": 1756701812648,
+      "respondida": true,
+      "ganador": "114263544885392@lid"
     }
   }
 }

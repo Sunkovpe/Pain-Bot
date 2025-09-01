@@ -188,7 +188,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ╰➺ ✧ *Juegos RPG* 𖤓
 │   • ${usedPrefix}dado
 │   • ${usedPrefix}daily / day
-│
+│   • ${usedPrefix}adivinanza
 │
 │
 ╰➺ ✧ *Búsquedas* 𖤓
