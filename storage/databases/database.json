@@ -996,16 +996,22 @@
       "coins": 0
     },
     "184593751793865@lid": {
-      "exp": 54,
+      "exp": 8,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "𝕰𝖑 𝕱𝖆𝖇𝖎 𝕲𝖆𝖒𝖊𝖘",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1756703016931,
       "banned": false,
       "level": 0,
-      "coins": 0,
-      "Subs": 1756515295271
+      "coins": 100,
+      "Subs": 1756515295271,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "80788435554315@lid": {
       "exp": 6,
@@ -3502,12 +3508,12 @@
       },
       "184593751793865@lid": {
         "count": 1,
-        "lastMessage": 1756514857517,
+        "lastMessage": 1756703016933,
         "messages": [
           {
             "remoteJid": "120363419764426260@g.us",
             "fromMe": false,
-            "id": "444F88CC78C9E379032E6F9B555E537A",
+            "id": "865DDD342C5FD30D3802D80F6247C92D",
             "participant": "184593751793865@lid"
           }
         ]
