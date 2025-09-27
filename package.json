@@ -27,7 +27,7 @@
   "dependencies": {
     "@dark-yasiya/scrap": "^1.0.1",
     "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^6.7.19",
+    "@whiskeysockets/baileys": "^v7.0.0-rc.4",
     "awesome-phonenumber": "^3.4.0",
     "axios": "^1.11.0",
     "cfonts": "^3.1.1",
