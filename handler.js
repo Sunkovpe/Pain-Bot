@@ -34,13 +34,13 @@ try {
   if (!isNumber(user.limit)) user.limit = 10  
   if (!('registered' in user)) user.registered = false  
   if (!user.registered) {  
-    // Registro automático de usuarios nuevos
+
     user.registered = true
     user.name = m.name || m.pushName || 'Usuario'
     user.regTime = Date.now()
     user.age = -1
     user.level = 0
-    user.coins = 100 // Dar 100 monedas iniciales
+    user.coins = 100 
     user.exp = 0
     user.genre = 'No establecido'
     user.birth = 'No registrado'
@@ -52,7 +52,7 @@ try {
     
     console.log(`✅ Usuario registrado automáticamente: ${m.sender} (${user.name})`)
     
-    // Enviar mensaje de bienvenida si es en privado
+
     if (!m.isGroup) {
       const welcomeMessage = `╭─「 ✦ 🎉 ʙɪᴇɴᴠᴇɴɪᴅᴏ ✦ 」─╮
 │
@@ -88,7 +88,7 @@ try {
         } catch (e) {
           console.error('Error enviando mensaje de bienvenida:', e)
         }
-      }, 1000) // Enviar después de 1 segundo
+      }, 1000) 
     }
   }  
   if (!('banned' in user)) user.banned = false  
@@ -1069,7 +1069,7 @@ if (isSubBot) {
   }
 }
 
-
+/*
 if (shouldAutoRead) {
   try {
     await this.readMessages([m.key])
@@ -1080,7 +1080,7 @@ if (shouldAutoRead) {
   } catch (e) {
     console.error('Error al marcar como leído:', e)
   }
-  
+*/  
   if (m.isGroup && global.db.data.modoIA && global.db.data.modoIA[m.chat] === true && m.text && !m.fromMe) {
     try {
       

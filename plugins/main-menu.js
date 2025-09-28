@@ -14,7 +14,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let imgBot = 'https://files.catbox.moe/iomah1.jpg'
     let mainImg = './storage/img/menu3.jpg'
     const botActual = conn.user?.jid?.split('@')[0]?.replace(/\D/g, '')
-    const tipo = botActual === '+5218442600752'.replace(/\D/g, '') ? 'Principal Bot' : 'Sub Bot'
+    const tipo = botActual === '+573206534465'.replace(/\D/g, '') ? 'Principal Bot' : 'Sub Bot'
     
     
     if (tipo === 'Sub Bot') {
@@ -172,16 +172,11 @@ let handler = async (m, { conn, usedPrefix }) => {
 │
 ╰➺ ✧ *\`𝗚𝗔𝗠𝗘 𝗥𝗣𝗚\`* 𖤓
 │   • ${usedPrefix}dado
-│   • ${usedPrefix}daily / day
-<<<<<<< HEAD
-│
-╰➺ ✧ *\`𝗕𝗨𝗦𝗤𝗨𝗘𝗗𝗔𝗦\`* 𖤓
-=======
+│   • ${usedPrefix}daily / dda
 │   • ${usedPrefix}adivinanza
 │
 │
-╰➺ ✧ *Búsquedas* 𖤓
->>>>>>> 9b498694049e90ae805d7c9d8b0ed9d699855596
+╰➺ ✧ *\`𝗕𝗨𝗦𝗤𝗨𝗘𝗗𝗔𝗦\`*
 │   • ${usedPrefix}google <búsqueda>
 │   • ${usedPrefix}yt <búsqueda>
 │   • ${usedPrefix}tiktok <búsqueda>
@@ -203,6 +198,8 @@ let handler = async (m, { conn, usedPrefix }) => {
 │   • ${usedPrefix}aptoide <app>
 │   • ${usedPrefix}git <url>
 │   • ${usedPrefix}tiktok2 <link>
+│   • ${usedPrefix}fb <link> 
+│   • ${usedPrefix}ig <link> 
 │
 ╰➺ ✧ *\`𝗔𝗗𝗜𝗖𝗜𝗢𝗡𝗔𝗟𝗘𝗦\`* 𖤓
 │   • ${usedPrefix}nota <contenido>
