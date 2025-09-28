@@ -274,20 +274,20 @@ let handler = async (m, { conn, usedPrefix }) => {
 > PAIN COMMUNITY`.trim()
 
     
-    const externalAdReply = {
-      title: `✦ ${nombreBot} | WhatsApp Bot\n`,
-      body: `𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗱𝗲 ${nombreBot} By @Sunkovv`,
-      thumbnailUrl: imgBot,
-      mediaType: 1,
-      showAdAttribution: true,
-      renderLargerThumbnail: true
-    }
+//    const externalAdReply = {
+//      title: `✦ ${nombreBot} | WhatsApp Bot\n`,
+//      body: `𝗖𝗼𝗺𝗮𝗻𝗱𝗼𝘀 𝗱𝗲 ${nombreBot} By @Sunkovv`,
+//      thumbnailUrl: imgBot,
+//      mediaType: 1,
+//      showAdAttribution: true,
+//      renderLargerThumbnail: true
+//    }
 
     await conn.sendFile(m.chat, mainImg, 'thumbnail.jpg', text, m, null, { 
       contextInfo: {
         ...rcanal.contextInfo,
         mentionedJid: [m.sender],
-        externalAdReply: externalAdReply
+//        externalAdReply: externalAdReply
       }
     })
 

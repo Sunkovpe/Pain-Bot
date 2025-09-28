@@ -1069,18 +1069,17 @@ if (isSubBot) {
   }
 }
 
-/*
 if (shouldAutoRead) {
   try {
-    await this.readMessages([m.key])
+//    await this.readMessages([m.key])
     
     if (m.isGroup) {
-      await this.readMessages([m.key], { readEphemeral: true })
+//      await this.readMessages([m.key], { readEphemeral: true })
     }
   } catch (e) {
     console.error('Error al marcar como leído:', e)
   }
-*/  
+
   if (m.isGroup && global.db.data.modoIA && global.db.data.modoIA[m.chat] === true && m.text && !m.fromMe) {
     try {
       
