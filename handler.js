@@ -34,9 +34,62 @@ try {
   if (!isNumber(user.limit)) user.limit = 10  
   if (!('registered' in user)) user.registered = false  
   if (!user.registered) {  
-    if (!('name' in user)) user.name = m.name  
-    if (!isNumber(user.age)) user.age = -1  
-    if (!isNumber(user.regTime)) user.regTime = -1  
+    // Registro automático de usuarios nuevos
+    user.registered = true
+    user.name = m.name || m.pushName || 'Usuario'
+    user.regTime = Date.now()
+    user.age = -1
+    user.level = 0
+    user.coins = 100 // Dar 100 monedas iniciales
+    user.exp = 0
+    user.genre = 'No establecido'
+    user.birth = 'No registrado'
+    user.desc = 'Sin descripción'
+    user.favourite = 'No establecido'
+    user.partner = ''
+    user.banned = false
+    user.prem = false
+    
+    console.log(`✅ Usuario registrado automáticamente: ${m.sender} (${user.name})`)
+    
+    // Enviar mensaje de bienvenida si es en privado
+    if (!m.isGroup) {
+      const welcomeMessage = `╭─「 ✦ 🎉 ʙɪᴇɴᴠᴇɴɪᴅᴏ ✦ 」─╮
+│
+╰➺ ✧ *¡Hola ${user.name}!*
+╰➺ ✧ *Te has registrado automáticamente en PAIN BOT*
+│
+╰➺ ✧ *Regalo de bienvenida:*
+╰➺ ✧ • 100 monedas iniciales
+╰➺ ✧ • Perfil básico creado
+╰➺ ✧ • Acceso a todos los comandos
+│
+╰➺ ✧ *Comandos útiles:*
+╰➺ ✧ • .menu - Ver menú principal
+╰➺ ✧ • .perfil - Ver tu perfil
+╰➺ ✧ • .balance - Ver tus monedas
+╰➺ ✧ • .setname - Cambiar nombre
+│
+╰➺ ✧ *¡Disfruta usando PAIN BOT!*
+│
+╰────────────────╯
+
+> PAIN COMMUNITY`
+
+      setTimeout(async () => {
+        try {
+          await this.sendMessage(m.chat, {
+            text: welcomeMessage,
+            contextInfo: {
+              ...rcanal.contextInfo,
+              mentionedJid: [m.sender]
+            }
+          }, { quoted: m })
+        } catch (e) {
+          console.error('Error enviando mensaje de bienvenida:', e)
+        }
+      }, 1000) // Enviar después de 1 segundo
+    }
   }  
   if (!('banned' in user)) user.banned = false  
   if (!isNumber(user.level)) user.level = 0  
@@ -316,6 +369,59 @@ for (let plugin of processedPlugins) {
     } catch (e) {
       m.error = e
       console.error(`Error ejecutando plugin ${plugin.name}:`, e)
+    }
+  }
+}
+
+
+
+if (m.text && !commandExecuted && global.db.data.adivinanzasActivas && global.db.data.adivinanzasActivas[m.chat]) {
+  const adivinanzaActiva = global.db.data.adivinanzasActivas[m.chat]
+  
+  
+  if (adivinanzaActiva.activa && !adivinanzaActiva.respondida) {
+    const tiempoTranscurrido = Date.now() - adivinanzaActiva.timestamp
+    const tiempoLimite = 60 * 1000 
+    
+    
+    if (tiempoTranscurrido > tiempoLimite) {
+      adivinanzaActiva.activa = false
+      adivinanzaActiva.respondida = true
+      
+      await this.sendMessage(m.chat, {
+        text: `╭─「 ✦ ⏰ ᴀᴅɪᴠɪɴᴀɴᴢᴀ ᴇxᴘɪʀᴀᴅᴀ ✦ 」─╮\n│\n╰➺ ✧ *Tiempo agotado*\n╰➺ ✧ *Respuesta:* ${adivinanzaActiva.respuesta}\n╰➺ ✧ *Nadie acertó*\n│\n╰➺ ✧ *Usa .adivinanza para una nueva*\n> PAIN COMMUNITY`,
+        contextInfo: {
+          ...rcanal.contextInfo
+        }
+      }, { quoted: m })
+      
+      return
+    }
+    
+  
+    const respuestaUsuario = m.text.toLowerCase().trim()
+    if (respuestaUsuario === adivinanzaActiva.respuesta) {
+     
+      adivinanzaActiva.activa = false
+      adivinanzaActiva.respondida = true
+      adivinanzaActiva.ganador = m.sender
+      
+    
+      let user = global.db.data.users[m.sender]
+      if (!user) global.db.data.users[m.sender] = {}
+      
+      const premio = 30
+      user.coins = (user.coins || 0) + premio
+      
+      await this.sendMessage(m.chat, {
+        text: `╭─「 ✦ 🎉 ¡ᴀᴄɪᴇʀᴛᴏ! ✦ 」─╮\n│\n╰➺ ✧ *Ganador:* @${m.sender.split('@')[0]}\n╰➺ ✧ *Respuesta:* ${adivinanzaActiva.respuesta}\n╰➺ ✧ *Premio:* +${premio} coins\n╰➺ ✧ *Total:* ${user.coins} coins\n│\n╰➺ ✧ *¡Felicitaciones!*\n> PAIN COMMUNITY`,
+        contextInfo: {
+          ...rcanal.contextInfo,
+          mentionedJid: [m.sender]
+        }
+      }, { quoted: m })
+      
+      return
     }
   }
 }

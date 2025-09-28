@@ -5,6 +5,33 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   const user = m.sender
   const data = global.db.data.users[user]
 
+  
+  if (!data || !data.registered) {
+    
+    if (!global.db.data.users[user]) {
+      global.db.data.users[user] = {
+        registered: true,
+        name: m.name || m.pushName || 'Usuario',
+        regTime: Date.now(),
+        age: -1,
+        level: 0,
+        coins: 0,
+        exp: 0,
+        genre: 'No establecido',
+        birth: 'No registrado',
+        desc: 'Sin descripción',
+        favourite: 'No establecido',
+        partner: '',
+        banned: false,
+        prem: false
+      }
+      console.log(`✅ Usuario registrado automáticamente desde perfil: ${user}`)
+    }
+  }
+
+  
+  const userData = global.db.data.users[user]
+
 
 
   const createOwnerIds = (number) => {
@@ -71,20 +98,20 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   }
 
   const texto = `
-✿ Perfil de ${data.name || await conn.getName(user)}
+✿ Perfil de ${userData.name || await conn.getName(user)}
 
-✿ Nombre: ${data.name || 'No establecido'}
-✿ Género: ${data.genre || 'No establecido'}
-✿ Cumpleaños: ${data.birth || 'No registrado'}
-✿ Descripción: ${data.desc || 'Sin descripción'}
-✿ Favorito: ${data.favourite || 'No establecido'}
-✿ Nivel: ${data.level || 0}
-✿ Coins: ${data.coins || 0}
-✿ Experiencia: ${data.exp || 0}
+✿ Nombre: ${userData.name || 'No establecido'}
+✿ Género: ${userData.genre || 'No establecido'}
+✿ Cumpleaños: ${userData.birth || 'No registrado'}
+✿ Descripción: ${userData.desc || 'Sin descripción'}
+✿ Favorito: ${userData.favourite || 'No establecido'}
+✿ Nivel: ${userData.level || 0}
+✿ Coins: ${userData.coins || 0}
+✿ Experiencia: ${userData.exp || 0}
 
 ❒ ID: ${user}
 ❒ Rol: ${userRole}
-❒ Registrado: ${data.registered ? 'Sí' : 'No'}
+❒ Registrado: ${userData.registered ? 'Sí' : 'No'}
   `.trim()
 
   const botNumber = conn.user?.jid?.split('@')[0].replace(/\D/g, '')
@@ -114,11 +141,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       caption: texto,
       contextInfo: {
         ...rcanal.contextInfo,
-        mentionedJid: [data.partner || user]
+        mentionedJid: [userData.partner || user]
       }
     }, { quoted: m })
   } else {
-    await conn.sendFile(m.chat, imgBot, 'profile.jpg', texto, m, null, rcanal, { mentions: [data.partner || user] })
+    await conn.sendFile(m.chat, imgBot, 'profile.jpg', texto, m, null, rcanal, { mentions: [userData.partner || user] })
   }
 }
 

@@ -173,8 +173,15 @@ let handler = async (m, { conn, usedPrefix }) => {
 ╰➺ ✧ *\`𝗚𝗔𝗠𝗘 𝗥𝗣𝗚\`* 𖤓
 │   • ${usedPrefix}dado
 │   • ${usedPrefix}daily / day
+<<<<<<< HEAD
 │
 ╰➺ ✧ *\`𝗕𝗨𝗦𝗤𝗨𝗘𝗗𝗔𝗦\`* 𖤓
+=======
+│   • ${usedPrefix}adivinanza
+│
+│
+╰➺ ✧ *Búsquedas* 𖤓
+>>>>>>> 9b498694049e90ae805d7c9d8b0ed9d699855596
 │   • ${usedPrefix}google <búsqueda>
 │   • ${usedPrefix}yt <búsqueda>
 │   • ${usedPrefix}tiktok <búsqueda>

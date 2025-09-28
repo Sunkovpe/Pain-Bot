@@ -27,7 +27,11 @@
   "dependencies": {
     "@dark-yasiya/scrap": "^1.0.1",
     "@hapi/boom": "^10.0.1",
+<<<<<<< HEAD
     "@whiskeysockets/baileys": "github:this-xyz/bails",
+=======
+    "@whiskeysockets/baileys": "^v7.0.0-rc.4",
+>>>>>>> 9b498694049e90ae805d7c9d8b0ed9d699855596
     "awesome-phonenumber": "^3.4.0",
     "axios": "^1.11.0",
     "cfonts": "^3.1.1",
