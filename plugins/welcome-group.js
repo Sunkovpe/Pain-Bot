@@ -4,13 +4,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }
       return conn.sendMessage(m.chat, {
         text: '《✧》Este comando solo funciona en grupos.'
       }, { quoted: m })
-    }
-    
-    if (!isAdmin) {
-      return conn.sendMessage(m.chat, {
-        text: '《✧》Solo los administradores pueden usar este comando.'
-      }, { quoted: m })
-    }
+    }    
     
     const action = args[0]?.toLowerCase()
     
@@ -454,5 +448,8 @@ let handler = async (m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }
 handler.help = ['bienvenidas']
 handler.tags = ['grupo']
 handler.command = ['welcome', 'bienvenidas', 'bienvenida']
+handler.group = true
+handler.admin = true
+handler.botAdmin = true
 
 export default handler

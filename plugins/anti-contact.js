@@ -8,16 +8,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin }
         }
       }, { quoted: m })
     }
-    
-    if (!isAdmin) {
-      return conn.sendMessage(m.chat, {
-        text: '《✧》Solo los administradores pueden usar este comando.',
-        contextInfo: {
-          ...rcanal.contextInfo
-        }
-      }, { quoted: m })
-    }
-    
+
     const action = args[0]?.toLowerCase()
     
     if (!global.db.data.antiContact) global.db.data.antiContact = {}

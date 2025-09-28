@@ -16,7 +16,7 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
   
   if (!args[0]) {
     return conn.sendMessage(m.chat, {
-      text: `《✧》Debes proporcionar un número de teléfono.\n\n> Ejemplo: ${usedPrefix + command} 51901437507\n> Ejemplo: ${usedPrefix + command} +51 901 437 507\n> Ejemplo: ${usedPrefix + command} 51901437507@s.whatsapp.net`,
+      text: `《✧》Debes proporcionar un número de teléfono.\n\n> Ejemplo: ${usedPrefix + command} 51999999999\n> Ejemplo: ${usedPrefix + command} +51 999 999 999\n> Ejemplo: ${usedPrefix + command} 51999999999@s.whatsapp.net`,
       contextInfo: {
         ...rcanal.contextInfo
       }
@@ -118,7 +118,7 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
     
     if (error.message && error.message.includes('not-authorized')) {
       return conn.sendMessage(m.chat, {
-        text: `《✧》No se pudo agregar al usuario ${number}.\n\n❌ *Razón:* El usuario tiene deshabilitada la opción de "Agregar a grupos" en su configuración de privacidad.`,
+        text: `《✧》No se pudo agregar al usuario ${number}.\n\n> ❌ *Razón:* El usuario tiene deshabilitada la opción de "Agregar a grupos" en su configuración de privacidad.`,
         contextInfo: {
           ...rcanal.contextInfo
         }
@@ -127,7 +127,7 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
     
     if (error.message && error.message.includes('forbidden')) {
       return conn.sendMessage(m.chat, {
-        text: `《✧》No se pudo agregar al usuario ${number}.\n\n❌ *Razón:* El bot no tiene permisos suficientes o el grupo está restringido.`,
+        text: `《✧》No se pudo agregar al usuario ${number}.\n\n> ❌ *Razón:* El bot no tiene permisos suficientes o el grupo está restringido.`,
         contextInfo: {
           ...rcanal.contextInfo
         }
@@ -136,7 +136,7 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
     
     if (error.message && error.message.includes('not-found')) {
       return conn.sendMessage(m.chat, {
-        text: `《✧》No se pudo agregar al usuario ${number}.\n\n❌ *Razón:* El número no está registrado en WhatsApp.`,
+        text: `《✧》No se pudo agregar al usuario ${number}.\n\n> ❌ *Razón:* El número no está registrado en WhatsApp.`,
         contextInfo: {
           ...rcanal.contextInfo
         }
@@ -145,7 +145,7 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
     
     if (error.message && error.message.includes('bad-request')) {
       return conn.sendMessage(m.chat, {
-        text: `《✧》No se pudo agregar al usuario ${number}.\n\n❌ *Razón:* Número de teléfono inválido o formato incorrecto.`,
+        text: `《✧》No se pudo agregar al usuario ${number}.\n\n> ❌ *Razón:* Número de teléfono inválido o formato incorrecto.`,
         contextInfo: {
           ...rcanal.contextInfo
         }
@@ -154,7 +154,7 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
     
    
     return conn.sendMessage(m.chat, {
-      text: `《✧》Ocurrió un error al intentar agregar al usuario ${number}.\n\n❌ *Error:* ${error.message || 'Error desconocido'}`,
+      text: `《✧》Ocurrió un error al intentar agregar al usuario ${number}.\n\n> ❌ *Error:* ${error.message || 'Error desconocido'}`,
       contextInfo: {
         ...rcanal.contextInfo
       }
@@ -162,7 +162,7 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
   }
 }
 
-handler.command = ['adg', 'addgroup', 'agregargrupo']
+handler.command = ['adg', 'addgroup', 'addgp']
 handler.group = true
 handler.admin = true
 handler.botAdmin = true

@@ -38,6 +38,13 @@ global.prems = []
 global.multiplier = 69 
 global.maxwarn = '2'
 
+global.APIs = {
+vreden: { url: "https://api.vreden.web.id", key: null },
+delirius: { url: "https://api.delirius.store", key: null },
+zenzxz: { url: "https://api.zenzxz.my.id", key: null },
+siputzx: { url: "https://api.siputzx.my.id", key: null }
+}
+
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
   unwatchFile(file)

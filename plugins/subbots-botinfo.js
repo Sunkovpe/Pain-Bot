@@ -49,7 +49,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     } catch {}
   }
 
-  const tipo = botActual === '+51958333972'.replace(/\D/g, '')
+  const tipo = botActual === '+5218442600752'.replace(/\D/g, '')
     ? 'Principal Bot'
     : 'Sub Bot'
 

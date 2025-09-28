@@ -1,43 +1,55 @@
-let handler = async (m, { conn, text, isAdmin, isOwner, isPrems }) => {
+import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 
-  if (!m.isGroup) return conn.sendMessage(m.chat, {
-    text: '*[❗] Este comando solo puede ser usado en grupos.*',
-    contextInfo: {
-      ...rcanal.contextInfo
-    }
-  }, { quoted: m })
-  
-  if (!isAdmin && !isOwner && !isPrems) return conn.sendMessage(m.chat, {
-    text: '*[❗] Solo los administradores pueden usar este comando.*',
-    contextInfo: {
-      ...rcanal.contextInfo
-    }
-  }, { quoted: m })
-  
+var handler = async (m, { conn, text, participants }) => {
+  if (!m.quoted && !text) 
+    return conn.reply(m.chat, 'ඞ Debes enviar un texto o responder a un mensaje para hacer un tag.', m)
+
+  let users = participants.map(u => conn.decodeJid(u.id))
+  let htextos = text || (m.quoted?.text ? m.quoted.text : "¡¡¡Hola!!!")
+
   try {
+    let quoted = m.quoted ? await m.getQuotedObj() : null
+    let msg = conn.cMod(
+      m.chat,
+      generateWAMessageFromContent(
+        m.chat,
+        { [quoted ? quoted.mtype : 'extendedTextMessage']: quoted ? quoted.message[quoted.mtype] : { text: htextos } },
+        { quoted: null, userJid: conn.user.id }
+      ),
+      htextos,
+      conn.user.jid,
+      { mentions: users }
+    )
 
-    const groupMetadata = await conn.groupMetadata(m.chat)
-    const participants = groupMetadata.participants
-    
-    await conn.sendMessage(m.chat, { 
-      text: text || ' ',
-      mentions: participants.map(p => p.id)
-    }, { quoted: m })
-    
-  } catch (e) {
-    console.error('Error en comando tag-all:', e)
-    conn.sendMessage(m.chat, {
-      text: '*[❗] Ocurrió un error al intentar etiquetar a los miembros del grupo.*',
-      contextInfo: {
-        ...rcanal.contextInfo
-      }
-    }, { quoted: m })
+    await conn.relayMessage(m.chat, msg.message, { messageId: msg.key?.id || undefined })
+  } catch {
+    let quoted = m.quoted || m
+    let mime = (quoted.msg || quoted).mimetype || ''
+    let isMedia = /image|video|sticker|audio/.test(mime)
+    let more = String.fromCharCode(8206)
+    let masss = more.repeat(850)
+
+    if (isMedia && quoted.mtype === 'imageMessage') {
+      let mediax = await quoted.download?.()
+      await conn.sendMessage(m.chat, { image: mediax, caption: htextos, mentions: users }, { quoted: null })
+    } else if (isMedia && quoted.mtype === 'videoMessage') {
+      let mediax = await quoted.download?.()
+      await conn.sendMessage(m.chat, { video: mediax, mimetype: 'video/mp4', caption: htextos, mentions: users }, { quoted: null })
+    } else if (isMedia && quoted.mtype === 'audioMessage') {
+      let mediax = await quoted.download?.()
+      await conn.sendMessage(m.chat, { audio: mediax, mimetype: 'audio/mpeg', fileName: 'hidetag.mp3', mentions: users }, { quoted: null })
+    } else if (isMedia && quoted.mtype === 'stickerMessage') {
+      let mediax = await quoted.download?.()
+      await conn.sendMessage(m.chat, { sticker: mediax, mentions: users }, { quoted: null })
+    } else {
+      await conn.sendMessage(m.chat, { text: `${masss}\n${htextos}\n`, mentions: users }, { quoted: null })
+    }
   }
 }
 
-handler.help = ['#tag']
-handler.tags = ['grupos']
-handler.command = ['tag', 'todos', 'mencionartodos']
+handler.help = ['hidetag']
+handler.tags = ['grupo']
+handler.command = ['hidetag', 'notificar', 'notify', 'tag']
 handler.group = true
 handler.admin = true
 

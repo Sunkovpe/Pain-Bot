@@ -14,7 +14,6 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
   }, { quoted: m })
   
   try {
-    
     const chatMessages = conn.chats[m.chat]?.messages || []
     const messageKeys = Object.keys(chatMessages)
     
@@ -27,12 +26,10 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
       }, { quoted: m })
     }
     
-    
     const messagesToDelete = messageKeys
       .filter(key => key !== m.key.id) 
-      .slice(-17) 
+      .slice(-15) 
     
-   
     for (const messageId of messagesToDelete) {
       try {
         const message = chatMessages[messageId]
@@ -46,14 +43,14 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
             }
           })
           
-          await new Promise(resolve => setTimeout(resolve, 100))
+          // 🔹 Corregido: paréntesis faltante cerrado y ; añadido
+          await new Promise(resolve => setTimeout(resolve, 210));
         }
       } catch (deleteError) {
         console.error('Error eliminando mensaje:', messageId, deleteError)
       }
     }
     
-   
     await conn.sendMessage(m.chat, {
       delete: {
         remoteJid: m.chat,
@@ -73,4 +70,4 @@ handler.group = true
 handler.admin = true
 handler.botAdmin = true
 
-export default handler 
+export default handler

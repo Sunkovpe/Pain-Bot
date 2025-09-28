@@ -125,7 +125,7 @@ const connectionOptions = {
     keys: makeCacheableSignalKeyStore(state.keys, logger),
   },
   browser: Browsers.ubuntu('Chrome'),
-  markOnlineOnclientect: false,
+  markOnlineOnclientect: true,
   generateHighQualityLinkPreview: true,
   syncFullHistory: true,
   retryRequestDelayMs: 10,

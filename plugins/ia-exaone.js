@@ -24,14 +24,14 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
       }, { quoted: m })
     }
     
-    const response = data.data?.trim() || 'No se obtuvo respuesta de Llama.'
+    const response = data.data?.trim() || 'No se obtuvo respuesta de Exaone.'
     
     await conn.sendMessage(m.chat, {
       text: response
     }, { quoted: m })
     
   } catch (e) {
-    console.error('Error en comando gemini:', e)
+    console.error('Error en comando Exaone:', e)
     conn.sendMessage(m.chat, {
       text: '*[❗] Ocurrió un error al procesar tu consulta. Por favor, inténtalo de nuevo más tarde.*',
       contextInfo: {

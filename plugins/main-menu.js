@@ -14,7 +14,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let imgBot = 'https://files.catbox.moe/iomah1.jpg'
     let mainImg = './storage/img/menu3.jpg'
     const botActual = conn.user?.jid?.split('@')[0]?.replace(/\D/g, '')
-    const tipo = botActual === '+51958333972'.replace(/\D/g, '') ? 'Principal Bot' : 'Sub Bot'
+    const tipo = botActual === '+5218442600752'.replace(/\D/g, '') ? 'Principal Bot' : 'Sub Bot'
     
     
     if (tipo === 'Sub Bot') {
@@ -89,16 +89,16 @@ let handler = async (m, { conn, usedPrefix }) => {
     } else if (isMods) {
       
       if (isGroupCreator) {
-        userRole = '⚡ Moderador del Bot y Creador'
+        userRole = 'Moderador del Bot y Creador'
       } else if (isRAdmin || isAdmin) {
-        userRole = '⚡ Moderador del Bot y Admin'
+        userRole = 'Moderador del Bot y Admin'
       } else {
-        userRole = '⚡ Moderador del Bot'
+        userRole = 'Moderador del Bot'
       }
     } else if (isGroupCreator) {
       userRole = '👑 Creador del Grupo'
     } else if (isRAdmin || isAdmin) {
-      userRole = '🛡️ Admin del Grupo'
+      userRole = '𖢠 Admin del Grupo'
     }
     
     let botUptime = 0
@@ -116,38 +116,24 @@ let handler = async (m, { conn, usedPrefix }) => {
 
     const text = `
 ╭─「 ✦ 𓆩🪐𓆪 ʙɪᴇɴᴠᴇɴɪᴅᴏ ✦ 」─╮
-│
-╰➺ ✧ *Usuario:* @${m.sender.split('@')[0]}
-│
-╰➺ ✧ *Rol:* ${userRole}
-│
-╰➺ ✧ *Bot:* ${nombreBot}
-│
-╰➺ ✧ *Tipo:* ${tipo}
-│
-╰➺ ✧ *Librería:* Baileys MD
-│
-╰➺ ✧ *Tiempo Activo:* ${botFormatUptime}
-│
-╰➺ ✧ *Plugins:* ${totalf}
-│
-╰➺ ✧ *Memoria:* ${memoryMB} MB
-
+╰➺ ඞ *Usuario:* @${m.sender.split('@')[0]}
+╰➺ ✪ *Rol:* ${userRole}
+╰➺ ߷ *Bot:* ${nombreBot}
+╰➺ ≛ *Tipo:* ${tipo}
+╰➺ ❖ *Librería:* Baileys MD
+╰➺ ☉ *Tiempo Activo:* ${botFormatUptime}
+╰➺ ✥ *Plugins:* ${totalf}
+╰➺ ❐ *Memoria:* ${memoryMB} MB
 
 ╭─「 ✦ 𓆩👑𓆪 ᴘʀᴏᴘɪᴇᴛᴀʀɪᴏs ✦ 」─╮
-│
-│
-╰➺ ✧ +51901437507 ➺ Sunkovv
-
+╰➺ ඩා +51901437507 ➺ 𝐒𝐮𝐧𝐤𝐨𝐯𝐯
 
 ╭─「 ✦ 𓆩💎𓆪 ᴄᴀɴᴀʟᴇs ᴏғɪᴄɪᴀʟᴇs ✦ 」─╮
-│
-╰➺ ✧ https://whatsapp.com/channel/0029Vb5Vinf72WTo11c5hJ3O
-
+╰➺ 〘 https://whatsapp.com/channel/0029Vb5Vinf72WTo11c5hJ3O 〙
 
 ╭─「 ✦ 𓆩🐦‍🔥𓆪 ᴄᴏᴍᴀɴᴅᴏs ᴅɪsᴘᴏɴɪʙʟᴇs ✦ 」─╮
 │
-╰➺ ✧ *Owners* 𖤓
+╰➺ ✧ *\`𝗢𝗪𝗡𝗘𝗥𝗦\`* 𖤓
 │   • ${usedPrefix}verplugin <nombre.js>
 │   • ${usedPrefix}replugin <nombre.js>
 │   • ${usedPrefix}addplugin <nombre.js>
@@ -156,7 +142,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │   • ${usedPrefix}restart
 │   • ${usedPrefix}subme <mensaje>
 │
-╰➺ ✧ *Sub-bots* 𖤓
+╰➺ ✧ *\`𝗖𝗠𝗗 𝗦𝗨𝗕 𝗕𝗢𝗧\`* 𖤓
 │   • ${usedPrefix}qr
 │   • ${usedPrefix}code
 │   • ${usedPrefix}bots
@@ -166,13 +152,13 @@ let handler = async (m, { conn, usedPrefix }) => {
 │   • ${usedPrefix}setbotimg
 │   • ${usedPrefix}setautoread
 │
-╰➺ ✧ *Economía RPG* 𖤓
+╰➺ ✧ *\`𝗘𝗖𝗢𝗡𝗢𝗠𝗜𝗔 𝗥𝗣𝗚\`* 𖤓
 │   • ${usedPrefix}balance
 │   • ${usedPrefix}bal
 │   • ${usedPrefix}coins
 │   • ${usedPrefix}transf @usuario <cantidad>
 │
-╰➺ ✧ *Perfiles RPG* 𖤓
+╰➺ ✧ *\`𝗣𝗘𝗥𝗙𝗜𝗟 𝗥𝗣𝗚\`* 𖤓
 │   • ${usedPrefix}perfil
 │   • ${usedPrefix}setbirth <fecha>
 │   • ${usedPrefix}setdesc <descripción>
@@ -181,47 +167,49 @@ let handler = async (m, { conn, usedPrefix }) => {
 │   • ${usedPrefix}birthdays
 │   • ${usedPrefix}setname <nombre>
 │
-╰➺ ✧ *Tops RPG* 𖤓
+╰➺ ✧ *\`𝗧𝗢𝗣 𝗥𝗣𝗚\`* 𖤓
 │   • ${usedPrefix}topcoins
 │
-│
-╰➺ ✧ *Juegos RPG* 𖤓
+╰➺ ✧ *\`𝗚𝗔𝗠𝗘 𝗥𝗣𝗚\`* 𖤓
 │   • ${usedPrefix}dado
 │   • ${usedPrefix}daily / day
 │
-│
-│
-╰➺ ✧ *Búsquedas* 𖤓
+╰➺ ✧ *\`𝗕𝗨𝗦𝗤𝗨𝗘𝗗𝗔𝗦\`* 𖤓
 │   • ${usedPrefix}google <búsqueda>
 │   • ${usedPrefix}yt <búsqueda>
 │   • ${usedPrefix}tiktok <búsqueda>
+│   • ${usedPrefix}tiktok2 <búsqueda>
 │   • ${usedPrefix}onlyfans <username>
+│   • ${usedPrefix}imagen <busqueda>
+│   • ${usedPrefix}pinterest <busqueda> 
 │
-╰➺ ✧ *Inteligencia A.* 𖤓
+╰➺ ✧ *\`𝗜𝗡𝗧𝗘𝗟𝗜𝗚𝗘𝗡𝗖𝗜𝗔 𝗔.\`* 𖤓
 │   • ${usedPrefix}gemini <texto>
 │   • ${usedPrefix}deepseek <texto>
 │   • ${usedPrefix}llama <texto>
+│   • ${usedPrefix}exaone <texto>
 │
-╰➺ ✧ *Descargas* 𖤓
+╰➺ ✧ *\`𝗗𝗘𝗦𝗖𝗔𝗥𝗚𝗔𝗦\`* 𖤓
 │   • ${usedPrefix}play <búsqueda/url>
 │   • ${usedPrefix}play2 <búsqueda>
 │   • ${usedPrefix}ytvideo <búsqueda>
 │   • ${usedPrefix}aptoide <app>
 │   • ${usedPrefix}git <url>
+│   • ${usedPrefix}tiktok2 <link>
 │
-╰➺ ✧ *Herramientas* 𖤓
+╰➺ ✧ *\`𝗔𝗗𝗜𝗖𝗜𝗢𝗡𝗔𝗟𝗘𝗦\`* 𖤓
 │   • ${usedPrefix}nota <contenido>
 │   • ${usedPrefix}delnota <numero>
 │   • ${usedPrefix}vernotas
 │   • ${usedPrefix}id 
 │
-╰➺ ✧ *Stickers* 𖤓
+╰➺ ✧ *\`𝗦𝗧𝗜𝗖𝗞𝗘𝗥𝗦\`* 𖤓
 │   • ${usedPrefix}sticker
 │   • ${usedPrefix}toimg
 │   • ${usedPrefix}setmeta <autor> | <pack>
 │   • ${usedPrefix}delmeta
 │
-╰➺ ✧ *Administración* 𖤓
+╰➺ ✧ *\`𝗔𝗗𝗠𝗜𝗡𝗦\`* 𖤓
 │   • ${usedPrefix}ban @usuario
 │   • ${usedPrefix}promote @usuario
 │   • ${usedPrefix}demote @usuario
@@ -256,7 +244,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │   • ${usedPrefix}modohot on/off
 │   • ${usedPrefix}modoilegal on/off
 │
-╰➺ ✧ *Diversión* 𖤓
+╰➺ ✧ *\`𝗗𝗜𝗩𝗘𝗥𝗦𝗜𝗢𝗡\`* 𖤓
 │   • ${usedPrefix}topgays
 │   • ${usedPrefix}topfeos
 │   • ${usedPrefix}toplindos
@@ -267,7 +255,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │   • ${usedPrefix}topmancos
 │   • ${usedPrefix}topinfieles
 │
-╰➺ ✧ *NSFW* 𖤓
+╰➺ ✧ *\`𝗡𝗦𝗙𝗪\`* 𖤓
 │   • ${usedPrefix}waifu
 │   • ${usedPrefix}waifu2
 │   • ${usedPrefix}neko
@@ -277,9 +265,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │   • ${usedPrefix}hentai <búsqueda>
 │   • ${usedPrefix}xvideos <url>
 │   • ${usedPrefix}xvideos <búsqueda>
-│
-│
-╰────────────────╯
+╰─
 
 > PAIN COMMUNITY`.trim()
 
