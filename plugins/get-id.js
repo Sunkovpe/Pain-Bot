@@ -8,7 +8,6 @@ let handler = async (m, { conn, usedPrefix }) => {
   txt += `╰➺ ✧ *ID:* ${who}\n`
   txt += `╰➺ ✧ *Nombre:* ${user?.name || 'Sin registrar'}\n`
   txt += `│\n`
-  txt += `╰────────────────╯\n`
   txt += `\n> PAIN COMMUNITY`
   
   await conn.sendMessage(m.chat, {
