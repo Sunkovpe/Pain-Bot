@@ -93,7 +93,6 @@ let handler = async (m, { conn, usedPrefix }) => {
   txt += `╰➺ ✧ *Prefijo:* ${usedPrefix}\n`
   txt += `╰➺ ✧ *Speed:* ${latensi.toFixed(4)}ms\n`
   txt += `│\n`
-  txt += `╰────────────────╯\n\n`
 
   if (ownersText) {
     txt += `╭─「 ✦ 𓆩👑𓆪 ᴄʀᴇᴀᴅᴏʀᴇs ✦ 」─╮\n`

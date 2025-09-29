@@ -1,15 +1,21 @@
 {
   "users": {
     "51958333972@s.whatsapp.net": {
-      "exp": 38,
+      "exp": 13,
       "limit": 10,
-      "registered": false,
-      "name": "+51 958 333 972",
+      "registered": true,
+      "name": "𝙋𝙖𝙞𝙣 𝘽𝙤𝙩",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759111386844,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "114263544885392@lid": {
       "exp": null,
@@ -64,7 +70,7 @@
       "prem": false
     },
     "593962620741@s.whatsapp.net": {
-      "exp": 350,
+      "exp": 746,
       "limit": 10,
       "registered": true,
       "name": "Titix 🔥",
@@ -73,7 +79,7 @@
       "banned": false,
       "level": 0,
       "coins": 100,
-      "Subs": 1759093891921,
+      "Subs": 1759104678523,
       "genre": "No establecido",
       "birth": "No registrado",
       "desc": "Sin descripción",
@@ -82,7 +88,7 @@
       "prem": false
     },
     "573206534465@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 571,
       "limit": 10,
       "registered": true,
       "name": "+57 320 6534465",
@@ -106,7 +112,7 @@
       "name": "❀𖤣𖥧𖡼⊱✿⊰𖡼𖥧𖤣❀",
       "age": -1,
       "regTime": 1759070539476,
-      "banned": false,
+      "banned": true,
       "level": 0,
       "coins": 100,
       "genre": "No establecido",
@@ -310,15 +316,21 @@
       "coins": 0
     },
     "47798825300091@lid": {
-      "exp": 27,
+      "exp": 10,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "diana Hbbt51",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759112647988,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "75540455284982@lid": {
       "exp": 7,
@@ -376,15 +388,21 @@
       "coins": 0
     },
     "50767244283@s.whatsapp.net": {
-      "exp": 12,
+      "exp": 11,
       "limit": 10,
-      "registered": false,
-      "name": "Daniel",
+      "registered": true,
+      "name": "daniel",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759100941153,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "179092099997823@lid": {
       "exp": 43,
@@ -409,7 +427,7 @@
       "coins": 0
     },
     "18293225479@s.whatsapp.net": {
-      "exp": 127,
+      "exp": 207,
       "limit": 10,
       "registered": true,
       "name": "Yoel 🐊",
@@ -448,7 +466,7 @@
       "coins": 0
     },
     "5219983069045@s.whatsapp.net": {
-      "exp": 60,
+      "exp": 237,
       "limit": 10,
       "registered": true,
       "name": "Juan",
@@ -487,15 +505,21 @@
       "coins": 0
     },
     "151324800860378@lid": {
-      "exp": 13,
-      "limit": 10,
-      "registered": false,
+      "exp": null,
+      "limit": null,
+      "registered": true,
       "name": "Juan",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759111333424,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "56191459795157@lid": {
       "exp": 24,
@@ -662,16 +686,22 @@
       "coins": 0
     },
     "5216278893061@s.whatsapp.net": {
-      "exp": 19,
+      "exp": 72,
       "limit": 10,
-      "registered": false,
-      "name": "Gael",
+      "registered": true,
+      "name": "《☆{pedro}☆》",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759100253664,
       "banned": false,
       "level": 0,
-      "coins": 0,
-      "Subs": 1756428846753
+      "coins": 100,
+      "Subs": 1756428846753,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "83648850219090@lid": {
       "exp": 2,
@@ -717,7 +747,7 @@
       "coins": 0
     },
     "573004656298@s.whatsapp.net": {
-      "exp": 3,
+      "exp": 19,
       "limit": 10,
       "registered": true,
       "name": "Morales👑",
@@ -883,7 +913,7 @@
       "coins": 0
     },
     "51901437507@s.whatsapp.net": {
-      "exp": 11,
+      "exp": 743,
       "limit": 10,
       "registered": true,
       "name": "𝗦𝘂𝗻𝗸𝗼𝘃𝘃 </>",
@@ -892,7 +922,7 @@
       "banned": false,
       "level": 0,
       "coins": 150,
-      "Subs": 1756536206937,
+      "Subs": 1759104272873,
       "genre": "No establecido",
       "birth": "No registrado",
       "desc": "Sin descripción",
@@ -904,7 +934,7 @@
       "lastDaily": 1759072031520
     },
     "5359576004@s.whatsapp.net": {
-      "exp": 55,
+      "exp": 57,
       "limit": 10,
       "registered": true,
       "name": "》 EЯΞN 𝙏Ƨ𝙐𝙔ӨƧ𝖧ł   ⻨",
@@ -921,15 +951,22 @@
       "prem": false
     },
     "584244309723@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 109,
       "limit": 10,
-      "registered": false,
-      "name": "Gloader",
+      "registered": true,
+      "name": "vito007",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759104636399,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false,
+      "Subs": 1759105009361
     },
     "72856151019694@lid": {
       "banned": true
@@ -1413,7 +1450,7 @@
       "coins": 0
     },
     "51928303585@s.whatsapp.net": {
-      "exp": 293,
+      "exp": 1467,
       "limit": 10,
       "registered": true,
       "name": "ㅤ",
@@ -1431,7 +1468,7 @@
       "prem": false
     },
     "38148520288338@lid": {
-      "exp": 4,
+      "exp": 10,
       "limit": 10,
       "registered": true,
       "name": "Usuario",
@@ -2440,7 +2477,7 @@
       "coins": 0
     },
     "5219881032907@s.whatsapp.net": {
-      "exp": 137,
+      "exp": 444,
       "limit": 10,
       "registered": true,
       "name": "kevin_",
@@ -2454,7 +2491,8 @@
       "desc": "Sin descripción",
       "favourite": "No establecido",
       "partner": "",
-      "prem": false
+      "prem": false,
+      "Subs": 1759104402024
     },
     "59171984792@s.whatsapp.net": {
       "exp": 10,
@@ -2479,7 +2517,7 @@
       "coins": 0
     },
     "51928681359@s.whatsapp.net": {
-      "exp": 110,
+      "exp": 112,
       "limit": 10,
       "registered": true,
       "name": "𝗦𝗔𝗠𝗜𝗥 𝗖/𝗩 𝗩𝗘𝗡𝗧𝗫𝗦",
@@ -2496,7 +2534,7 @@
       "prem": false
     },
     "51983395272@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 6,
       "limit": 10,
       "registered": true,
       "name": ".",
@@ -2513,7 +2551,7 @@
       "prem": false
     },
     "51927995789@s.whatsapp.net": {
-      "exp": 16,
+      "exp": 26,
       "limit": 10,
       "registered": true,
       "name": "💸",
@@ -2530,7 +2568,7 @@
       "prem": false
     },
     "50379628407@s.whatsapp.net": {
-      "exp": 26,
+      "exp": 32,
       "limit": 10,
       "registered": true,
       "name": ".",
@@ -2547,15 +2585,21 @@
       "prem": false
     },
     "51951111061@s.whatsapp.net": {
-      "exp": 674,
+      "exp": 4,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "..",
       "age": -1,
-      "regTime": -1,
-      "banned": true,
+      "regTime": 1759112252339,
+      "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51916990298@s.whatsapp.net": {
       "exp": 10,
@@ -2586,7 +2630,7 @@
       "prem": false
     },
     "51904503656@s.whatsapp.net": {
-      "exp": 18,
+      "exp": 24,
       "limit": 10,
       "registered": true,
       "name": "Rodrznffx",
@@ -2603,18 +2647,24 @@
       "prem": false
     },
     "51955129257@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 5,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "Xoooo",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759112253496,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51901524456@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 41,
       "limit": 10,
       "registered": true,
       "name": "𝙴𝚁𝚃𝙲𝙷",
@@ -2628,10 +2678,12 @@
       "desc": "Sin descripción",
       "favourite": "No establecido",
       "partner": "",
-      "prem": false
+      "prem": false,
+      "packname": "",
+      "author": ""
     },
     "51950380915@s.whatsapp.net": {
-      "exp": 6,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "Smith",
@@ -2659,7 +2711,7 @@
       "coins": 0
     },
     "51903340966@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 16,
       "limit": 10,
       "registered": true,
       "name": "yarehn",
@@ -2676,7 +2728,7 @@
       "prem": false
     },
     "51901652412@s.whatsapp.net": {
-      "exp": 108,
+      "exp": 120,
       "limit": 10,
       "registered": true,
       "name": "..",
@@ -2694,7 +2746,7 @@
       "lastDado": 1759089749096
     },
     "51922682931@s.whatsapp.net": {
-      "exp": 6,
+      "exp": 12,
       "limit": 10,
       "registered": true,
       "name": "Vásquez 🙌🏻😉",
@@ -2733,7 +2785,7 @@
       "coins": 0
     },
     "51935757813@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 9,
       "limit": 10,
       "registered": true,
       "name": ",,,",
@@ -2750,29 +2802,41 @@
       "prem": false
     },
     "51963298467@s.whatsapp.net": {
-      "exp": 2,
+      "exp": 12,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "Jhonatan",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759112251490,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51966484497@s.whatsapp.net": {
-      "exp": 36,
+      "exp": 5,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759112257641,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51907618897@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 21,
       "limit": 10,
       "registered": true,
       "name": "Klk?\"Richard C'R👿👹",
@@ -2800,18 +2864,24 @@
       "coins": 0
     },
     "51944740463@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 1,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "DEA",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759112250572,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51976371686@s.whatsapp.net": {
-      "exp": 20,
+      "exp": 27,
       "limit": 10,
       "registered": true,
       "name": "Crhistian",
@@ -2868,18 +2938,24 @@
       "coins": 0
     },
     "51958804397@s.whatsapp.net": {
-      "exp": 1,
+      "exp": 10,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "Junior BR",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759112266586,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51931609818@s.whatsapp.net": {
-      "exp": 2,
+      "exp": 5,
       "limit": 10,
       "registered": true,
       "name": "xd",
@@ -2896,7 +2972,7 @@
       "prem": false
     },
     "51960173266@s.whatsapp.net": {
-      "exp": 13,
+      "exp": 17,
       "limit": 10,
       "registered": true,
       "name": ".x_s<3s¹⁷",
@@ -2915,13 +2991,19 @@
     "51998247497@s.whatsapp.net": {
       "exp": 5,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "Dayael🙃",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759113783400,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51929612760@s.whatsapp.net": {
       "exp": 8,
@@ -2941,7 +3023,7 @@
       "prem": false
     },
     "51955262940@s.whatsapp.net": {
-      "exp": 17,
+      "exp": 22,
       "limit": 10,
       "registered": true,
       "name": "ROMERO",
@@ -2958,7 +3040,7 @@
       "prem": false
     },
     "51922561959@s.whatsapp.net": {
-      "exp": 29,
+      "exp": 33,
       "limit": 10,
       "registered": true,
       "name": "VENTAS MC TUTO",
@@ -2975,7 +3057,7 @@
       "prem": false
     },
     "51947137729@s.whatsapp.net": {
-      "exp": 17,
+      "exp": 34,
       "limit": 10,
       "registered": true,
       "name": "Jhonny Antonio Valencia m",
@@ -2992,37 +3074,55 @@
       "prem": false
     },
     "51948677016@s.whatsapp.net": {
-      "exp": 7,
+      "exp": 6,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "STFNY",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759112256282,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51916244381@s.whatsapp.net": {
-      "exp": 3,
+      "exp": 13,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "...",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759112258704,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51983971496@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 7,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "Mtuy",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759112260290,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51928435738@s.whatsapp.net": {
       "exp": null,
@@ -3036,7 +3136,7 @@
       "coins": 0
     },
     "51974279378@s.whatsapp.net": {
-      "exp": 149,
+      "exp": 279,
       "limit": 10,
       "registered": true,
       "name": "《♤Informasion#privada♧¤₩》",
@@ -3065,7 +3165,7 @@
       "coins": 0
     },
     "5218448582376@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 15,
       "limit": 10,
       "registered": true,
       "name": "𝙁𝙚𝙧𝙣𝙖𝙣𝙙𝙤",
@@ -3082,7 +3182,7 @@
       "prem": false
     },
     "5218612002811@s.whatsapp.net": {
-      "exp": 7,
+      "exp": 14,
       "limit": 10,
       "registered": true,
       "name": "Eduardo.",
@@ -3099,7 +3199,7 @@
       "prem": false
     },
     "247257626636345@lid": {
-      "exp": 19,
+      "exp": 1,
       "limit": 10,
       "registered": true,
       "name": "《♤Informasion#privada♧¤₩》",
@@ -3116,7 +3216,7 @@
       "prem": false
     },
     "51991160370@s.whatsapp.net": {
-      "exp": 20,
+      "exp": 32,
       "limit": 10,
       "registered": true,
       "name": "Jxchii",
@@ -3272,7 +3372,7 @@
       "prem": false
     },
     "51937130264@s.whatsapp.net": {
-      "exp": 21,
+      "exp": 27,
       "limit": 10,
       "registered": true,
       "name": "Jhoel",
@@ -3509,7 +3609,7 @@
       "coins": 0
     },
     "51921907915@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 42,
       "limit": 10,
       "registered": true,
       "name": "👻👻",
@@ -3592,15 +3692,21 @@
       "coins": 0
     },
     "584126483113@s.whatsapp.net": {
-      "exp": 28,
+      "exp": 19,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "~sʜᴀᴋᴜʀɪᴛᴀ-`ღ´-",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759104999308,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "51916576776@s.whatsapp.net": {
       "exp": 36,
@@ -3641,15 +3747,21 @@
       "coins": 0
     },
     "5491126106973@s.whatsapp.net": {
-      "exp": 81,
+      "exp": 24,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "name": "HEYTAN",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759105114585,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "5493874409843@s.whatsapp.net": {
       "exp": 14,
@@ -3762,14 +3874,21 @@
       "coins": 0
     },
     "120363419837575209@newsletter": {
-      "exp": 16,
-      "limit": 10,
-      "registered": false,
+      "exp": null,
+      "limit": null,
+      "registered": true,
       "age": -1,
-      "regTime": -1,
+      "regTime": 1759115520536,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "name": "Usuario",
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "5493855882754@s.whatsapp.net": {
       "exp": 19,
@@ -4006,7 +4125,7 @@
       "prem": false
     },
     "5926706393@s.whatsapp.net": {
-      "exp": 93,
+      "exp": 365,
       "limit": 10,
       "registered": true,
       "name": "Kevinsito🥵",
@@ -4023,7 +4142,7 @@
       "prem": false
     },
     "5215615150459@s.whatsapp.net": {
-      "exp": 81,
+      "exp": 167,
       "limit": 10,
       "registered": true,
       "name": "Alberto Ramírez",
@@ -4127,7 +4246,7 @@
       "prem": false
     },
     "51943326312@s.whatsapp.net": {
-      "exp": 33,
+      "exp": 46,
       "limit": 10,
       "registered": true,
       "name": "YAMY ¡★!",
@@ -4161,8 +4280,8 @@
       "prem": false
     },
     "248588881899645@lid": {
-      "exp": 10,
-      "limit": 10,
+      "exp": null,
+      "limit": null,
       "registered": true,
       "name": "pou triste",
       "regTime": 1759070503950,
@@ -4195,7 +4314,7 @@
       "prem": false
     },
     "593960755485@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 168,
       "limit": 10,
       "registered": true,
       "name": "Alls",
@@ -4212,7 +4331,7 @@
       "prem": false
     },
     "5219381001979@s.whatsapp.net": {
-      "exp": 135,
+      "exp": 65,
       "limit": 10,
       "registered": true,
       "name": "diana Hbbt51",
@@ -4467,7 +4586,7 @@
       "prem": false
     },
     "120363372883715167@newsletter": {
-      "exp": 9,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "Usuario",
@@ -4484,7 +4603,7 @@
       "prem": false
     },
     "573219318040@s.whatsapp.net": {
-      "exp": 14,
+      "exp": 24,
       "limit": 10,
       "registered": true,
       "name": "♔Manuelxx♔",
@@ -4501,7 +4620,7 @@
       "prem": false
     },
     "584120507578@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 64,
       "limit": 10,
       "registered": true,
       "name": "jeremy",
@@ -4518,7 +4637,7 @@
       "prem": false
     },
     "593989404259@s.whatsapp.net": {
-      "exp": 136,
+      "exp": 290,
       "limit": 10,
       "registered": true,
       "name": "ALEXANDRA  PAZMIÑO",
@@ -4552,7 +4671,7 @@
       "prem": false
     },
     "5214211185917@s.whatsapp.net": {
-      "exp": 86,
+      "exp": 106,
       "limit": 10,
       "registered": true,
       "name": "☆LINDSEY ★",
@@ -4603,7 +4722,7 @@
       "prem": false
     },
     "120363316533574847@newsletter": {
-      "exp": 8,
+      "exp": 28,
       "limit": 10,
       "registered": true,
       "name": "Usuario",
@@ -4620,7 +4739,7 @@
       "prem": false
     },
     "5219321171693@s.whatsapp.net": {
-      "exp": 134,
+      "exp": 265,
       "limit": 10,
       "registered": true,
       "name": "🫐𝙅𝙐𝘼𝙉𝙄𝙏𝙊 🍇",
@@ -4739,7 +4858,7 @@
       "prem": false
     },
     "50663701222@s.whatsapp.net": {
-      "exp": 42,
+      "exp": 105,
       "limit": 10,
       "registered": true,
       "name": "🙂",
@@ -4790,7 +4909,7 @@
       "prem": false
     },
     "212608780482@s.whatsapp.net": {
-      "exp": 18,
+      "exp": 131,
       "limit": 10,
       "registered": true,
       "name": "خادم ماهوراغا",
@@ -4807,7 +4926,7 @@
       "prem": false
     },
     "5493755690350@s.whatsapp.net": {
-      "exp": 15,
+      "exp": 98,
       "limit": 10,
       "registered": true,
       "name": "Monjiso0",
@@ -4824,7 +4943,7 @@
       "prem": false
     },
     "584120190803@s.whatsapp.net": {
-      "exp": 31,
+      "exp": 128,
       "limit": 10,
       "registered": true,
       "name": "𝐬𝐚𝐥𝐚𝐦𝐢",
@@ -4838,10 +4957,11 @@
       "favourite": "No establecido",
       "partner": "",
       "banned": false,
-      "prem": false
+      "prem": false,
+      "Subs": 1759100109843
     },
     "51941717709@s.whatsapp.net": {
-      "exp": 16,
+      "exp": 141,
       "limit": 10,
       "registered": true,
       "name": "Gato 🐱🥷🏻",
@@ -4926,7 +5046,7 @@
       "prem": false
     },
     "573147378051@s.whatsapp.net": {
-      "exp": 13,
+      "exp": 19,
       "limit": 10,
       "registered": true,
       "name": "furriscan 12",
@@ -4994,7 +5114,7 @@
       "prem": false
     },
     "5356642983@s.whatsapp.net": {
-      "exp": 17,
+      "exp": 132,
       "limit": 10,
       "registered": true,
       "name": "~🩷.💜•[🎐°Niko-San°🎐]•💜.🩷~",
@@ -5011,7 +5131,7 @@
       "prem": false
     },
     "5493856432281@s.whatsapp.net": {
-      "exp": 17,
+      "exp": 31,
       "limit": 10,
       "registered": true,
       "name": "CHICO STUT 🇷🇺🏍️🏁",
@@ -5062,7 +5182,7 @@
       "prem": false
     },
     "5214442137507@s.whatsapp.net": {
-      "exp": 16,
+      "exp": 37,
       "limit": 10,
       "registered": true,
       "name": "𝕲𝕬𝖁𝕽𝕴𝕰𝕷",
@@ -5181,8 +5301,8 @@
       "prem": false
     },
     "120363419884883303@newsletter": {
-      "exp": null,
-      "limit": null,
+      "exp": 32,
+      "limit": 10,
       "registered": true,
       "name": "Usuario",
       "regTime": 1759081157367,
@@ -5249,7 +5369,7 @@
       "prem": false
     },
     "51967793555@s.whatsapp.net": {
-      "exp": 6,
+      "exp": 13,
       "limit": 10,
       "registered": true,
       "name": "Gabriel",
@@ -5266,7 +5386,7 @@
       "prem": false
     },
     "51974333571@s.whatsapp.net": {
-      "exp": 6,
+      "exp": 15,
       "limit": 10,
       "registered": true,
       "name": "©€¥king£$®",
@@ -5300,7 +5420,7 @@
       "prem": false
     },
     "51900393196@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 9,
       "limit": 10,
       "registered": true,
       "name": "Latin 11",
@@ -5317,7 +5437,7 @@
       "prem": false
     },
     "51934011950@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 17,
       "limit": 10,
       "registered": true,
       "name": "BOY",
@@ -5351,7 +5471,7 @@
       "prem": false
     },
     "59178306242@s.whatsapp.net": {
-      "exp": 7,
+      "exp": 10,
       "limit": 10,
       "registered": true,
       "name": "nayra",
@@ -5368,7 +5488,7 @@
       "prem": false
     },
     "51904877009@s.whatsapp.net": {
-      "exp": 5,
+      "exp": 8,
       "limit": 10,
       "registered": true,
       "name": "Angel🫩!!",
@@ -5385,7 +5505,7 @@
       "prem": false
     },
     "51940946329@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 10,
       "limit": 10,
       "registered": true,
       "name": ".",
@@ -5402,7 +5522,7 @@
       "prem": false
     },
     "51910354418@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 10,
       "limit": 10,
       "registered": true,
       "name": "Sistemas Perú",
@@ -5436,7 +5556,7 @@
       "prem": false
     },
     "51957737040@s.whatsapp.net": {
-      "exp": 1,
+      "exp": 3,
       "limit": 10,
       "registered": true,
       "name": "✞︎     𝗰𝗖𝗛𝗔𝗧𝗢𝗼  ✿︎",
@@ -5453,7 +5573,7 @@
       "prem": false
     },
     "51916671774@s.whatsapp.net": {
-      "exp": 15,
+      "exp": 30,
       "limit": 10,
       "registered": true,
       "name": "Reynaldo",
@@ -5470,7 +5590,7 @@
       "prem": false
     },
     "51936817849@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 16,
       "limit": 10,
       "registered": true,
       "name": "Dilan👾",
@@ -5487,7 +5607,7 @@
       "prem": false
     },
     "51916851055@s.whatsapp.net": {
-      "exp": 3,
+      "exp": 9,
       "limit": 10,
       "registered": true,
       "name": "Kathler, 🐰",
@@ -5504,7 +5624,7 @@
       "prem": false
     },
     "51938476032@s.whatsapp.net": {
-      "exp": 7,
+      "exp": 14,
       "limit": 10,
       "registered": true,
       "name": "marc_xv",
@@ -5521,7 +5641,7 @@
       "prem": false
     },
     "51938585316@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 17,
       "limit": 10,
       "registered": true,
       "name": "jesus risalazo flores",
@@ -5538,7 +5658,7 @@
       "prem": false
     },
     "51979003072@s.whatsapp.net": {
-      "exp": 12,
+      "exp": 16,
       "limit": 10,
       "registered": true,
       "name": "José Luis",
@@ -5555,7 +5675,7 @@
       "prem": false
     },
     "5493756643341@s.whatsapp.net": {
-      "exp": 3,
+      "exp": 13,
       "limit": 10,
       "registered": true,
       "name": "sergio ramos 😝",
@@ -5572,7 +5692,7 @@
       "prem": false
     },
     "51904759126@s.whatsapp.net": {
-      "exp": 6,
+      "exp": 11,
       "limit": 10,
       "registered": true,
       "name": "🎤🎼🎵🎧",
@@ -5589,7 +5709,7 @@
       "prem": false
     },
     "51984001620@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 12,
       "limit": 10,
       "registered": true,
       "name": "マさたんせきできますので",
@@ -5606,7 +5726,7 @@
       "prem": false
     },
     "51968770483@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 12,
       "limit": 10,
       "registered": true,
       "name": "LUIS",
@@ -5623,7 +5743,7 @@
       "prem": false
     },
     "51989806955@s.whatsapp.net": {
-      "exp": 23,
+      "exp": 28,
       "limit": 10,
       "registered": true,
       "name": "ㅤ",
@@ -5640,7 +5760,7 @@
       "prem": false
     },
     "51901103201@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 15,
       "limit": 10,
       "registered": true,
       "name": "terronesluz100",
@@ -5657,7 +5777,7 @@
       "prem": false
     },
     "51994084692@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 6,
       "limit": 10,
       "registered": true,
       "name": "@pachi.ffv",
@@ -5674,7 +5794,7 @@
       "prem": false
     },
     "51906538028@s.whatsapp.net": {
-      "exp": 13,
+      "exp": 23,
       "limit": 10,
       "registered": true,
       "name": "Maria",
@@ -5691,7 +5811,7 @@
       "prem": false
     },
     "51912167131@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 12,
       "limit": 10,
       "registered": true,
       "name": "Jesús Palacios",
@@ -5708,7 +5828,7 @@
       "prem": false
     },
     "51931187056@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 8,
       "limit": 10,
       "registered": true,
       "name": "Santi୧⍤⃝🦕",
@@ -5725,7 +5845,7 @@
       "prem": false
     },
     "51923125018@s.whatsapp.net": {
-      "exp": 3,
+      "exp": 8,
       "limit": 10,
       "registered": true,
       "name": "Grovr9",
@@ -5759,7 +5879,7 @@
       "prem": false
     },
     "51925315803@s.whatsapp.net": {
-      "exp": 16,
+      "exp": 20,
       "limit": 10,
       "registered": true,
       "name": "Ψㅤ卂ㄥ乇乂卂几ᗪ乇尺এ​",
@@ -5793,7 +5913,7 @@
       "prem": false
     },
     "51918269322@s.whatsapp.net": {
-      "exp": 7,
+      "exp": 11,
       "limit": 10,
       "registered": true,
       "name": "Yxremxt",
@@ -5827,7 +5947,7 @@
       "prem": false
     },
     "51930138783@s.whatsapp.net": {
-      "exp": 6,
+      "exp": 13,
       "limit": 10,
       "registered": true,
       "name": "Sebas Guti",
@@ -5844,7 +5964,7 @@
       "prem": false
     },
     "51901907914@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 11,
       "limit": 10,
       "registered": true,
       "name": "alex",
@@ -5861,7 +5981,7 @@
       "prem": false
     },
     "51928945768@s.whatsapp.net": {
-      "exp": 16,
+      "exp": 28,
       "limit": 10,
       "registered": true,
       "name": "nerito",
@@ -5878,7 +5998,7 @@
       "prem": false
     },
     "51946190591@s.whatsapp.net": {
-      "exp": 3,
+      "exp": 6,
       "limit": 10,
       "registered": true,
       "name": "abcdefgjijkmmñopqrsywxy",
@@ -5895,7 +6015,7 @@
       "prem": false
     },
     "51979687456@s.whatsapp.net": {
-      "exp": 1,
+      "exp": 2,
       "limit": 10,
       "registered": true,
       "name": "tu papi 🧸 tobby",
@@ -5912,7 +6032,7 @@
       "prem": false
     },
     "51944327316@s.whatsapp.net": {
-      "exp": 16,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "Sell Out.",
@@ -5929,7 +6049,7 @@
       "prem": false
     },
     "51913871810@s.whatsapp.net": {
-      "exp": 6,
+      "exp": 15,
       "limit": 10,
       "registered": true,
       "name": "Miau?",
@@ -5946,7 +6066,7 @@
       "prem": false
     },
     "51910307580@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "(⁠ヘ⁠･⁠_⁠･⁠)⁠ヘ⁠┳⁠━⁠┳",
@@ -5980,7 +6100,7 @@
       "prem": false
     },
     "51945738370@s.whatsapp.net": {
-      "exp": 13,
+      "exp": 14,
       "limit": 10,
       "registered": true,
       "name": "EL EGO NUNCA MUERE ..🧐",
@@ -5997,7 +6117,7 @@
       "prem": false
     },
     "51938143188@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 22,
       "limit": 10,
       "registered": true,
       "name": ".",
@@ -6031,7 +6151,7 @@
       "prem": false
     },
     "51900221203@s.whatsapp.net": {
-      "exp": 13,
+      "exp": 21,
       "limit": 10,
       "registered": true,
       "name": "......",
@@ -6048,7 +6168,7 @@
       "prem": false
     },
     "59162575312@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 24,
       "limit": 10,
       "registered": true,
       "name": "~ Streaming Mundial 🚨",
@@ -6082,7 +6202,7 @@
       "prem": false
     },
     "51921341299@s.whatsapp.net": {
-      "exp": 5,
+      "exp": 6,
       "limit": 10,
       "registered": true,
       "name": "Mayc",
@@ -6099,7 +6219,7 @@
       "prem": false
     },
     "51918576477@s.whatsapp.net": {
-      "exp": 20,
+      "exp": 26,
       "limit": 10,
       "registered": true,
       "name": "‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎",
@@ -6116,7 +6236,7 @@
       "prem": false
     },
     "51994808072@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 13,
       "limit": 10,
       "registered": true,
       "name": "Ⓛⓤⓘⓢ ⓐⓛⓔⓙⓐⓝⓓⓡⓞ ♡⚽️",
@@ -6167,7 +6287,7 @@
       "prem": false
     },
     "51901488325@s.whatsapp.net": {
-      "exp": 2,
+      "exp": 12,
       "limit": 10,
       "registered": true,
       "name": "Jp Ramirez N.N",
@@ -6184,7 +6304,7 @@
       "prem": false
     },
     "51931146134@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 16,
       "limit": 10,
       "registered": true,
       "name": "juan Flores",
@@ -6201,7 +6321,7 @@
       "prem": false
     },
     "51912374896@s.whatsapp.net": {
-      "exp": 5,
+      "exp": 21,
       "limit": 10,
       "registered": true,
       "name": "[<*El chino* >]",
@@ -6218,7 +6338,7 @@
       "prem": false
     },
     "51925106874@s.whatsapp.net": {
-      "exp": 13,
+      "exp": 21,
       "limit": 10,
       "registered": true,
       "name": "Siempre Positivo 🤬👊🥷🏻💯",
@@ -6235,7 +6355,7 @@
       "prem": false
     },
     "51900531380@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": ".",
@@ -6286,7 +6406,7 @@
       "prem": false
     },
     "573192275968@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 12,
       "limit": 10,
       "registered": true,
       "name": "Alfonso Gonzalez",
@@ -6303,7 +6423,7 @@
       "prem": false
     },
     "51907113336@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 10,
       "limit": 10,
       "registered": true,
       "name": "Falkon",
@@ -6354,7 +6474,7 @@
       "prem": false
     },
     "50374582145@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 14,
       "limit": 10,
       "registered": true,
       "name": "Andxr",
@@ -6371,7 +6491,7 @@
       "prem": false
     },
     "51906025153@s.whatsapp.net": {
-      "exp": 1,
+      "exp": 11,
       "limit": 10,
       "registered": true,
       "name": "Gabriel",
@@ -6388,7 +6508,7 @@
       "prem": false
     },
     "584245569086@s.whatsapp.net": {
-      "exp": 6,
+      "exp": 13,
       "limit": 10,
       "registered": true,
       "name": "Lo Bueno Se Hace Esperar",
@@ -6405,7 +6525,7 @@
       "prem": false
     },
     "51965136609@s.whatsapp.net": {
-      "exp": 2,
+      "exp": 3,
       "limit": 10,
       "registered": true,
       "name": "Harold 🥴",
@@ -6439,7 +6559,7 @@
       "prem": false
     },
     "51966199600@s.whatsapp.net": {
-      "exp": 14,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "Dennis",
@@ -6456,7 +6576,7 @@
       "prem": false
     },
     "51989886004@s.whatsapp.net": {
-      "exp": 3,
+      "exp": 10,
       "limit": 10,
       "registered": true,
       "name": "Daniel Torres",
@@ -6473,7 +6593,7 @@
       "prem": false
     },
     "51929140610@s.whatsapp.net": {
-      "exp": 17,
+      "exp": 37,
       "limit": 10,
       "registered": true,
       "name": "Jeyson",
@@ -6507,7 +6627,7 @@
       "prem": false
     },
     "51906008944@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "L.G🌟👀",
@@ -6524,7 +6644,7 @@
       "prem": false
     },
     "51949221866@s.whatsapp.net": {
-      "exp": 7,
+      "exp": 10,
       "limit": 10,
       "registered": true,
       "name": "Cesar",
@@ -6541,7 +6661,7 @@
       "prem": false
     },
     "51912272554@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 8,
       "limit": 10,
       "registered": true,
       "name": "Pierx",
@@ -6558,7 +6678,7 @@
       "prem": false
     },
     "59162719759@s.whatsapp.net": {
-      "exp": 3,
+      "exp": 5,
       "limit": 10,
       "registered": true,
       "name": "SOPORTE BOLIVIANO",
@@ -6575,7 +6695,7 @@
       "prem": false
     },
     "51913724056@s.whatsapp.net": {
-      "exp": 12,
+      "exp": 21,
       "limit": 10,
       "registered": true,
       "name": "MATHI",
@@ -6592,7 +6712,7 @@
       "prem": false
     },
     "51983002875@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 16,
       "limit": 10,
       "registered": true,
       "name": "Justi",
@@ -6609,7 +6729,7 @@
       "prem": false
     },
     "51903068583@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 13,
       "limit": 10,
       "registered": true,
       "name": "Elias",
@@ -6626,7 +6746,7 @@
       "prem": false
     },
     "51937016668@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 19,
       "limit": 10,
       "registered": true,
       "name": "Jordan",
@@ -6660,7 +6780,7 @@
       "prem": false
     },
     "51936157761@s.whatsapp.net": {
-      "exp": 2,
+      "exp": 3,
       "limit": 10,
       "registered": true,
       "name": ".",
@@ -6677,7 +6797,7 @@
       "prem": false
     },
     "51917757505@s.whatsapp.net": {
-      "exp": 2,
+      "exp": 9,
       "limit": 10,
       "registered": true,
       "name": "Frank",
@@ -6711,7 +6831,7 @@
       "prem": false
     },
     "51906944456@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "Steven",
@@ -6728,7 +6848,7 @@
       "prem": false
     },
     "51946814473@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "Cje",
@@ -6745,7 +6865,7 @@
       "prem": false
     },
     "51951309980@s.whatsapp.net": {
-      "exp": 19,
+      "exp": 21,
       "limit": 10,
       "registered": true,
       "name": "llados primer millon",
@@ -6762,7 +6882,7 @@
       "prem": false
     },
     "51910661924@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 11,
       "limit": 10,
       "registered": true,
       "name": "💸",
@@ -6779,7 +6899,7 @@
       "prem": false
     },
     "51952447279@s.whatsapp.net": {
-      "exp": 4,
+      "exp": 9,
       "limit": 10,
       "registered": true,
       "name": "todo tiene un final",
@@ -6796,7 +6916,7 @@
       "prem": false
     },
     "51997009832@s.whatsapp.net": {
-      "exp": 3,
+      "exp": 8,
       "limit": 10,
       "registered": true,
       "name": "🥷🏻",
@@ -6813,7 +6933,7 @@
       "prem": false
     },
     "51927932835@s.whatsapp.net": {
-      "exp": 10,
+      "exp": 12,
       "limit": 10,
       "registered": true,
       "name": "SNAYDER👹☠️",
@@ -6847,7 +6967,7 @@
       "prem": false
     },
     "51930648710@s.whatsapp.net": {
-      "exp": 6,
+      "exp": 16,
       "limit": 10,
       "registered": true,
       "name": "Axron hx venxts",
@@ -6881,7 +7001,7 @@
       "prem": false
     },
     "51901956044@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "christiansaguinaula",
@@ -6898,7 +7018,7 @@
       "prem": false
     },
     "51984918923@s.whatsapp.net": {
-      "exp": 1,
+      "exp": 14,
       "limit": 10,
       "registered": true,
       "name": "Luis Acasiete",
@@ -6915,7 +7035,7 @@
       "prem": false
     },
     "573212921340@s.whatsapp.net": {
-      "exp": 9,
+      "exp": 18,
       "limit": 10,
       "registered": true,
       "name": "Andres⚡💯",
@@ -6949,7 +7069,7 @@
       "prem": false
     },
     "5493765103085@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 15,
       "limit": 10,
       "registered": true,
       "name": "%1",
@@ -6983,7 +7103,7 @@
       "prem": false
     },
     "164437755457716@lid": {
-      "exp": 7,
+      "exp": 12,
       "limit": 10,
       "registered": true,
       "name": "kevin_",
@@ -7000,7 +7120,7 @@
       "prem": false
     },
     "51939335038@s.whatsapp.net": {
-      "exp": 23,
+      "exp": 89,
       "limit": 10,
       "registered": true,
       "name": "꧁✩★Bツ🌷꧂",
@@ -7017,7 +7137,7 @@
       "prem": false
     },
     "59176296442@s.whatsapp.net": {
-      "exp": 24,
+      "exp": 25,
       "limit": 10,
       "registered": true,
       "name": "arnezabgel",
@@ -7051,7 +7171,7 @@
       "prem": false
     },
     "593979058335@s.whatsapp.net": {
-      "exp": 55,
+      "exp": 231,
       "limit": 10,
       "registered": true,
       "name": "Elias",
@@ -7085,7 +7205,7 @@
       "prem": false
     },
     "584161623555@s.whatsapp.net": {
-      "exp": 1,
+      "exp": 15,
       "limit": 10,
       "registered": true,
       "name": "⍟•𝑳𝒖𝒄𝒂𝒔•𝒔𝒕𝒓𝒂𝒚•⍟",
@@ -7102,8 +7222,8 @@
       "prem": false
     },
     "120363403739366547@newsletter": {
-      "exp": 1,
-      "limit": 10,
+      "exp": null,
+      "limit": null,
       "registered": true,
       "name": "Usuario",
       "regTime": 1759095580220,
@@ -7158,6 +7278,3066 @@
       "registered": true,
       "name": "💗",
       "regTime": 1759096138018,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5214794834816@s.whatsapp.net": {
+      "exp": 169,
+      "limit": 10,
+      "registered": true,
+      "name": "🫥",
+      "regTime": 1759098582956,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "523461133931@s.whatsapp.net": {
+      "exp": 58,
+      "limit": 10,
+      "registered": true,
+      "name": "Adrian 💜😝😛👍🇲🇽",
+      "regTime": 1759098621767,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5218675412320@s.whatsapp.net": {
+      "exp": 96,
+      "limit": 10,
+      "registered": true,
+      "name": "😀",
+      "regTime": 1759098871421,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573249505861@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "NIXON",
+      "regTime": 1759099168537,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5215534946086@s.whatsapp.net": {
+      "exp": 109,
+      "limit": 10,
+      "registered": true,
+      "name": "I×I KiNG I×I",
+      "regTime": 1759099284868,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593960193191@s.whatsapp.net": {
+      "exp": 43,
+      "limit": 10,
+      "registered": true,
+      "name": ".",
+      "regTime": 1759099735524,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "584126547586@s.whatsapp.net": {
+      "exp": 227,
+      "limit": 10,
+      "registered": true,
+      "name": "~Viky❤️",
+      "regTime": 1759100144364,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5214624283711@s.whatsapp.net": {
+      "exp": 33,
+      "limit": 10,
+      "registered": true,
+      "name": "⚘↝𝕽σԃ↜⚘",
+      "regTime": 1759100145984,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "584126119929@s.whatsapp.net": {
+      "exp": 3,
+      "limit": 10,
+      "registered": true,
+      "name": "👑 REINY 👑",
+      "regTime": 1759100147176,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "56957237300@s.whatsapp.net": {
+      "exp": 37,
+      "limit": 10,
+      "registered": true,
+      "name": "Josue",
+      "regTime": 1759100147655,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50075594166386@lid": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "Kevinsito🥵",
+      "regTime": 1759100175799,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "56935748698@s.whatsapp.net": {
+      "exp": 11,
+      "limit": 10,
+      "registered": true,
+      "name": "愛",
+      "regTime": 1759100181847,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "181479598473348@lid": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "Josue",
+      "regTime": 1759100187131,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "268019381080187@lid": {
+      "exp": null,
+      "limit": null,
+      "registered": true,
+      "name": "𝐬𝐚𝐥𝐚𝐦𝐢",
+      "regTime": 1759100226989,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573144653329@s.whatsapp.net": {
+      "exp": 18,
+      "limit": 10,
+      "registered": true,
+      "name": ":\n\n✦━─【𝑵𝒊𝒌𝒐】─━✦",
+      "regTime": 1759100241690,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5215669251753@s.whatsapp.net": {
+      "exp": 35,
+      "limit": 10,
+      "registered": true,
+      "name": "SweetXit-bot",
+      "regTime": 1759100263325,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "247206019920048@lid": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "خادم ماهوراغا",
+      "regTime": 1759100263404,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50663950555@s.whatsapp.net": {
+      "exp": 99,
+      "limit": 10,
+      "registered": true,
+      "name": "ㅤ愛",
+      "regTime": 1759100268225,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "28459074101451@lid": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "SweetXit-bot",
+      "regTime": 1759100271657,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5493876362124@s.whatsapp.net": {
+      "exp": 57,
+      "limit": 10,
+      "registered": true,
+      "name": "🌸✨Candu✨🌸",
+      "regTime": 1759100294045,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "56944154968@s.whatsapp.net": {
+      "exp": 36,
+      "limit": 10,
+      "registered": true,
+      "name": ". . .",
+      "regTime": 1759100319574,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51938634776@s.whatsapp.net": {
+      "exp": 69,
+      "limit": 10,
+      "registered": true,
+      "name": "emojipop",
+      "regTime": 1759100320147,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217821061090@s.whatsapp.net": {
+      "exp": 23,
+      "limit": 10,
+      "registered": true,
+      "name": "𝐴𝑚𝑎𝑡𝑒𝑟𝑎𝑡𝑠𝑢✡︎",
+      "regTime": 1759100354365,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593959401912@s.whatsapp.net": {
+      "exp": 217,
+      "limit": 10,
+      "registered": true,
+      "name": "Sánchez 💋",
+      "regTime": 1759100355028,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "524531335535@s.whatsapp.net": {
+      "exp": 32,
+      "limit": 10,
+      "registered": true,
+      "name": "Shadow👤ghost",
+      "regTime": 1759100403705,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "595991663556@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "ƙׁׅɑׁׅtׁׅׅ꯱υׁׅƙׁׅꪱׁׁׁׅׅׅ",
+      "regTime": 1759100486116,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5215532040990@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "ㅤ 𝗐𝖼         𝗄𝗒𝖺𝗇.ㅤ",
+      "regTime": 1759100486813,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50831541940343@lid": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "*_*𝕊ℍ𝕌𝔹ℍ𝔸𝕄*_*",
+      "regTime": 1759100530023,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "919707424380@s.whatsapp.net": {
+      "exp": 28,
+      "limit": 10,
+      "registered": true,
+      "name": "*_*𝕊ℍ𝕌𝔹ℍ𝔸𝕄*_*",
+      "regTime": 1759100530164,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217718122803@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "hanako kun",
+      "regTime": 1759100537271,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51907910544@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "™ MAYCOL ™ϋ",
+      "regTime": 1759100651765,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5219531297077@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "あ┊Kiyotaka Ayanokoji",
+      "regTime": 1759100667467,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "56956719723@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "🦠",
+      "regTime": 1759100768030,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593968855283@s.whatsapp.net": {
+      "exp": 97,
+      "limit": 10,
+      "registered": true,
+      "name": "Ah",
+      "regTime": 1759100996376,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593982513030@s.whatsapp.net": {
+      "exp": 17,
+      "limit": 10,
+      "registered": true,
+      "name": "joshua",
+      "regTime": 1759101130347,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573001857652@s.whatsapp.net": {
+      "exp": 51,
+      "limit": 10,
+      "registered": true,
+      "name": "Juan",
+      "regTime": 1759101322801,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5216634418537@s.whatsapp.net": {
+      "exp": 17,
+      "limit": 10,
+      "registered": true,
+      "name": "Jr",
+      "regTime": 1759101400966,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5213337872005@s.whatsapp.net": {
+      "exp": 81,
+      "limit": 10,
+      "registered": true,
+      "name": "Rimuru㉺Tempest",
+      "regTime": 1759101567110,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593981862062@s.whatsapp.net": {
+      "exp": 51,
+      "limit": 10,
+      "registered": true,
+      "name": "𝑅𝐼𝑃𝑃𝑃",
+      "regTime": 1759101950330,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593985332166@s.whatsapp.net": {
+      "exp": 10,
+      "limit": 10,
+      "registered": true,
+      "name": "☄☄☄",
+      "regTime": 1759102749138,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "584247669389@s.whatsapp.net": {
+      "exp": 23,
+      "limit": 10,
+      "registered": true,
+      "name": "Angel",
+      "regTime": 1759102974772,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5219881055325@s.whatsapp.net": {
+      "exp": 138,
+      "limit": 10,
+      "registered": true,
+      "name": "Anelí",
+      "regTime": 1759104451965,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50589035807@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "Harvy Hurtado",
+      "regTime": 1759104475723,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573102707462@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "🥸",
+      "regTime": 1759104500397,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "584121289750@s.whatsapp.net": {
+      "exp": 13,
+      "limit": 10,
+      "registered": true,
+      "name": "𝐁𝐲𝐆𝐚𝐛𝐨𝐃𝐋 ^^ 💙",
+      "regTime": 1759104599163,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "554791310618@s.whatsapp.net": {
+      "exp": 165,
+      "limit": 10,
+      "registered": true,
+      "name": "Thiago",
+      "regTime": 1759104738402,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "584220082234@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "💟｡^‿^｡💟",
+      "regTime": 1759104861769,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "59175194866@s.whatsapp.net": {
+      "exp": 42,
+      "limit": 10,
+      "registered": true,
+      "name": "ᥬ_★_𝗘𝗠𝗬_★_︴",
+      "regTime": 1759105070387,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593994832148@s.whatsapp.net": {
+      "exp": 15,
+      "limit": 10,
+      "registered": true,
+      "name": "~Joseph",
+      "regTime": 1759107314369,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593998792476@s.whatsapp.net": {
+      "exp": 15,
+      "limit": 10,
+      "registered": true,
+      "name": "MaLuLi🌈",
+      "regTime": 1759107448504,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50557460106@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "H",
+      "regTime": 1759107543614,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5216688563236@s.whatsapp.net": {
+      "exp": 27,
+      "limit": 10,
+      "registered": true,
+      "name": "EinerPrime",
+      "regTime": 1759107767540,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "18492444827@s.whatsapp.net": {
+      "exp": 42,
+      "limit": 10,
+      "registered": true,
+      "name": "★Sr.Armando★",
+      "regTime": 1759107943538,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51913589987@s.whatsapp.net": {
+      "exp": 30,
+      "limit": 10,
+      "registered": true,
+      "name": "𝐀𝐥𝐞𝐱",
+      "regTime": 1759108069397,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593980983771@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "Amuu✨️",
+      "regTime": 1759108210748,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5215521880892@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "ADANGM",
+      "regTime": 1759108218037,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51903020998@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "OMNI-CAT",
+      "regTime": 1759108218212,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50256100180@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "German",
+      "regTime": 1759108218304,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5218662115946@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "F.T.G",
+      "regTime": 1759108218505,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5219936255456@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "+52 993 625 5456",
+      "regTime": 1759108218836,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573224758938@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "Stiffer",
+      "regTime": 1759108226414,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5212218042545@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "Ghost",
+      "regTime": 1759108226575,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51929430413@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "Brandon",
+      "regTime": 1759108226754,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51970263047@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "Santiago R'A",
+      "regTime": 1759108227149,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50576777520@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "J҉₳҉Đ҉Ɽ҉ł҉Ɇ҉Ⱡ҉",
+      "regTime": 1759108227433,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5216624099733@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "Eliud",
+      "regTime": 1759108228401,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "554196684725@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "Angel🐹",
+      "regTime": 1759108228645,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573136850632@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "mundo arte mostacilla",
+      "regTime": 1759108228677,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "595976227629@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "Analia",
+      "regTime": 1759108228816,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5215647607600@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "daylan🐄💨",
+      "regTime": 1759108229193,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217491100776@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "🙂‍↕️",
+      "regTime": 1759108231242,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5511964233438@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "Pedro Vieira",
+      "regTime": 1759108232639,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50236150834@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "Jose",
+      "regTime": 1759108233412,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217354601891@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "nam gyu",
+      "regTime": 1759108234174,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5493816495223@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "Mauro Casp 8-7-23💙💛💙🏆",
+      "regTime": 1759108234214,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217713451584@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "alexys",
+      "regTime": 1759108234950,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51921543351@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "\\__23__/",
+      "regTime": 1759108235566,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "59167848976@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "Jhosep",
+      "regTime": 1759108235831,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573207286849@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "DANIEL",
+      "regTime": 1759108236561,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5493884385426@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "Roo 🦄",
+      "regTime": 1759108238512,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573005603456@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "William Polo",
+      "regTime": 1759108240143,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5214831110971@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "Everardo luis",
+      "regTime": 1759108244484,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593990484554@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "💤💤",
+      "regTime": 1759108276583,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "559581113432@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "Vb.",
+      "regTime": 1759108356105,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5218671619846@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "Damian Alejandro",
+      "regTime": 1759108399177,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5216861975329@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "Elias",
+      "regTime": 1759108410496,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217124158529@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 10,
+      "registered": true,
+      "name": "𓃥",
+      "regTime": 1759108445853,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5214121476829@s.whatsapp.net": {
+      "exp": 44,
+      "limit": 10,
+      "registered": true,
+      "name": "𖤍༒︎😈𝙹.𝙽.𝚁.𝙻🇲🇽༒︎𖤍",
+      "regTime": 1759108496075,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573249654515@s.whatsapp.net": {
+      "exp": 22,
+      "limit": 10,
+      "registered": true,
+      "name": "Julian",
+      "regTime": 1759108555378,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593988297313@s.whatsapp.net": {
+      "exp": 93,
+      "limit": 10,
+      "registered": true,
+      "name": "Dilan Magno ♤",
+      "regTime": 1759108822903,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593998118103@s.whatsapp.net": {
+      "exp": 27,
+      "limit": 10,
+      "registered": true,
+      "name": "..",
+      "regTime": 1759108920407,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593991912049@s.whatsapp.net": {
+      "exp": 38,
+      "limit": 10,
+      "registered": true,
+      "name": "Copa🍷",
+      "regTime": 1759109473124,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5212311402379@s.whatsapp.net": {
+      "exp": 38,
+      "limit": 10,
+      "registered": true,
+      "name": "🎮Alexis Bv6🖤♎🇲🇽 🐢",
+      "regTime": 1759109478780,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593995563329@s.whatsapp.net": {
+      "exp": 25,
+      "limit": 10,
+      "registered": true,
+      "name": "Adri",
+      "regTime": 1759109666152,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593969168202@s.whatsapp.net": {
+      "exp": 65,
+      "limit": 10,
+      "registered": true,
+      "name": "Fernando Holguín",
+      "regTime": 1759109871511,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50577892324@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 10,
+      "registered": true,
+      "name": "☯︎꧁☬𝕵𝖔𝖘𝖚é☬꧂☯︎",
+      "regTime": 1759110117038,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "59176226434@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "jes",
+      "regTime": 1759110187650,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593961768027@s.whatsapp.net": {
+      "exp": 57,
+      "limit": 10,
+      "registered": true,
+      "name": "Jean x>",
+      "regTime": 1759110221578,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5218341459516@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "¿×_×?",
+      "regTime": 1759110297367,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51916016460@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "~Judy~",
+      "regTime": 1759110879572,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50671705835@s.whatsapp.net": {
+      "exp": 26,
+      "limit": 10,
+      "registered": true,
+      "name": "Anthony",
+      "regTime": 1759110941536,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51960722160@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "Armando Limay Julcamoro♥️",
+      "regTime": 1759112249910,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51952199241@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "~joseeq",
+      "regTime": 1759112250608,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51918088732@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "🗣️",
+      "regTime": 1759112250739,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51925496479@s.whatsapp.net": {
+      "exp": 3,
+      "limit": 10,
+      "registered": true,
+      "name": "Jp",
+      "regTime": 1759112251163,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51990866118@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "Joseph Medrano",
+      "regTime": 1759112251217,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51931849339@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "Nataly Sv",
+      "regTime": 1759112251290,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51922187299@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": ".",
+      "regTime": 1759112251320,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5215648952951@s.whatsapp.net": {
+      "exp": 3,
+      "limit": 10,
+      "registered": true,
+      "name": ":)",
+      "regTime": 1759112251408,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51998197349@s.whatsapp.net": {
+      "exp": 14,
+      "limit": 10,
+      "registered": true,
+      "name": "🥺",
+      "regTime": 1759112251505,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51904313498@s.whatsapp.net": {
+      "exp": 16,
+      "limit": 10,
+      "registered": true,
+      "name": "Alan Maquera",
+      "regTime": 1759112251519,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51921346135@s.whatsapp.net": {
+      "exp": 10,
+      "limit": 10,
+      "registered": true,
+      "name": ".",
+      "regTime": 1759112251557,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51916585896@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "*Recargas de diamantes*",
+      "regTime": 1759112251791,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "595982211801@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 10,
+      "registered": true,
+      "name": "꧁GIOVANNI꧂",
+      "regTime": 1759112251877,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51917414704@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 10,
+      "registered": true,
+      "name": "Jack",
+      "regTime": 1759112251980,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51960478129@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "Fool to want you",
+      "regTime": 1759112252000,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51900204850@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "*",
+      "regTime": 1759112252022,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5212219852534@s.whatsapp.net": {
+      "exp": 10,
+      "limit": 10,
+      "registered": true,
+      "name": "™f®ª№©¡$¢øπ√._.",
+      "regTime": 1759112252071,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51925921226@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "sebashuancavilla",
+      "regTime": 1759112252175,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51925337329@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "kevin RD",
+      "regTime": 1759112252510,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51966310478@s.whatsapp.net": {
+      "exp": 12,
+      "limit": 10,
+      "registered": true,
+      "name": "amigos del hombre",
+      "regTime": 1759112252864,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573507184957@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "jean",
+      "regTime": 1759112253027,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51980706419@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "JON VXNTS",
+      "regTime": 1759112253320,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51986879558@s.whatsapp.net": {
+      "exp": 3,
+      "limit": 10,
+      "registered": true,
+      "name": ".",
+      "regTime": 1759112253536,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51963942398@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "Dayiro 😎",
+      "regTime": 1759112253759,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51964955954@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "REI",
+      "regTime": 1759112254068,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51910924131@s.whatsapp.net": {
+      "exp": 3,
+      "limit": 10,
+      "registered": true,
+      "name": "gsists",
+      "regTime": 1759112254182,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51978775583@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "Diegooooo :v",
+      "regTime": 1759112254478,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51926960520@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "🥺🥺",
+      "regTime": 1759112254906,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51918844972@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "Kalel",
+      "regTime": 1759112255073,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51903192778@s.whatsapp.net": {
+      "exp": 11,
+      "limit": 10,
+      "registered": true,
+      "name": "903   192  778",
+      "regTime": 1759112255540,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51948350627@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "fabricio17hr😎",
+      "regTime": 1759112255552,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "59178820689@s.whatsapp.net": {
+      "exp": 15,
+      "limit": 10,
+      "registered": true,
+      "name": "YASXX",
+      "regTime": 1759112256202,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51910333950@s.whatsapp.net": {
+      "exp": 18,
+      "limit": 10,
+      "registered": true,
+      "name": "nicolas",
+      "regTime": 1759112256539,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51980214546@s.whatsapp.net": {
+      "exp": 14,
+      "limit": 10,
+      "registered": true,
+      "name": "alone",
+      "regTime": 1759112256754,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51917743353@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "ESTUDIOS SUPERIORES P.P.M.",
+      "regTime": 1759112256862,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5492634777446@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "Santino",
+      "regTime": 1759112258465,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51919658742@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "V",
+      "regTime": 1759112258826,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51900038214@s.whatsapp.net": {
+      "exp": 10,
+      "limit": 10,
+      "registered": true,
+      "name": ".",
+      "regTime": 1759112259113,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51951065324@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "~JOHAN💚",
+      "regTime": 1759112259879,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51929511421@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "SJL",
+      "regTime": 1759112259953,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51967668461@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "Edinson😉",
+      "regTime": 1759112261825,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51944705817@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": ".",
+      "regTime": 1759112262682,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51971122016@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 10,
+      "registered": true,
+      "name": "X Play",
+      "regTime": 1759112263108,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "56920684869@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": ".",
+      "regTime": 1759112263464,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51974689610@s.whatsapp.net": {
+      "exp": 3,
+      "limit": 10,
+      "registered": true,
+      "name": "orianinilanegrini",
+      "regTime": 1759112267602,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "59177131746@s.whatsapp.net": {
+      "exp": 11,
+      "limit": 10,
+      "registered": true,
+      "name": "Operaciones en divisas",
+      "regTime": 1759112268670,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51934142886@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "Frank Ssandoval",
+      "regTime": 1759112269755,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51925487720@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 10,
+      "registered": true,
+      "name": "SANTOS",
+      "regTime": 1759112271693,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51925207061@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 10,
+      "registered": true,
+      "name": "M+S",
+      "regTime": 1759112271971,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51944349960@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 10,
+      "registered": true,
+      "name": "FFEE n° 15",
+      "regTime": 1759112284651,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51903389999@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "BrayanAP",
+      "regTime": 1759112295241,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51904776560@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": ".",
+      "regTime": 1759112308545,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51903020600@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "Erick",
+      "regTime": 1759112310825,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51925297548@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "Jean",
+      "regTime": 1759112332117,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51953502953@s.whatsapp.net": {
+      "exp": 10,
+      "limit": 10,
+      "registered": true,
+      "name": "╰•★★  ıŋɠ.ɱıƈɧąɛƖ ★★•╯",
+      "regTime": 1759112369118,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "573206686797@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "Paco",
+      "regTime": 1759112373977,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5212434356598@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "🤑👺😈😎",
+      "regTime": 1759112400212,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51997434334@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "23~⭐⭐⭐",
+      "regTime": 1759112641147,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51938236921@s.whatsapp.net": {
+      "exp": 6,
+      "limit": 10,
+      "registered": true,
+      "name": "Gerrard Vents 🙆",
+      "regTime": 1759112811445,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51910009935@s.whatsapp.net": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "~`..",
+      "regTime": 1759112814960,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217351824455@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": ".",
+      "regTime": 1759112998635,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "231709811437568@lid": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "💸",
+      "regTime": 1759113733573,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51918688640@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "dueño bruss",
+      "regTime": 1759113780783,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51925535716@s.whatsapp.net": {
+      "exp": 8,
+      "limit": 10,
+      "registered": true,
+      "name": "@CHOQUEHUANCA",
+      "regTime": 1759113780860,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51974800170@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "Cele",
+      "regTime": 1759113796287,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5212285808565@s.whatsapp.net": {
+      "exp": 15,
+      "limit": 10,
+      "registered": true,
+      "name": "Keyla Sosa",
+      "regTime": 1759114501818,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50575305665@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "jeff",
+      "regTime": 1759115208897,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5212382489012@s.whatsapp.net": {
+      "exp": 18,
+      "limit": 10,
+      "registered": true,
+      "name": "𝕾𝖈𝖔𝖙𝖙 𝕻𝖆𝖗𝖐𝖊𝖗🎃",
+      "regTime": 1759115678873,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5492233403234@s.whatsapp.net": {
+      "exp": 82,
+      "limit": 10,
+      "registered": true,
+      "name": "Nata",
+      "regTime": 1759116643150,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "50248523099@s.whatsapp.net": {
+      "exp": 25,
+      "limit": 10,
+      "registered": true,
+      "name": "Wili Craft..",
+      "regTime": 1759117111862,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593995125018@s.whatsapp.net": {
+      "exp": 59,
+      "limit": 10,
+      "registered": true,
+      "name": "𝑀✨",
+      "regTime": 1759117684952,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593963919332@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "Cristhian Acurio",
+      "regTime": 1759117895450,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51974839570@s.whatsapp.net": {
+      "exp": 13,
+      "limit": 10,
+      "registered": true,
+      "name": "Smxth B'rnll4🐉🐉",
+      "regTime": 1759118028510,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593967830720@s.whatsapp.net": {
+      "exp": 5,
+      "limit": 10,
+      "registered": true,
+      "name": "SI SABE 💎",
+      "regTime": 1759118186393,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217752171142@s.whatsapp.net": {
+      "exp": 17,
+      "limit": 10,
+      "registered": true,
+      "name": "ᰔ♥︎Roberto♥︎ᰔ",
+      "regTime": 1759118231123,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5217206688787@s.whatsapp.net": {
+      "exp": 2,
+      "limit": 10,
+      "registered": true,
+      "name": "☆  ͡ ݂🥐 . 𝐌𝐄! . ៸ ៸ ˚",
+      "regTime": 1759118975429,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5218183624347@s.whatsapp.net": {
+      "exp": 3,
+      "limit": 10,
+      "registered": true,
+      "name": "El Hollow",
+      "regTime": 1759119308707,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5219981286601@s.whatsapp.net": {
+      "exp": 55,
+      "limit": 10,
+      "registered": true,
+      "name": "Jesus",
+      "regTime": 1759119513118,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593995424329@s.whatsapp.net": {
+      "exp": 25,
+      "limit": 10,
+      "registered": true,
+      "name": "ANDRES👑",
+      "regTime": 1759120620302,
       "age": -1,
       "level": 0,
       "coins": 100,
@@ -8498,38 +11678,254 @@
       "onlyLatinos": false,
       "nsfw": false,
       "expired": 0
+    },
+    "120363402576877898@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363402646540595@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "584120190803@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363405078235003@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "56957237300@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363421140579611@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "5217821061090@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593959401912@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "50767244283@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363400672940572@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "584247669389@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "5219881032907@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "5219881055325@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363184994729161@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "554791310618@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "5356642983@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593980983771@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363418580431819@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593988297313@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363371277767922@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593998118103@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593969168202@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593995563329@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593960755485@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593995125018@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363402253910074@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593995424329@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
     }
   },
   "stats": {
     "main-menu.js": {
-      "total": 132,
-      "success": 132,
-      "last": 1759094110076,
-      "lastSuccess": 1759094110076
+      "total": 225,
+      "success": 225,
+      "last": 1759117978085,
+      "lastSuccess": 1759117978085
     },
     "sub-bots.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1759094888303,
-      "lastSuccess": 1759094888303
+      "total": 22,
+      "success": 22,
+      "last": 1759117353590,
+      "lastSuccess": 1759117353590
     },
     "group-close.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1759095319103,
-      "lastSuccess": 1759095319103
+      "total": 16,
+      "success": 16,
+      "last": 1759113810186,
+      "lastSuccess": 1759113810186
     },
     "group-open.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1759086981438,
-      "lastSuccess": 1759086981438
+      "total": 16,
+      "success": 16,
+      "last": 1759113777347,
+      "lastSuccess": 1759113777347
     },
     "waifu.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1759088941038,
-      "lastSuccess": 1759088941038
+      "total": 4,
+      "success": 4,
+      "last": 1759113286665,
+      "lastSuccess": 1759113286665
     },
     "play.js": {
       "total": 26,
@@ -8556,16 +11952,16 @@
       "lastSuccess": 1759087805576
     },
     "sticker-toimg.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1759089089790,
-      "lastSuccess": 1759089089790
+      "total": 7,
+      "success": 7,
+      "last": 1759104984342,
+      "lastSuccess": 1759104984342
     },
     "stickers-sticker.js": {
-      "total": 24,
-      "success": 24,
-      "last": 1759089098696,
-      "lastSuccess": 1759089098696
+      "total": 36,
+      "success": 36,
+      "last": 1759112121038,
+      "lastSuccess": 1759112121038
     },
     "xvideos.js": {
       "total": 10,
@@ -8598,16 +11994,16 @@
       "lastSuccess": 1756524780838
     },
     "tag-all.js": {
-      "total": 70,
-      "success": 70,
-      "last": 1759095834494,
-      "lastSuccess": 1759095834494
+      "total": 83,
+      "success": 83,
+      "last": 1759119593934,
+      "lastSuccess": 1759119593934
     },
     "group-promote.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1759070272892,
-      "lastSuccess": 1759070272892
+      "total": 9,
+      "success": 9,
+      "last": 1759111638289,
+      "lastSuccess": 1759111638289
     },
     "group-demote.js": {
       "total": 1,
@@ -8628,10 +12024,10 @@
       "lastSuccess": 1759094290101
     },
     "serbot-serbot.js": {
-      "total": 52,
-      "success": 52,
-      "last": 1759093891922,
-      "lastSuccess": 1759093891922
+      "total": 76,
+      "success": 76,
+      "last": 1759105009362,
+      "lastSuccess": 1759105009362
     },
     "anti-link.js": {
       "total": 8,
@@ -8652,10 +12048,10 @@
       "lastSuccess": 1759004256936
     },
     "perfiles-perfil.js": {
-      "total": 17,
-      "success": 17,
-      "last": 1759079367428,
-      "lastSuccess": 1759079367428
+      "total": 19,
+      "success": 19,
+      "last": 1759113233828,
+      "lastSuccess": 1759113233828
     },
     "owner-update.js": {
       "total": 1,
@@ -8676,10 +12072,10 @@
       "lastSuccess": 1758511098038
     },
     "rpg-daily.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1759072032257,
-      "lastSuccess": 1759072032257
+      "total": 6,
+      "success": 6,
+      "last": 1759110304765,
+      "lastSuccess": 1759110304765
     },
     "group-add.js": {
       "total": 14,
@@ -8700,10 +12096,10 @@
       "lastSuccess": 1756517294046
     },
     "group-kick.js": {
-      "total": 19,
-      "success": 19,
-      "last": 1759071703081,
-      "lastSuccess": 1759071703081
+      "total": 22,
+      "success": 22,
+      "last": 1759108238052,
+      "lastSuccess": 1759108238052
     },
     "google-search.js": {
       "total": 5,
@@ -8772,16 +12168,16 @@
       "lastSuccess": 1756537990793
     },
     "welcome-group.js": {
-      "total": 23,
-      "success": 23,
-      "last": 1759071679830,
-      "lastSuccess": 1759071679830
+      "total": 26,
+      "success": 26,
+      "last": 1759120769029,
+      "lastSuccess": 1759120769029
     },
     "anti-img.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1759087689260,
-      "lastSuccess": 1759087689260
+      "total": 6,
+      "success": 6,
+      "last": 1759110294335,
+      "lastSuccess": 1759110294335
     },
     "anti-mention.js": {
       "total": 5,
@@ -8790,10 +12186,10 @@
       "lastSuccess": 1759087532118
     },
     "group-warn.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1759071546713,
-      "lastSuccess": 1759071546713
+      "total": 9,
+      "success": 9,
+      "last": 1759112233578,
+      "lastSuccess": 1759112233578
     },
     "group-warnings.js": {
       "total": 1,
@@ -8814,10 +12210,10 @@
       "lastSuccess": 1759009406226
     },
     "grupo-bot-off-on.js": {
-      "total": 1,
-      "success": 1,
-      "last": 1759003684017,
-      "lastSuccess": 1759003684017
+      "total": 7,
+      "success": 7,
+      "last": 1759120404401,
+      "lastSuccess": 1759120404401
     },
     "xnxx.js": {
       "total": 2,
@@ -8868,16 +12264,16 @@
       "lastSuccess": 1759071207190
     },
     "set-autoread.js": {
-      "total": 16,
-      "success": 16,
-      "last": 1759094602730,
-      "lastSuccess": 1759094602730
+      "total": 28,
+      "success": 28,
+      "last": 1759118161500,
+      "lastSuccess": 1759118161500
     },
     "Download-play3.js": {
-      "total": 35,
-      "success": 35,
-      "last": 1759094197019,
-      "lastSuccess": 1759094197019
+      "total": 194,
+      "success": 194,
+      "last": 1759118991941,
+      "lastSuccess": 1759118991941
     },
     "Download-fb-ig.js": {
       "total": 13,
@@ -8892,16 +12288,16 @@
       "lastSuccess": 1759078479948
     },
     "Download-fb.js": {
-      "total": 14,
-      "success": 14,
-      "last": 1759095766975,
-      "lastSuccess": 1759095766975
+      "total": 26,
+      "success": 26,
+      "last": 1759120744152,
+      "lastSuccess": 1759120744152
     },
     "economia-coins.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1759083581036,
-      "lastSuccess": 1759083581036
+      "total": 3,
+      "success": 3,
+      "last": 1759113291705,
+      "lastSuccess": 1759113291705
     },
     "Download-play2.js": {
       "total": 3,
@@ -8910,22 +12306,64 @@
       "lastSuccess": 1759094359924
     },
     "search-ytvideo.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1759084297333,
-      "lastSuccess": 1759084297333
-    },
-    "waifu-nsfw.js": {
       "total": 3,
       "success": 3,
-      "last": 1759088414058,
-      "lastSuccess": 1759088414058
+      "last": 1759110828764,
+      "lastSuccess": 1759110828764
+    },
+    "waifu-nsfw.js": {
+      "total": 5,
+      "success": 5,
+      "last": 1759104705561,
+      "lastSuccess": 1759104705561
     },
     "rpg-dado.js": {
       "total": 1,
       "success": 1,
       "last": 1759089749722,
       "lastSuccess": 1759089749722
+    },
+    "reconnect-bots.js": {
+      "total": 6,
+      "success": 6,
+      "last": 1759112687853,
+      "lastSuccess": 1759112687853
+    },
+    "group-delete.js": {
+      "total": 1,
+      "success": 1,
+      "last": 1759104646062,
+      "lastSuccess": 1759104646062
+    },
+    "set-botname.js": {
+      "total": 1,
+      "success": 1,
+      "last": 1759112826389,
+      "lastSuccess": 1759112826389
+    },
+    "top-parejas.js": {
+      "total": 1,
+      "success": 1,
+      "last": 1759113147308,
+      "lastSuccess": 1759113147308
+    },
+    "stickers-delmeta.js": {
+      "total": 1,
+      "success": 1,
+      "last": 1759113203111,
+      "lastSuccess": 1759113203111
+    },
+    "language-toggle.js": {
+      "total": 12,
+      "success": 12,
+      "last": 1759117701438,
+      "lastSuccess": 1759117701438
+    },
+    "timer.js": {
+      "total": 16,
+      "success": 16,
+      "last": 1759120220643,
+      "lastSuccess": 1759120220643
     }
   },
   "msgs": {},
@@ -8966,12 +12404,26 @@
     "593962620741@s.whatsapp.net": {
       "self": false,
       "autoread": true
+    },
+    "584120190803@s.whatsapp.net": {
+      "self": false,
+      "autoread": true
+    },
+    "5219881032907@s.whatsapp.net": {
+      "self": false,
+      "autoread": true
     }
   },
-  "botGroups": {},
+  "botGroups": {
+    "120363402646540595@g.us": false,
+    "120363419764426260@g.us": true,
+    "120363418580431819@g.us": false,
+    "120363371277767922@g.us": false
+  },
   "antiImg": {
     "120363419764426260@g.us": false,
-    "120363344478804563@g.us": false
+    "120363344478804563@g.us": false,
+    "120363402646540595@g.us": true
   },
   "bienvenidas": {
     "120363402434717449@g.us": false,
@@ -8979,6 +12431,13 @@
       "enabled": true,
       "welcomeMsg": "",
       "goodbyeMsg": "Adios p mierda, se fue la basura de: ${participant}",
+      "welcomeImg": "",
+      "goodbyeImg": ""
+    },
+    "120363402646540595@g.us": {
+      "enabled": true,
+      "welcomeMsg": "",
+      "goodbyeMsg": "",
       "welcomeImg": "",
       "goodbyeImg": ""
     }
@@ -10134,7 +13593,19 @@
     "120363419764426260@g.us": false
   },
   "warnings": {
-    "120363344478804563@g.us": {},
+    "120363344478804563@g.us": {
+      "51925487720@s.whatsapp.net": {
+        "count": 1,
+        "warnings": [
+          {
+            "reason": "aña",
+            "admin": "51901437507@s.whatsapp.net",
+            "date": "2025-09-29T02:17:06.542Z",
+            "timestamp": 1759112226542
+          }
+        ]
+      }
+    },
     "120363419764426260@g.us": {
       "275878953148477@lid": {
         "count": 2,
@@ -10180,5 +13651,7 @@
       "timestamp": 1759071206035,
       "respondida": true
     }
-  }
+  },
+  "botLanguage": "en",
+  "botLanguages": {}
 }

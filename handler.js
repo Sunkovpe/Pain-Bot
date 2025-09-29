@@ -71,8 +71,6 @@ try {
 ╰➺ ✧ • .setname - Cambiar nombre
 │
 ╰➺ ✧ *¡Disfruta usando PAIN BOT!*
-│
-╰────────────────╯
 
 > PAIN COMMUNITY`
 
@@ -1071,10 +1069,10 @@ if (isSubBot) {
 
 if (shouldAutoRead) {
   try {
-//    await this.readMessages([m.key])
+    await this.readMessages([m.key])
     
     if (m.isGroup) {
-//      await this.readMessages([m.key], { readEphemeral: true })
+      await this.readMessages([m.key], { readEphemeral: true })
     }
   } catch (e) {
     console.error('Error al marcar como leído:', e)

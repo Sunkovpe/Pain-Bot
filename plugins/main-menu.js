@@ -221,6 +221,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │   • ${usedPrefix}delwarn @usuario
 │   • ${usedPrefix}warnings @usuario
 │   • ${usedPrefix}tag
+│   • ${usedPrefix}temp <mensaje> <tiempo>
 │   • ${usedPrefix}open
 │   • ${usedPrefix}close
 │   • ${usedPrefix}delete

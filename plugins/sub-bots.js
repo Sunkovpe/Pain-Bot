@@ -1,6 +1,7 @@
 import ws from 'ws'
 import { format } from 'util'
-import { join } from 'path'
+import path, { join } from 'path'
+import { fileURLToPath } from 'url'
 import fs from 'fs'
 
 let handler = async (m, { conn }) => {
@@ -148,7 +149,7 @@ let handler = async (m, { conn }) => {
       
       
       const subBotConfigPath = join('./Serbot', subBotNumber, 'config.json')
-      let subBotName = global.namebot || 'KIYOMI MD'
+      let subBotName = global.namebot || 'PAIN BOT'
       
       if (fs.existsSync(subBotConfigPath)) {
         try {
@@ -196,12 +197,30 @@ let handler = async (m, { conn }) => {
   txt += `╰➺ ✧ *Bots Totales:* ${totalBots}\n`
   txt += `\n> PAIN COMMUNITY`
 
-  let imgBot = './storage/img/menu.jpg'
-  
+
+  const __filename = fileURLToPath(import.meta.url)
+  const __dirname = path.dirname(__filename)
+  const ROOT_DIR = path.join(__dirname, '..')
+  const IMG_DIR = join(ROOT_DIR, 'storage', 'img')
+
+  const candidates = [
+    'menu.jpg'
+  ]
+
+  let imgBot = candidates
+    .map(name => join(IMG_DIR, name))
+    .find(full => { try { return fs.existsSync(full) } catch { return false } })
+    || join(IMG_DIR, 'menu.jpg')
+
+ 
   if (fs.existsSync(configPath)) {
     try {
       const config = JSON.parse(fs.readFileSync(configPath))
-      if (config.img) imgBot = config.img
+      if (config.img) {
+        const custom = config.img
+        const customAbs = path.isAbsolute(custom) ? custom : join(ROOT_DIR, custom)
+        if (fs.existsSync(customAbs)) imgBot = customAbs
+      }
     } catch (err) {
       console.error('Error al leer el archivo de configuración:', err)
     }
