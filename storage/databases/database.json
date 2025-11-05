@@ -53,8 +53,8 @@
       "coins": 0
     },
     "185345505243351@lid": {
-      "exp": null,
-      "limit": null,
+      "exp": 10,
+      "limit": 10,
       "registered": true,
       "name": "Titix 🔥",
       "age": -1,
@@ -70,7 +70,7 @@
       "prem": false
     },
     "593962620741@s.whatsapp.net": {
-      "exp": 746,
+      "exp": 60,
       "limit": 10,
       "registered": true,
       "name": "Titix 🔥",
@@ -79,7 +79,7 @@
       "banned": false,
       "level": 0,
       "coins": 100,
-      "Subs": 1759104678523,
+      "Subs": 1762311414715,
       "genre": "No establecido",
       "birth": "No registrado",
       "desc": "Sin descripción",
@@ -913,7 +913,7 @@
       "coins": 0
     },
     "51901437507@s.whatsapp.net": {
-      "exp": 743,
+      "exp": 1214,
       "limit": 10,
       "registered": true,
       "name": "𝗦𝘂𝗻𝗸𝗼𝘃𝘃 </>",
@@ -1450,7 +1450,7 @@
       "coins": 0
     },
     "51928303585@s.whatsapp.net": {
-      "exp": 1467,
+      "exp": 1472,
       "limit": 10,
       "registered": true,
       "name": "ㅤ",
@@ -3165,7 +3165,7 @@
       "coins": 0
     },
     "5218448582376@s.whatsapp.net": {
-      "exp": 15,
+      "exp": 123,
       "limit": 10,
       "registered": true,
       "name": "𝙁𝙚𝙧𝙣𝙖𝙣𝙙𝙤",
@@ -3670,15 +3670,21 @@
       "coins": 0
     },
     "5218442600752@s.whatsapp.net": {
-      "exp": 94,
+      "exp": 270,
       "limit": 10,
-      "registered": false,
-      "name": "Fer",
+      "registered": true,
+      "name": "Pain Bot",
       "age": -1,
-      "regTime": -1,
+      "regTime": 1762311059544,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "5218442210300@s.whatsapp.net": {
       "exp": 228,
@@ -3692,7 +3698,7 @@
       "coins": 0
     },
     "584126483113@s.whatsapp.net": {
-      "exp": 19,
+      "exp": 23,
       "limit": 10,
       "registered": true,
       "name": "~sʜᴀᴋᴜʀɪᴛᴀ-`ღ´-",
@@ -3737,17 +3743,24 @@
       "coins": 0
     },
     "120363401454490428@newsletter": {
-      "exp": 18,
+      "exp": 6,
       "limit": 10,
-      "registered": false,
+      "registered": true,
       "age": -1,
-      "regTime": -1,
+      "regTime": 1762312004480,
       "banned": false,
       "level": 0,
-      "coins": 0
+      "coins": 100,
+      "name": "Usuario",
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "prem": false
     },
     "5491126106973@s.whatsapp.net": {
-      "exp": 24,
+      "exp": 32,
       "limit": 10,
       "registered": true,
       "name": "HEYTAN",
@@ -8123,7 +8136,7 @@
       "prem": false
     },
     "593998792476@s.whatsapp.net": {
-      "exp": 15,
+      "exp": 48,
       "limit": 10,
       "registered": true,
       "name": "MaLuLi🌈",
@@ -10333,11 +10346,150 @@
       "prem": false
     },
     "593995424329@s.whatsapp.net": {
-      "exp": 25,
+      "exp": 36,
       "limit": 10,
       "registered": true,
       "name": "ANDRES👑",
       "regTime": 1759120620302,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51942501966@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "ㅤ",
+      "regTime": 1762311205141,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593987283526@s.whatsapp.net": {
+      "exp": 1,
+      "limit": 10,
+      "registered": true,
+      "name": "Estrada",
+      "regTime": 1762311317046,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "75420129042499@lid": {
+      "exp": 10,
+      "limit": 10,
+      "registered": true,
+      "name": "Pain Bot",
+      "regTime": 1762311469701,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "114981106372821@lid": {
+      "banned": true
+    },
+    "5491164291009@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "Thomas Balborin",
+      "regTime": 1762312910634,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "5218119151388@s.whatsapp.net": {
+      "exp": 3,
+      "limit": 10,
+      "registered": true,
+      "name": "Jonathan Juarez",
+      "regTime": 1762313141626,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "71597759140000@lid": {
+      "exp": 7,
+      "limit": 10,
+      "registered": true,
+      "name": "Automotriz",
+      "regTime": 1762313426306,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "51904177717@s.whatsapp.net": {
+      "exp": 9,
+      "limit": 10,
+      "registered": true,
+      "name": "...",
+      "regTime": 1762313625317,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "593992577704@s.whatsapp.net": {
+      "exp": 3,
+      "limit": 10,
+      "registered": true,
+      "name": "ac",
+      "regTime": 1762314020505,
       "age": -1,
       "level": 0,
       "coins": 100,
@@ -11894,14 +12046,54 @@
       "onlyLatinos": false,
       "nsfw": false,
       "expired": 0
+    },
+    "120363422505276411@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "593998792476@s.whatsapp.net": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363418862412608@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363419775448012@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
+    },
+    "120363400974709058@g.us": {
+      "isBanned": false,
+      "bienvenida": true,
+      "antiLink": false,
+      "onlyLatinos": false,
+      "nsfw": false,
+      "expired": 0
     }
   },
   "stats": {
     "main-menu.js": {
-      "total": 225,
-      "success": 225,
-      "last": 1759117978085,
-      "lastSuccess": 1759117978085
+      "total": 232,
+      "success": 232,
+      "last": 1762313634314,
+      "lastSuccess": 1762313634314
     },
     "sub-bots.js": {
       "total": 22,
@@ -11988,16 +12180,16 @@
       "lastSuccess": 1756348897392
     },
     "modo-ilegal.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1756524780838,
-      "lastSuccess": 1756524780838
+      "total": 32,
+      "success": 32,
+      "last": 1762313124043,
+      "lastSuccess": 1762313124043
     },
     "tag-all.js": {
-      "total": 83,
-      "success": 83,
-      "last": 1759119593934,
-      "lastSuccess": 1759119593934
+      "total": 88,
+      "success": 88,
+      "last": 1762312282435,
+      "lastSuccess": 1762312282435
     },
     "group-promote.js": {
       "total": 9,
@@ -12024,10 +12216,10 @@
       "lastSuccess": 1759094290101
     },
     "serbot-serbot.js": {
-      "total": 76,
-      "success": 76,
-      "last": 1759105009362,
-      "lastSuccess": 1759105009362
+      "total": 80,
+      "success": 80,
+      "last": 1762311414716,
+      "lastSuccess": 1762311414716
     },
     "anti-link.js": {
       "total": 8,
@@ -12078,16 +12270,16 @@
       "lastSuccess": 1759110304765
     },
     "group-add.js": {
-      "total": 14,
-      "success": 14,
-      "last": 1759071734565,
-      "lastSuccess": 1759071734565
+      "total": 16,
+      "success": 16,
+      "last": 1762311652296,
+      "lastSuccess": 1762311652296
     },
     "top-pajeros.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1759087729705,
-      "lastSuccess": 1759087729705
+      "total": 9,
+      "success": 9,
+      "last": 1762312003023,
+      "lastSuccess": 1762312003023
     },
     "get-id.js": {
       "total": 6,
@@ -12096,10 +12288,10 @@
       "lastSuccess": 1756517294046
     },
     "group-kick.js": {
-      "total": 22,
-      "success": 22,
-      "last": 1759108238052,
-      "lastSuccess": 1759108238052
+      "total": 24,
+      "success": 24,
+      "last": 1762311622427,
+      "lastSuccess": 1762311622427
     },
     "google-search.js": {
       "total": 5,
@@ -12132,10 +12324,10 @@
       "lastSuccess": 1756350030910
     },
     "perfiles-setname.js": {
-      "total": 1,
-      "success": 1,
-      "last": 1756482848930,
-      "lastSuccess": 1756482848930
+      "total": 2,
+      "success": 2,
+      "last": 1762314090854,
+      "lastSuccess": 1762314090854
     },
     "bienvenidas.js": {
       "total": 16,
@@ -12174,10 +12366,10 @@
       "lastSuccess": 1759120769029
     },
     "anti-img.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1759110294335,
-      "lastSuccess": 1759110294335
+      "total": 8,
+      "success": 8,
+      "last": 1762312619115,
+      "lastSuccess": 1762312619115
     },
     "anti-mention.js": {
       "total": 5,
@@ -12186,10 +12378,10 @@
       "lastSuccess": 1759087532118
     },
     "group-warn.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1759112233578,
-      "lastSuccess": 1759112233578
+      "total": 11,
+      "success": 11,
+      "last": 1762311669997,
+      "lastSuccess": 1762311669997
     },
     "group-warnings.js": {
       "total": 1,
@@ -12198,10 +12390,10 @@
       "lastSuccess": 1759003578037
     },
     "group-delwarn.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1759003646937,
-      "lastSuccess": 1759003646937
+      "total": 4,
+      "success": 4,
+      "last": 1762311675045,
+      "lastSuccess": 1762311675045
     },
     "anti-sticker.js": {
       "total": 3,
@@ -12264,16 +12456,16 @@
       "lastSuccess": 1759071207190
     },
     "set-autoread.js": {
-      "total": 28,
-      "success": 28,
-      "last": 1759118161500,
-      "lastSuccess": 1759118161500
+      "total": 31,
+      "success": 31,
+      "last": 1762311797170,
+      "lastSuccess": 1762311797170
     },
     "Download-play3.js": {
-      "total": 194,
-      "success": 194,
-      "last": 1759118991941,
-      "lastSuccess": 1759118991941
+      "total": 197,
+      "success": 197,
+      "last": 1762311609144,
+      "lastSuccess": 1762311609144
     },
     "Download-fb-ig.js": {
       "total": 13,
@@ -12300,10 +12492,10 @@
       "lastSuccess": 1759113291705
     },
     "Download-play2.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1759094359924,
-      "lastSuccess": 1759094359924
+      "total": 4,
+      "success": 4,
+      "last": 1762311538829,
+      "lastSuccess": 1762311538829
     },
     "search-ytvideo.js": {
       "total": 3,
@@ -12421,7 +12613,7 @@
     "120363371277767922@g.us": false
   },
   "antiImg": {
-    "120363419764426260@g.us": false,
+    "120363419764426260@g.us": true,
     "120363344478804563@g.us": false,
     "120363402646540595@g.us": true
   },
