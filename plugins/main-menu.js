@@ -115,164 +115,190 @@ let handler = async (m, { conn, usedPrefix }) => {
     const memoryMB = Math.round(memoryUsage.heapUsed / 1024 / 1024)
 
     const text = `
-╭─「 ✦ 𓆩🪐𓆪 ʙɪᴇɴᴠᴇɴɪᴅᴏ ✦ 」─╮
-╰➺ ඞ *Usuario:* @${m.sender.split('@')[0]}
-╰➺ ✪ *Rol:* ${userRole}
-╰➺ ߷ *Bot:* ${nombreBot}
-╰➺ ≛ *Tipo:* ${tipo}
-╰➺ ❖ *Librería:* Baileys MD
-╰➺ ☉ *Tiempo Activo:* ${botFormatUptime}
-╰➺ ✥ *Plugins:* ${totalf}
-╰➺ ❐ *Memoria:* ${memoryMB} MB
 
-╭─「 ✦ 𓆩👑𓆪 ᴘʀᴏᴘɪᴇᴛᴀʀɪᴏs ✦ 」─╮
-╰➺ ඩා +51901437507 ➺ 𝐒𝐮𝐧𝐤𝐨𝐯𝐯
+𓂃 ࣪ ִֶָ☾. 𝙱𝙸𝙴𝙽𝚅𝙴𝙽𝙸𝙳𝙾 𓂃 ࣪ ִֶָ☾.
 
-╭─「 ✦ 𓆩💎𓆪 ᴄᴀɴᴀʟᴇs ᴏғɪᴄɪᴀʟᴇs ✦ 」─╮
-╰➺ 〘 https://whatsapp.com/channel/0029Vb5Vinf72WTo11c5hJ3O 〙
 
-╭─「 ✦ 𓆩🐦‍🔥𓆪 ᴄᴏᴍᴀɴᴅᴏs ᴅɪsᴘᴏɴɪʙʟᴇs ✦ 」─╮
-│
-╰➺ ✧ *\`𝗢𝗪𝗡𝗘𝗥𝗦\`* 𖤓
-│   • ${usedPrefix}verplugin <nombre.js>
-│   • ${usedPrefix}replugin <nombre.js>
-│   • ${usedPrefix}addplugin <nombre.js>
-│   • ${usedPrefix}nameplugins <archivo.js> > <nuevo.js>
-│   • ${usedPrefix}update
-│   • ${usedPrefix}restart
-│   • ${usedPrefix}subme <mensaje>
-│
-╰➺ ✧ *\`𝗖𝗠𝗗 𝗦𝗨𝗕 𝗕𝗢𝗧\`* 𖤓
-│   • ${usedPrefix}qr
-│   • ${usedPrefix}code
-│   • ${usedPrefix}bots
-│   • ${usedPrefix}botinfo
-│   • ${usedPrefix}reconnect
-│   • ${usedPrefix}setbotname
-│   • ${usedPrefix}setbotimg
-│   • ${usedPrefix}setautoread
-│
-╰➺ ✧ *\`𝗘𝗖𝗢𝗡𝗢𝗠𝗜𝗔 𝗥𝗣𝗚\`* 𖤓
-│   • ${usedPrefix}balance
-│   • ${usedPrefix}bal
-│   • ${usedPrefix}coins
-│   • ${usedPrefix}transf @usuario <cantidad>
-│
-╰➺ ✧ *\`𝗣𝗘𝗥𝗙𝗜𝗟 𝗥𝗣𝗚\`* 𖤓
-│   • ${usedPrefix}perfil
-│   • ${usedPrefix}setbirth <fecha>
-│   • ${usedPrefix}setdesc <descripción>
-│   • ${usedPrefix}setfav <personaje>
-│   • ${usedPrefix}setgenre <hombre/mujer>
-│   • ${usedPrefix}birthdays
-│   • ${usedPrefix}setname <nombre>
-│
-╰➺ ✧ *\`𝗧𝗢𝗣 𝗥𝗣𝗚\`* 𖤓
-│   • ${usedPrefix}topcoins
-│
-╰➺ ✧ *\`𝗚𝗔𝗠𝗘 𝗥𝗣𝗚\`* 𖤓
-│   • ${usedPrefix}dado
-│   • ${usedPrefix}daily / dda
-│   • ${usedPrefix}adivinanza
-│
-│
-╰➺ ✧ *\`𝗕𝗨𝗦𝗤𝗨𝗘𝗗𝗔𝗦\`*
-│   • ${usedPrefix}google <búsqueda>
-│   • ${usedPrefix}yt <búsqueda>
-│   • ${usedPrefix}tiktok <búsqueda>
-│   • ${usedPrefix}tiktok2 <búsqueda>
-│   • ${usedPrefix}onlyfans <username>
-│   • ${usedPrefix}imagen <busqueda>
-│   • ${usedPrefix}pinterest <busqueda> 
-│
-╰➺ ✧ *\`𝗜𝗡𝗧𝗘𝗟𝗜𝗚𝗘𝗡𝗖𝗜𝗔 𝗔.\`* 𖤓
-│   • ${usedPrefix}gemini <texto>
-│   • ${usedPrefix}deepseek <texto>
-│   • ${usedPrefix}llama <texto>
-│   • ${usedPrefix}exaone <texto>
-│
-╰➺ ✧ *\`𝗗𝗘𝗦𝗖𝗔𝗥𝗚𝗔𝗦\`* 𖤓
-│   • ${usedPrefix}play <búsqueda/url>
-│   • ${usedPrefix}play2 <búsqueda>
-│   • ${usedPrefix}ytvideo <búsqueda>
-│   • ${usedPrefix}aptoide <app>
-│   • ${usedPrefix}git <url>
-│   • ${usedPrefix}tiktok2 <link>
-│   • ${usedPrefix}fb <link> 
-│   • ${usedPrefix}ig <link> 
-│
-╰➺ ✧ *\`𝗔𝗗𝗜𝗖𝗜𝗢𝗡𝗔𝗟𝗘𝗦\`* 𖤓
-│   • ${usedPrefix}nota <contenido>
-│   • ${usedPrefix}delnota <numero>
-│   • ${usedPrefix}vernotas
-│   • ${usedPrefix}id 
-│
-╰➺ ✧ *\`𝗦𝗧𝗜𝗖𝗞𝗘𝗥𝗦\`* 𖤓
-│   • ${usedPrefix}sticker
-│   • ${usedPrefix}toimg
-│   • ${usedPrefix}setmeta <autor> | <pack>
-│   • ${usedPrefix}delmeta
-│
-╰➺ ✧ *\`𝗔𝗗𝗠𝗜𝗡𝗦\`* 𖤓
-│   • ${usedPrefix}ban @usuario
-│   • ${usedPrefix}promote @usuario
-│   • ${usedPrefix}demote @usuario
-│   • ${usedPrefix}warn @usuario <motivo>
-│   • ${usedPrefix}delwarn @usuario
-│   • ${usedPrefix}warnings @usuario
-│   • ${usedPrefix}tag
-│   • ${usedPrefix}temp <mensaje> <tiempo>
-│   • ${usedPrefix}open
-│   • ${usedPrefix}close
-│   • ${usedPrefix}delete
-│   • ${usedPrefix}namegp <nombre>
-│   • ${usedPrefix}desgp <descripción>
-│   • ${usedPrefix}photogp
-│   • ${usedPrefix}adg <numero>
-│   • ${usedPrefix}grupo on/off
-│   • ${usedPrefix}antilink on/off
-│   • ${usedPrefix}antiimg on/off
-│   • ${usedPrefix}antiaudio on/off
-│   • ${usedPrefix}antivideo on/off
-│   • ${usedPrefix}antisticker on/off
-│   • ${usedPrefix}antispam on/off
-│   • ${usedPrefix}anticontact on/off
-│   • ${usedPrefix}antimention on/off
-│   • ${usedPrefix}antidocument on/off
-│   • ${usedPrefix}anticaracter on/off <limite>
-│   • ${usedPrefix}soloadmin on/off
-│   • ${usedPrefix}welcome on/off
-│   • ${usedPrefix}savep
-│   • ${usedPrefix}publicg on/off
-│   • ${usedPrefix}publicg time <tiempo>
-│   • ${usedPrefix}modoia on/off
-│   • ${usedPrefix}modohot on/off
-│   • ${usedPrefix}modoilegal on/off
-│
-╰➺ ✧ *\`𝗗𝗜𝗩𝗘𝗥𝗦𝗜𝗢𝗡\`* 𖤓
-│   • ${usedPrefix}topgays
-│   • ${usedPrefix}topfeos
-│   • ${usedPrefix}toplindos
-│   • ${usedPrefix}topburros
-│   • ${usedPrefix}topmachos
-│   • ${usedPrefix}topparejas
-│   • ${usedPrefix}toppajeros
-│   • ${usedPrefix}topmancos
-│   • ${usedPrefix}topinfieles
-│
-╰➺ ✧ *\`𝗡𝗦𝗙𝗪\`* 𖤓
-│   • ${usedPrefix}waifu
-│   • ${usedPrefix}waifu2
-│   • ${usedPrefix}neko
-│   • ${usedPrefix}xnxx <url>
-│   • ${usedPrefix}xnxx <búsqueda>
-│   • ${usedPrefix}hentai <url>
-│   • ${usedPrefix}hentai <búsqueda>
-│   • ${usedPrefix}xvideos <url>
-│   • ${usedPrefix}xvideos <búsqueda>
-╰─
+╭─╮  𓍯  𝙸𝙽𝙵𝙾 𝚄𝚂𝚄𝙰𝚁𝙸𝙾  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  𝚄𝚂𝚄𝙰𝚁𝙸𝙾  @${m.sender.split('@')[0]}
+│  𓂃 ࣪ ִֶָ☾.  𝚁𝙾𝙻  ${userRole}
+│  𓂃 ࣪ ִֶָ☾.  𝙱𝙾𝚃  ${nombreBot}
+│  𓂃 ࣪ ִֶָ☾.  𝚃𝙸𝙿𝙾  ${tipo}
+│  𓂃 ࣪ ִֶָ☾.  𝙻𝙸𝙱𝚁𝙴𝚁𝙸𝙰  𝙱𝚊𝚒𝚕𝚎𝚢𝚜 𝙼𝙳
+│  𓂃 ࣪ ִֶָ☾.  𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾  ${botFormatUptime}
+│  𓂃 ࣪ ִֶָ☾.  𝙿𝙻𝚄𝙶𝙸𝙽𝚂  ${totalf}
+│  𓂃 ࣪ ִֶָ☾.  𝙼𝙴𝙼𝙾𝚁𝙸𝙰  ${memoryMB} 𝙼𝙱
+╰─╯
 
-> PAIN COMMUNITY`.trim()
+
+𓂃 ࣪ ִֶָ☾. 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾𝚂𓂃 ࣪ ִֶָ☾.
+
+𓂃 ࣪ ִֶָ☾.  ⊹ +51901437507 ⊹ 𝚂𝚞𝚗𝚔𝚘𝚟𝚟
+
+
+𓂃 ࣪ ִֶָ☾. 𝙲𝙰𝙽𝙰𝙻𝙴𝚂 𝙾𝙵𝙸𝙲𝙸𝙰𝙻𝙴𝚂 𓂃 ࣪ ִֶָ☾.
+
+
+𓂃 ࣪ ִֶָ☾.  ⟅ https://whatsapp.com/channel/0029Vb5Vinf72WTo11c5hJ3O ⟆
+
+
+𓂃 ࣪ ִֶָ☾. 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𓂃 ࣪ ִֶָ☾.
+
+
+╭─╮  𓍯  𝙾𝚆𝙽𝙴𝚁𝚂  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}verplugin <nombre.js>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}replugin <nombre.js>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}addplugin <nombre.js>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}nameplugins <archivo.js> > <nuevo.js>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}update
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}restart
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}subme <mensaje>
+╰─╯
+
+╭─╮  𓍯  𝙲𝙼𝙳 𝚂𝚄𝙱 𝙱𝙾𝚃  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}qr
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}code
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}bots
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}botinfo
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}reconnect
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setbotname
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setbotimg
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setautoread
+╰─╯
+
+╭─╮  𓍯  𝙴𝙲𝙾𝙽𝙾𝙼𝙸𝙰 𝚁𝙿𝙶  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}balance
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}bal
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}coins
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}transf @usuario <cantidad>
+╰─╯
+
+╭─╮  𓍯  𝙿𝙴𝚁𝙵𝙸𝙻 𝚁𝙿𝙶  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}perfil
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setbirth <fecha>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setdesc <descripción>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setfav <personaje>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setgenre <hombre/mujer>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}birthdays
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setname <nombre>
+╰─╯
+
+╭─╮  𓍯  𝚃𝙾𝙿 𝚁𝙿𝙶  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topcoins
+╰─╯
+
+╭─╮  𓍯  𝙶𝙰𝙼𝙴 𝚁𝙿𝙶  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}dado
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}daily / dda
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}adivinanza
+╰─╯
+
+╭─╮  𓍯  𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰𝚂  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}google <búsqueda>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}yt <búsqueda>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}tiktok <búsqueda>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}tiktok2 <búsqueda>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}onlyfans <username>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}imagen <busqueda>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}pinterest <busqueda>
+╰─╯
+
+╭─╮  𓍯  𝙸𝙽𝚃𝙴𝙻𝙸𝙶𝙴𝙽𝙲𝙸𝙰 𝙰.𝙸  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}gemini <texto>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}deepseek <texto>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}llama <texto>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}exaone <texto>
+╰─╯
+
+╭─╮  𓍯  𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰𝚂  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}play <búsqueda/url>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}play2 <búsqueda>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}ytvideo <búsqueda>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}aptoide <app>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}git <url>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}tiktok2 <link>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}fb <link>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}ig <link>
+╰─╯
+
+╭─╮  𓍯  𝙰𝙳𝙸𝙲𝙸𝙾𝙽𝙰𝙻𝙴𝚂  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}nota <contenido>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}delnota <numero>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}vernotas
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}id
+╰─╯
+
+╭─╮  𓍯  𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}sticker
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}toimg
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setmeta <autor> | <pack>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}delmeta
+╰─╯
+
+╭─╮  𓍯  𝙰𝙳𝙼𝙸𝙽𝚂  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}ban @usuario
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}promote @usuario
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}demote @usuario
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}warn @usuario <motivo>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}delwarn @usuario
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}warnings @usuario
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}tag
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}temp <mensaje> <tiempo>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}open
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}close
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}delete
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}namegp <nombre>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}desgp <descripción>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}photogp
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}adg <numero>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}grupo on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}antilink on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}antiimg on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}antiaudio on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}antivideo on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}antisticker on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}antispam on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}anticontact on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}antimention on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}antidocument on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}anticaracter on/off <limite>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}soloadmin on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}welcome on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}savep
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}publicg on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}publicg time <tiempo>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}modoia on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}modohot on/off
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}modoilegal on/off
+╰─╯
+
+╭─╮  𓍯  𝙳𝙸𝚅𝙴𝚁𝚂𝙸𝙾𝙽  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topgays
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topfeos
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}toplindos
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topburros
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topmachos
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topparejas
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}toppajeros
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topmancos
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topinfieles
+╰─╯
+
+╭─╮  𓍯  𝙽𝚂𝙵𝚆  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}waifu
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}waifu2
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}neko
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}xnxx <url>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}xnxx <búsqueda>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}hentai <url>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}hentai <búsqueda>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}xvideos <url>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}xvideos <búsqueda>
+╰─╯
+
+
+
+> 𝙿𝙰𝙸𝙽 𝙲𝙾𝙼𝙼𝚄𝙽𝙸𝚃𝚈`.trim()
 
     
 //    const externalAdReply = {

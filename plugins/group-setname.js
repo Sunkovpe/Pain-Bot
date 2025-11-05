@@ -6,12 +6,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isAdmin, isBotAdmin, 
     }
   }, { quoted: m })
 
-  if (!isAdmin && !isOwner && !isPrems) return conn.sendMessage(m.chat, {
-    text: '《✧》Solo los administradores pueden usar este comando.',
-    contextInfo: {
-      ...rcanal.contextInfo
-    }
-  }, { quoted: m })
+
 
   const newName = args.join(' ').trim()
 

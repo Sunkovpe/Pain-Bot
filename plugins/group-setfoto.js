@@ -4,10 +4,6 @@ let handler = async (m, { conn, usedPrefix, command, isAdmin }) => {
     contextInfo: { ...rcanal.contextInfo }
   }, { quoted: m })
 
-  if (!isAdmin) return conn.sendMessage(m.chat, {
-    text: '《✧》Solo los administradores pueden usar este comando.',
-    contextInfo: { ...rcanal.contextInfo }
-  }, { quoted: m })
 
   const q = m.quoted || m
   const mime = (q.msg || q).mimetype || ''

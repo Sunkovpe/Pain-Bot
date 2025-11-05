@@ -70,7 +70,7 @@
       "prem": false
     },
     "593962620741@s.whatsapp.net": {
-      "exp": 160,
+      "exp": 267,
       "limit": 10,
       "registered": true,
       "name": "Titix 🔥",
@@ -913,7 +913,7 @@
       "coins": 0
     },
     "51901437507@s.whatsapp.net": {
-      "exp": 1374,
+      "exp": 1548,
       "limit": 10,
       "registered": true,
       "name": "𝗦𝘂𝗻𝗸𝗼𝘃𝘃 </>",
@@ -1070,8 +1070,8 @@
       "prem": false
     },
     "275878953148477@lid": {
-      "exp": 97,
-      "limit": 10,
+      "exp": null,
+      "limit": null,
       "registered": false,
       "name": "𝙁𝙚𝙧𝙣𝙖𝙣𝙙𝙤",
       "age": -1,
@@ -3165,7 +3165,7 @@
       "coins": 0
     },
     "5218448582376@s.whatsapp.net": {
-      "exp": 123,
+      "exp": 258,
       "limit": 10,
       "registered": true,
       "name": "𝙁𝙚𝙧𝙣𝙖𝙣𝙙𝙤",
@@ -3670,7 +3670,7 @@
       "coins": 0
     },
     "5218442600752@s.whatsapp.net": {
-      "exp": 369,
+      "exp": 471,
       "limit": 10,
       "registered": true,
       "name": "Pain Bot",
@@ -10517,6 +10517,43 @@
       "partner": "",
       "banned": false,
       "prem": false
+    },
+    "5215656456121@s.whatsapp.net": {
+      "exp": 21,
+      "limit": 10,
+      "registered": true,
+      "name": "rafaeltamayoramos87",
+      "regTime": 1762315745912,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "595983127053@s.whatsapp.net": {
+      "exp": 26,
+      "limit": 10,
+      "registered": true,
+      "name": "Mongo 😛",
+      "regTime": 1762316131941,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
+    },
+    "101456187265095@lid": {
+      "banned": true
     }
   },
   "chats": {
@@ -12107,10 +12144,10 @@
   },
   "stats": {
     "main-menu.js": {
-      "total": 250,
-      "success": 250,
-      "last": 1762315356931,
-      "lastSuccess": 1762315356931
+      "total": 266,
+      "success": 266,
+      "last": 1762316293027,
+      "lastSuccess": 1762316293027
     },
     "sub-bots.js": {
       "total": 22,
@@ -12203,16 +12240,16 @@
       "lastSuccess": 1762313124043
     },
     "tag-all.js": {
-      "total": 88,
-      "success": 88,
-      "last": 1762312282435,
-      "lastSuccess": 1762312282435
+      "total": 90,
+      "success": 90,
+      "last": 1762316360148,
+      "lastSuccess": 1762316360148
     },
     "group-promote.js": {
-      "total": 11,
-      "success": 11,
-      "last": 1762315392419,
-      "lastSuccess": 1762315392419
+      "total": 13,
+      "success": 13,
+      "last": 1762316286544,
+      "lastSuccess": 1762316286544
     },
     "group-demote.js": {
       "total": 3,
@@ -12287,10 +12324,10 @@
       "lastSuccess": 1759110304765
     },
     "group-add.js": {
-      "total": 16,
-      "success": 16,
-      "last": 1762311652296,
-      "lastSuccess": 1762311652296
+      "total": 18,
+      "success": 18,
+      "last": 1762316365659,
+      "lastSuccess": 1762316365659
     },
     "top-pajeros.js": {
       "total": 9,
@@ -12305,10 +12342,10 @@
       "lastSuccess": 1756517294046
     },
     "group-kick.js": {
-      "total": 24,
-      "success": 24,
-      "last": 1762311622427,
-      "lastSuccess": 1762311622427
+      "total": 28,
+      "success": 28,
+      "last": 1762316379317,
+      "lastSuccess": 1762316379317
     },
     "google-search.js": {
       "total": 5,
