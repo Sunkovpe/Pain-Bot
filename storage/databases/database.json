@@ -53,8 +53,8 @@
       "coins": 0
     },
     "185345505243351@lid": {
-      "exp": 10,
-      "limit": 10,
+      "exp": null,
+      "limit": null,
       "registered": true,
       "name": "Titix 🔥",
       "age": -1,
@@ -70,7 +70,7 @@
       "prem": false
     },
     "593962620741@s.whatsapp.net": {
-      "exp": 145,
+      "exp": 160,
       "limit": 10,
       "registered": true,
       "name": "Titix 🔥",
@@ -913,7 +913,7 @@
       "coins": 0
     },
     "51901437507@s.whatsapp.net": {
-      "exp": 1334,
+      "exp": 1374,
       "limit": 10,
       "registered": true,
       "name": "𝗦𝘂𝗻𝗸𝗼𝘃𝘃 </>",
@@ -3670,7 +3670,7 @@
       "coins": 0
     },
     "5218442600752@s.whatsapp.net": {
-      "exp": 352,
+      "exp": 369,
       "limit": 10,
       "registered": true,
       "name": "Pain Bot",
@@ -7949,7 +7949,7 @@
       "prem": false
     },
     "593981862062@s.whatsapp.net": {
-      "exp": 54,
+      "exp": 57,
       "limit": 10,
       "registered": true,
       "name": "𝑅𝐼𝑃𝑃𝑃",
@@ -10397,8 +10397,8 @@
       "prem": false
     },
     "75420129042499@lid": {
-      "exp": 10,
-      "limit": 10,
+      "exp": null,
+      "limit": null,
       "registered": true,
       "name": "Pain Bot",
       "regTime": 1762311469701,
@@ -12107,10 +12107,10 @@
   },
   "stats": {
     "main-menu.js": {
-      "total": 248,
-      "success": 248,
-      "last": 1762315198301,
-      "lastSuccess": 1762315198301
+      "total": 250,
+      "success": 250,
+      "last": 1762315356931,
+      "lastSuccess": 1762315356931
     },
     "sub-bots.js": {
       "total": 22,
@@ -12209,16 +12209,16 @@
       "lastSuccess": 1762312282435
     },
     "group-promote.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1759111638289,
-      "lastSuccess": 1759111638289
+      "total": 11,
+      "success": 11,
+      "last": 1762315392419,
+      "lastSuccess": 1762315392419
     },
     "group-demote.js": {
-      "total": 1,
-      "success": 1,
-      "last": 1756205047322,
-      "lastSuccess": 1756205047322
+      "total": 3,
+      "success": 3,
+      "last": 1762315382952,
+      "lastSuccess": 1762315382952
     },
     "buscador-yt.js": {
       "total": 1,
