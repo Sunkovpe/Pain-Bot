@@ -70,7 +70,7 @@
       "prem": false
     },
     "593962620741@s.whatsapp.net": {
-      "exp": 60,
+      "exp": 145,
       "limit": 10,
       "registered": true,
       "name": "Titix 🔥",
@@ -88,7 +88,7 @@
       "prem": false
     },
     "573206534465@s.whatsapp.net": {
-      "exp": 571,
+      "exp": 577,
       "limit": 10,
       "registered": true,
       "name": "+57 320 6534465",
@@ -913,7 +913,7 @@
       "coins": 0
     },
     "51901437507@s.whatsapp.net": {
-      "exp": 1214,
+      "exp": 1334,
       "limit": 10,
       "registered": true,
       "name": "𝗦𝘂𝗻𝗸𝗼𝘃𝘃 </>",
@@ -3670,7 +3670,7 @@
       "coins": 0
     },
     "5218442600752@s.whatsapp.net": {
-      "exp": 270,
+      "exp": 352,
       "limit": 10,
       "registered": true,
       "name": "Pain Bot",
@@ -7949,7 +7949,7 @@
       "prem": false
     },
     "593981862062@s.whatsapp.net": {
-      "exp": 51,
+      "exp": 54,
       "limit": 10,
       "registered": true,
       "name": "𝑅𝐼𝑃𝑃𝑃",
@@ -10500,6 +10500,23 @@
       "partner": "",
       "banned": false,
       "prem": false
+    },
+    "51988702260@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 10,
+      "registered": true,
+      "name": "Gimerson",
+      "regTime": 1762314383351,
+      "age": -1,
+      "level": 0,
+      "coins": 100,
+      "genre": "No establecido",
+      "birth": "No registrado",
+      "desc": "Sin descripción",
+      "favourite": "No establecido",
+      "partner": "",
+      "banned": false,
+      "prem": false
     }
   },
   "chats": {
@@ -12090,10 +12107,10 @@
   },
   "stats": {
     "main-menu.js": {
-      "total": 232,
-      "success": 232,
-      "last": 1762313634314,
-      "lastSuccess": 1762313634314
+      "total": 248,
+      "success": 248,
+      "last": 1762315198301,
+      "lastSuccess": 1762315198301
     },
     "sub-bots.js": {
       "total": 22,
@@ -12360,16 +12377,16 @@
       "lastSuccess": 1756537990793
     },
     "welcome-group.js": {
-      "total": 26,
-      "success": 26,
-      "last": 1759120769029,
-      "lastSuccess": 1759120769029
+      "total": 27,
+      "success": 27,
+      "last": 1762314273331,
+      "lastSuccess": 1762314273331
     },
     "anti-img.js": {
-      "total": 8,
-      "success": 8,
-      "last": 1762312619115,
-      "lastSuccess": 1762312619115
+      "total": 12,
+      "success": 12,
+      "last": 1762315191439,
+      "lastSuccess": 1762315191439
     },
     "anti-mention.js": {
       "total": 5,
@@ -12627,6 +12644,13 @@
       "goodbyeImg": ""
     },
     "120363402646540595@g.us": {
+      "enabled": true,
+      "welcomeMsg": "",
+      "goodbyeMsg": "",
+      "welcomeImg": "",
+      "goodbyeImg": ""
+    },
+    "120363400974709058@g.us": {
       "enabled": true,
       "welcomeMsg": "",
       "goodbyeMsg": "",

@@ -144,6 +144,9 @@ const connectionOptions = {
 
 global.conn = makeWASocket(connectionOptions)
 
+// Almacenar el JID del bot principal para que los sub-bots puedan acceder
+global.mainBotJid = null
+
 async function handleLogin() {
   if (conn.authState.creds.registered) {
     console.log(chalk.green('Sesión ya está registrada.'))
@@ -244,6 +247,9 @@ async function connectionUpdate(update) {
   if (global.db.data == null) await loadDatabase()
   if (connection === 'open') {
     console.log(chalk.yellow('Conectado correctamente.'))
+  
+    global.mainBotJid = conn.user?.jid?.split('@')[0] || conn.user?.id?.split('@')[0]
+    console.log(chalk.cyan(`Bot principal JID: ${global.mainBotJid}`))
     if (!conn.startTime) {
       conn.startTime = Date.now()
     }

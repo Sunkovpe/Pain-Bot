@@ -294,18 +294,6 @@ for (let plugin of processedPlugins) {
       }
     }
     
-   
-    if (m.isGroup && global.db.data.antiImg && global.db.data.antiImg[m.chat] === true) {
-      if (m.message && (m.message.imageMessage || m.message.extendedTextMessage?.contextInfo?.quotedMessage?.imageMessage)) {
-        try {
-          await this.sendMessage(m.chat, { delete: m.key })
-          return
-        } catch (error) {
-          console.error('Error eliminando imagen:', error)
-        }
-      }
-    }
-    
     commandExecuted = true
     try {
       await plugin.handler.call(this, m, {
