@@ -260,22 +260,21 @@ export async function AYBot(options) {
         }
 
         if ([405, 401].includes(reason)) {
-          console.log(chalk.bold.magentaBright(`\n┆ Sesión inválida o cerrada manualmente. (+${path.basename(pathAYBot)}) - No se elimina la carpeta para permitir reconexión manual.\n`))
-          // No eliminar la carpeta automáticamente para evitar cierres inesperados
-          // try {
-          //   if (fs.existsSync(pathAYBot)) {
-          //     fs.rmSync(pathAYBot, { recursive: true })
-          //   }
-          // } catch (error) {
-          //   console.log(chalk.bold.redBright(`\n┆ Error eliminando carpeta ${pathAYBot}: ${error.message}\n`))
-          // }
+          console.log(chalk.bold.magentaBright(`\n┆ Sesión inválida o cerrada manualmente. (+${path.basename(pathAYBot)})\n`))
+        try {
+          if (fs.existsSync(pathAYBot)) {
+          fs.rmdirSync(pathAYBot, { recursive: true })
+          }
+        } catch (error) {
+          console.log(chalk.bold.redBright(`\n┆ Error eliminando carpeta ${pathAYBot}: ${error.message}\n`))
+        }
         }
 
         if (reason === 440 || reason === 403) {
           console.log(chalk.bold.magentaBright(`\n┆ Sesión reemplazada o en soporte. Eliminando carpeta...\n`))
           try {
             if (fs.existsSync(pathAYBot)) {
-              fs.rmSync(pathAYBot, { recursive: true })
+          fs.rmdirSync(pathAYBot, { recursive: true })
             }
           } catch (error) {
             console.log(chalk.bold.redBright(`\n┆ Error eliminando carpeta ${pathAYBot}: ${error.message}\n`))
@@ -358,15 +357,16 @@ export async function AYBot(options) {
     }
 
     setInterval(async () => {
-      if (sock.ws && sock.ws.readyState === ws.CLOSED) {
-        console.log(chalk.yellow(`\n┆ Sub-bot (+${path.basename(pathAYBot)}) conexión cerrada, intentando reconectar...\n`))
-        try {
-          await creloadHandler(true).catch(console.error)
-        } catch (error) {
-          console.log(chalk.red(`\n┆ Error reconectando sub-bot (+${path.basename(pathAYBot)}): ${error.message}\n`))
+      if (!sock.user) {
+        try { sock.ws.close() } catch (e) { }
+        sock.ev.removeAllListeners()
+        let i = global.conns.indexOf(sock)
+        if (i >= 0) {
+          delete global.conns[i]
+          global.conns.splice(i, 1)
         }
       }
-    }, 8000)
+    }, 60000)
 
     let handler = await import('../handler.js')
     let creloadHandler = async function (restatConn) {
