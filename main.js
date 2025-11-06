@@ -220,7 +220,16 @@ if (!opts['test']) {
 function clearTmp() {
   const tmp = [join(__dirname, './tmp')]
   const filename = []
-  tmp.forEach((dirname) => readdirSync(dirname).forEach((file) => filename.push(join(dirname, file))))
+  tmp.forEach((dirname) => {
+    if (existsSync(dirname)) {
+      readdirSync(dirname).forEach((file) => filename.push(join(dirname, file)))
+    } else {
+      console.log(chalk.yellow(`Directorio tmp no encontrado: ${dirname}, creando...`))
+     
+      const fs = require('fs')
+      fs.mkdirSync(dirname, { recursive: true })
+    }
+  })
   return filename.map((file) => {
     const stats = statSync(file)
     if (stats.isFile() && Date.now() - stats.mtimeMs >= 1000 * 60 * 3) return unlinkSync(file)
@@ -230,7 +239,11 @@ function clearTmp() {
 
 setInterval(() => {
   if (global.stopped === 'close' || !conn || !conn.user) return
-  clearTmp()
+  try {
+    clearTmp()
+  } catch (error) {
+    console.error('Error limpiando tmp:', error.message)
+  }
 }, 180000)
 
 async function connectionUpdate(update) {
