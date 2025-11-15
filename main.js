@@ -6,7 +6,7 @@ import path, { join } from 'path'
 import { fileURLToPath, pathToFileURL } from 'url'
 import { platform } from 'process'
 import * as ws from 'ws'
-import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, watch } from 'fs'
+import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, watch, mkdirSync } from 'fs'
 import yargs from 'yargs'
 import chalk from 'chalk'
 import syntaxerror from 'syntax-error'
@@ -46,6 +46,24 @@ global.__require = function require(dir = import.meta.url) {
   return createRequire(dir)
 }
 
+
+global.ensureTmpDir = function() {
+  const tmpDir = join(global.__dirname(import.meta.url), './tmp')
+  if (!existsSync(tmpDir)) {
+    mkdirSync(tmpDir, { recursive: true })
+  }
+  return tmpDir
+}
+
+
+function ensureTmpDir() {
+  const tmpDir = join(global.__dirname(import.meta.url), './tmp')
+  if (!existsSync(tmpDir)) {
+    mkdirSync(tmpDir, { recursive: true })
+    console.log(chalk.green('Carpeta TMP creado exitosamente'))
+  }
+}
+
 global.API = (name, path = '/', query = {}, apikeyqueryname) =>
   (name in global.APIs ? global.APIs[name] : name) +
   path +
@@ -62,6 +80,9 @@ global.API = (name, path = '/', query = {}, apikeyqueryname) =>
 global.timestamp = { start: new Date() }
 
 const __dirname = global.__dirname(import.meta.url)
+
+
+ensureTmpDir()
 
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
 global.prefix = new RegExp(
@@ -218,20 +239,42 @@ if (!opts['test']) {
 }
 
 function clearTmp() {
-  const tmp = [join(__dirname, './tmp')]
-  const filename = []
-  tmp.forEach((dirname) => readdirSync(dirname).forEach((file) => filename.push(join(dirname, file))))
-  return filename.map((file) => {
-    const stats = statSync(file)
-    if (stats.isFile() && Date.now() - stats.mtimeMs >= 1000 * 60 * 3) return unlinkSync(file)
-    return false
+  const tmp = [join(global.__dirname(import.meta.url), './tmp')]
+  let cleanedCount = 0
+  tmp.forEach((dirname) => {
+  
+    if (!existsSync(dirname)) {
+      mkdirSync(dirname, { recursive: true })
+      return 
+    }
+    try {
+      const files = readdirSync(dirname)
+      files.forEach((file) => {
+        const filePath = join(dirname, file)
+        try {
+          const stats = statSync(filePath)
+          if (stats.isFile()) {
+            unlinkSync(filePath)
+            cleanedCount++
+          }
+        } catch (error) {
+          
+          console.error('Error processing tmp file:', error.message)
+        }
+      })
+    } catch (error) {
+      
+      console.error('Error reading tmp directory:', error.message)
+    }
   })
+  return cleanedCount
 }
 
 setInterval(() => {
   if (global.stopped === 'close' || !conn || !conn.user) return
-  clearTmp()
-}, 180000)
+  const cleanedCount = clearTmp()
+  console.log(chalk.gray(`Limpieza TMP ejecutada - ${cleanedCount} archivo(s) eliminado(s).`))
+}, 50000)
 
 async function connectionUpdate(update) {
   const { connection, lastDisconnect, isNewLogin } = update
@@ -437,7 +480,7 @@ global.reconnectSubBots = async function() {
     return
   }
 
-  console.log(chalk.cyan(`\n🔄 Reconectando ${subBotFolders.length} sub-bots...`))
+  console.log(chalk.cyan(`\nReconectando ${subBotFolders.length} sub-bots...`))
 
   for (const folder of subBotFolders) {
     try {
@@ -445,7 +488,7 @@ global.reconnectSubBots = async function() {
       const credsPath = join(botPath, 'creds.json')
       
       if (!existsSync(credsPath)) {
-        console.log(chalk.red(`❌ No se encontró creds.json en ${folder}`))
+        console.log(chalk.red(`No se encontró creds.json en ${folder}`))
         continue
       }
 
@@ -455,7 +498,7 @@ global.reconnectSubBots = async function() {
       )
 
       if (isAlreadyConnected) {
-        console.log(chalk.green(`✅ Sub-bot ${folder} ya está conectado`))
+        console.log(chalk.green(`Sub-bot ${folder} ya está conectado`))
         continue
       }
 
@@ -471,20 +514,20 @@ global.reconnectSubBots = async function() {
           command: 'qr',
           fromCommand: false
         })
-        console.log(chalk.green(`✅ Sub-bot ${folder} reconectado exitosamente`))
+        console.log(chalk.green(`Sub-bot ${folder} reconectado exitosamente`))
       } else {
-        console.log(chalk.red(`❌ No se pudo importar AYBot para ${folder}`))
+        console.log(chalk.red(`No se pudo importar AYBot para ${folder}`))
       }
 
      
       await new Promise(resolve => setTimeout(resolve, 2000))
 
     } catch (error) {
-      console.log(chalk.red(`❌ Error reconectando sub-bot ${folder}:`, error.message))
+      console.log(chalk.red(`Error reconectando sub-bot ${folder}:`, error.message))
     }
   }
 
-  console.log(chalk.cyan(`\n🎉 Proceso de reconexión de sub-bots completado`))
+  console.log(chalk.cyan(`\nProceso de reconexión de sub-bots completado`))
 }
 
 

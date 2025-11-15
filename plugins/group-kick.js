@@ -19,6 +19,18 @@ let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner
   }
   const who = m.mentionedJid[0]
   
+  const targetUser = participants.find(u => u.id === who)
+  const isTargetAdmin = targetUser?.admin === 'admin' || targetUser?.admin === 'superadmin'
+  
+  if (isTargetAdmin) {
+    return conn.sendMessage(m.chat, {
+      text: '《✧》No puedes eliminar a un administrador del grupo.',
+      contextInfo: {
+        ...rcanal.contextInfo
+      }
+    }, { quoted: m })
+  }
+  
   const ownerNumbers = global.owner.map(v => {
     const id = typeof v === 'string' ? v.replace(/[^0-9]/g, '') : String(v).replace(/[^0-9]/g, '');
     return id + '@s.whatsapp.net';

@@ -4,6 +4,10 @@ import fetch from 'node-fetch'
 import fluent from 'fluent-ffmpeg'
 import { fileTypeFromBuffer as fromBuffer } from 'file-type'
 import { addExif } from '../lib/sticker.js'
+import ffmpegStatic from 'ffmpeg-static'
+
+
+fluent.setFfmpegPath(ffmpegStatic)
 
 let handler = async (m, { conn, args }) => {
   let q = m.quoted ? m.quoted : m
@@ -21,7 +25,7 @@ let handler = async (m, { conn, args }) => {
     }
 
     const username = '@' + (conn.getName(m.sender) || 'Usuario')
-    let nombreBot = global.namebot || 'PAIN'
+    let nombreBot = global.namebot || 'PAIN BOT'
     
     const packname = `👑 𝗢𝘄𝗻𝗲𝗿𝘀: \n✰ Sunkovv`
     const author = `\n\n🪐 𝗕𝗼𝘁:\n↳${nombreBot}\n\n🍁 𝑼𝒔𝒖𝒂𝒓𝒊𝒐:\n↳${username}`
@@ -42,11 +46,28 @@ handler.command = ['s', 'stickers', 'sticker']
 
 export default handler
 
+
+function cleanupTempFiles(...filePaths) {
+  filePaths.forEach(filePath => {
+    try {
+      if (fs.existsSync(filePath)) {
+        fs.unlinkSync(filePath)
+      }
+    } catch (error) {
+      console.error('Error cleaning up temp file:', filePath, error.message)
+    }
+  })
+}
+
 async function toWebp(buffer, opts = {}) {
   const { ext } = await fromBuffer(buffer)
   if (!/(png|jpg|jpeg|mp4|mkv|m4p|gif|webp|webm)/i.test(ext)) throw '《✧》Archivo no compatible.'
 
-  const tempDir = global.tempDir || './tmp'
+  
+  const tempDir = path.join(process.cwd(), 'tmp')
+  if (!fs.existsSync(tempDir)) {
+    fs.mkdirSync(tempDir, { recursive: true })
+  }
   const input = path.join(tempDir, `${Date.now()}.${ext}`)
   const output = path.join(tempDir, `${Date.now()}.webp`)
 
@@ -67,13 +88,19 @@ async function toWebp(buffer, opts = {}) {
       .toFormat('webp')
       .save(output)
       .on('end', () => {
-        const result = fs.readFileSync(output)
-        fs.unlinkSync(input)
-        fs.unlinkSync(output)
-        resolve(result)
+        try {
+          const result = fs.readFileSync(output)
+          
+          cleanupTempFiles(input, output)
+          resolve(result)
+        } catch (error) {
+          cleanupTempFiles(input, output)
+          reject(error)
+        }
       })
       .on('error', (err) => {
-        fs.unlinkSync(input)
+        
+        cleanupTempFiles(input)
         reject(err)
       })
   })

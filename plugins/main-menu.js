@@ -130,14 +130,12 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  𝙼𝙴𝙼𝙾𝚁𝙸𝙰:  ${memoryMB} 𝙼𝙱
 ╰─╯
 
-
 𓂃 ࣪ ִֶָ☾. 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾𝚂𓂃 ࣪ ִֶָ☾.
 
 𓂃 ࣪ ִֶָ☾.  ⊹ +51901437507 ⊹ 𝚂𝚞𝚗𝚔𝚘𝚟𝚟
 
 
 𓂃 ࣪ ִֶָ☾. 𝙲𝙰𝙽𝙰𝙻𝙴𝚂 𝙾𝙵𝙸𝙲𝙸𝙰𝙻𝙴𝚂 𓂃 ࣪ ִֶָ☾.
-
 
 𓂃 ࣪ ִֶָ☾.  ⟅ https://whatsapp.com/channel/0029Vb5Vinf72WTo11c5hJ3O ⟆
 
@@ -321,7 +319,7 @@ let handler = async (m, { conn, usedPrefix }) => {
   } catch (e) {
     console.error('Error en menú:', e)
     conn.sendMessage(m.chat, {
-      text: '❎ Hubo un error al mostrar el menú.',
+      text: 'Hubo un error al mostrar el menú.',
       contextInfo: {
         ...rcanal.contextInfo
       }
