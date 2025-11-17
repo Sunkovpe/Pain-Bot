@@ -10,7 +10,7 @@ global.owner = [
 
 global.ownerLid = [
   ['114263544885392', 'Sunkovv', true],
-  ['27587895314877', 'Fernando', true],
+  ['275878953148477', 'Fernando', true],
 ]
 
 global.sessions = 'Sessions'
