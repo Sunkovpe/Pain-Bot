@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
     if (allUsers.length === 0) {
       return conn.sendMessage(m.chat, {
-        text: '《✧》No hay usuarios con coins registrados.',
+        text: `《✧》No hay usuarios con ${global.moneda} registrados.`,
         contextInfo: {
           ...rcanal.contextInfo
         }
@@ -21,7 +21,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }
 
     
-    let txt = `╭─「 ✦ 💰 ᴛᴏᴘ 10 ᴄᴏɪɴs ɢʟᴏʙᴀʟ ✦ 」─╮\n`
+    let txt = `╭─「 ✦ 💰 ᴛᴏᴘ 10 ${global.moneda} ɢʟᴏʙᴀʟ ✦ 」─╮\n`
     txt += `│\n`
 
     
@@ -38,7 +38,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
       
              txt += `╰➺ ${emoji} *${position}.* ${user.name}\n`
-       txt += `╰➺ ✧ *Coins:* ${user.coins.toLocaleString()}\n`
+       txt += `╰➺ ✧ *${global.moneda}:* ${user.coins.toLocaleString()}\n`
       txt += `│\n`
     })
 
@@ -58,7 +58,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   } catch (e) {
     console.error('Error en top coins:', e)
     return conn.sendMessage(m.chat, {
-      text: '《✧》Ocurrió un error al generar el top de coins.',
+      text: `《✧》Ocurrió un error al generar el top de ${global.moneda}.`,
       contextInfo: {
         ...rcanal.contextInfo
       }
@@ -66,7 +66,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['#topcoins\n→ Muestra el top 10 global de usuarios con más coins']
+handler.help = [`#topcoins\n→ Muestra el top 10 global de usuarios con más ${global.moneda}`]
 handler.tags = ['juegos', 'economía']
 handler.command = ['topcoins', 'topcoin', 'top-coins', 'richest', 'ricos']
 

@@ -61,7 +61,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let txt = `╭─「 ✦ 🧩 ᴀᴅɪᴠɪɴᴀɴᴢᴀ ✦ 」─╮\n`
     txt += `│\n`
     txt += `╰➺ ✧ *Pregunta:* ${adivinanza.pregunta}\n`
-    txt += `╰➺ ✧ *Premio:* 30 coins\n`
+    txt += `╰➺ ✧ *Premio:* 30 ${global.moneda}\n`
     txt += `╰➺ ✧ *Tiempo:* 60 segundos\n`
     txt += `╰➺ ✧ *Categoría:* ${adivinanza.categoria}\n`
     txt += `│\n`
@@ -89,7 +89,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['#adivinanza\n→ Juega a las adivinanzas cada 3 minutos y gana 30 coins si aciertas']
+handler.help = ['#adivinanza\n→ Juega a las adivinanzas cada 3 minutos y gana 30 USD si aciertas']
 handler.tags = ['juegos', 'economía']
 handler.command = ['adivinanza', 'adivinanzas', 'riddle']
 

@@ -98,21 +98,31 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   }
 
   const texto = `
-✿ Perfil de ${userData.name || await conn.getName(user)}
 
-✿ Nombre: ${userData.name || 'No establecido'}
-✿ Género: ${userData.genre || 'No establecido'}
-✿ Cumpleaños: ${userData.birth || 'No registrado'}
-✿ Descripción: ${userData.desc || 'Sin descripción'}
-✿ Favorito: ${userData.favourite || 'No establecido'}
-✿ Nivel: ${userData.level || 0}
-✿ Coins: ${userData.coins || 0}
-✿ Experiencia: ${userData.exp || 0}
+𓂃 ࣪ ִֶָ☾. 𝙿𝙴𝚁𝙵𝙸𝙻 𝙳𝙴 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𓂃 ࣪ ִֶָ☾.
 
-❒ ID: ${user}
-❒ Rol: ${userRole}
-❒ Registrado: ${userData.registered ? 'Sí' : 'No'}
-  `.trim()
+
+╭─╮  𓍯  𝙸𝙽𝙵𝙾𝚁𝙼𝙰𝙲𝙸𝙾𝙽 𝙿𝙴𝚁𝚂𝙾𝙽𝙰𝙻  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  𝙽𝙾𝙼𝙱𝚁𝙴:  ${userData.name || 'No establecido'}
+│  𓂃 ࣪ ִֶָ☾.  𝙶𝙴𝙽𝙴𝚁𝙾:  ${userData.genre || 'No establecido'}
+│  𓂃 ࣪ ִֶָ☾.  𝙲𝚄𝙼𝙿𝙻𝙴𝙰𝙽𝙾𝚂:  ${userData.birth || 'No registrado'}
+│  𓂃 ࣪ ִֶָ☾.  𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽:  ${userData.desc || 'Sin descripción'}
+│  𓂃 ࣪ ִֶָ☾.  𝙵𝙰𝚅𝙾𝚁𝙸𝚃𝙾:  ${userData.favourite || 'No establecido'}
+╰─╯
+
+╭─╮  𓍯  𝙴𝚂𝚃𝙰𝙳𝙸𝚂𝚃𝙸𝙲𝙰𝚂  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  𝙽𝙸𝚅𝙴𝙻:  ${userData.level || 0}
+│  𓂃 ࣪ ִֶָ☾.  𝙲𝙾𝙸𝙽𝚂:  ${userData.coins || 0} ${global.moneda}
+│  𓂃 ࣪ ִֶָ☾.  𝙴𝚇𝙿𝙴𝚁𝙸𝙴𝙽𝙲𝙸𝙰:  ${userData.exp || 0}
+╰─╯
+
+╭─╮  𓍯  𝙸𝙽𝙵𝙾 𝙶𝙴𝙽𝙴𝚁𝙰𝙻  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  𝙸𝙳:  ${user}
+│  𓂃 ࣪ ִֶָ☾.  𝚁𝙾𝙻:  ${userRole}
+│  𓂃 ࣪ ִֶָ☾.  𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾:  ${userData.registered ? 'Sí' : 'No'}
+╰─╯
+
+> PAIN COMMUNITY`.trim()
 
   const botNumber = conn.user?.jid?.split('@')[0].replace(/\D/g, '')
   const configPath = join('./Serbot', botNumber, 'config.json')

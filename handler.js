@@ -368,7 +368,7 @@ if (m.text && !commandExecuted && global.db.data.adivinanzasActivas && global.db
       user.coins = (user.coins || 0) + premio
       
       await this.sendMessage(m.chat, {
-        text: `╭─「 ✦ 🎉 ¡ᴀᴄɪᴇʀᴛᴏ! ✦ 」─╮\n│\n╰➺ ✧ *Ganador:* @${m.sender.split('@')[0]}\n╰➺ ✧ *Respuesta:* ${adivinanzaActiva.respuesta}\n╰➺ ✧ *Premio:* +${premio} coins\n╰➺ ✧ *Total:* ${user.coins} coins\n│\n╰➺ ✧ *¡Felicitaciones!*\n> PAIN COMMUNITY`,
+        text: `╭─「 ✦ 🎉 ¡ᴀᴄɪᴇʀᴛᴏ! ✦ 」─╮\n│\n╰➺ ✧ *Ganador:* @${m.sender.split('@')[0]}\n╰➺ ✧ *Respuesta:* ${adivinanzaActiva.respuesta}\n╰➺ ✧ *Premio:* +${premio} ${global.moneda}\n╰➺ ✧ *Total:* ${user.coins} ${global.moneda}\n│\n╰➺ ✧ *¡Felicitaciones!*\n> PAIN COMMUNITY`,
         contextInfo: {
           ...rcanal.contextInfo,
           mentionedJid: [m.sender]
@@ -381,8 +381,122 @@ if (m.text && !commandExecuted && global.db.data.adivinanzasActivas && global.db
 }
 
 
-  // Sistemas anti-spam, anti-link y restricciones
+  
   await handleAntiSystems(m, this, isAdmin, isOwner, isRAdmin, isBotAdmin, isPrems, commandExecuted)
+
+  
+  if (m.isGroup && global.pendingInvites && global.pendingInvites[m.chat] && !commandExecuted) {
+    const invite = global.pendingInvites[m.chat]
+    
+    
+    if (m.sender !== invite.opponent) return
+    
+    const message = m.text?.toLowerCase().trim()
+    
+    if (message === 'si' || message === 'sí' || message === 'yes' || message === 'acepto') {
+      
+      try {
+        const { acceptInvite } = await import(`./plugins/rpg-michi.js`)
+        return acceptInvite.call(this, m, this, invite)
+      } catch (e) {
+        console.error('Error al aceptar invitación:', e)
+      }
+    } else if (message === 'no' || message === 'rechazo' || message === 'rechazar') {
+  
+      try {
+        const { rejectInvite } = await import(`./plugins/rpg-michi.js`)
+        return rejectInvite.call(this, m, this, invite)
+      } catch (e) {
+        console.error('Error al rechazar invitación:', e)
+      }
+    }
+  }
+
+  if (m.isGroup && global.games && global.games[m.chat] && global.games[m.chat].type === 'tictactoe' && !commandExecuted) {
+    const gameData = global.games[m.chat]
+    const game = gameData.game
+
+    
+    if (!gameData.players.includes(m.sender)) return
+
+    
+    if (!game.gameActive) return
+
+    
+    const message = m.text?.trim()
+    if (!message || !/^[1-9]$/.test(message)) return
+
+    const position = parseInt(message)
+
+    try {
+      
+      const { handleGameEnd } = await import(`./plugins/rpg-michi.js`)
+
+      
+      const result = game.makeMove(position, m.sender)
+
+      if (!result.success) {
+        
+        return this.sendMessage(m.chat, {
+          text: `╭─╮  𓍯  𝙀𝙍𝙍𝙊𝙍  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${result.message}
+╰─╯
+
+> 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`,
+          contextInfo: {
+            ...rcanal.contextInfo
+          }
+        }, { quoted: m })
+      }
+
+      
+      game.startInactivityTimeout((cancelledGame) => {
+        if (global.games && global.games[m.chat] && global.games[m.chat].type === 'tictactoe') {
+          handleGameEnd(m, this, cancelledGame, 'timeout')
+        }
+      })
+
+      if (result.finished) {
+        
+        return handleGameEnd(m, this, game, result.winner ? 'finished' : 'draw')
+      } else {
+        
+        const board = game.getBoard()
+        const nextPlayerName = game.currentPlayer === game.player1 ? '𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 1 (❌)' : '𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 2 (⭕)'
+        const nextPlayer = game.currentPlayer
+
+        const message = `╭─╮  𓍯  𝙈𝙊𝙑𝙄𝙈𝙄𝙀𝙉𝙏𝙊 𝙍𝙀𝘼𝙇𝙄𝙕𝘼𝘿𝙊  𓍯  
+
+${board}
+
+│  𓂃 ࣪ ִֶָ☾.  🎯 𝙏𝙐𝙍𝙉𝙊 𝘿𝙀: @${nextPlayer.split('@')[0]} (${nextPlayerName})
+╰─╯
+
+> 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`.trim()
+
+        return this.sendMessage(m.chat, {
+          text: message,
+          contextInfo: {
+            ...rcanal.contextInfo,
+            mentionedJid: [nextPlayer]
+          }
+        }, { quoted: m })
+      }
+
+    } catch (e) {
+      console.error('Error procesando movimiento de 3 en raya:', e)
+      return this.sendMessage(m.chat, {
+        text: `╭─╮  𓍯  𝙀𝙍𝙍𝙊𝙍  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  𝙀𝙧𝙧𝙤𝙧 𝙖𝙡 𝙥𝙧𝙤𝙘𝙚𝙨𝙖𝙧 𝙚𝙡 𝙢𝙤𝙫𝙞𝙢𝙞𝙚𝙣𝙩𝙤
+╰─╯
+
+> 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`,
+        contextInfo: {
+          ...rcanal.contextInfo
+        }
+      }, { quoted: m })
+    }
+  }
 
 global.dfail = (type, m, conn) => {  
   const msg = {  

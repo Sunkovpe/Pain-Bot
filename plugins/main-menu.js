@@ -189,6 +189,8 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}dado
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}daily / dda
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}adivinanza
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}pescar
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}michi @usuario
 ╰─╯
 
 ╭─╮  𓍯  𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰𝚂  𓍯  

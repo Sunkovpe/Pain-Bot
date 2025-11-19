@@ -1,4 +1,20 @@
 let handler = async (m, { conn, args, participants, isAdmin, isBotAdmin, isOwner, isPrems, usedPrefix, command }) => {
+  // Verificación de admin
+  const adminCheckMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch(_ => null)) : {}) || {}  
+  const groupParticipants = (m.isGroup ? adminCheckMetadata.participants : []) || []  
+  const user = (m.isGroup ? groupParticipants.find(u => conn.decodeJid(u.id) === m.sender) : {}) || {}  
+  const isRAdmin = user?.admin == 'superadmin' || false  
+  const isAdminManual = isRAdmin || user?.admin == 'admin' || false  
+  
+  // Verificación adicional para owner del bot
+  const isOwnerManual = global.owner.some(([number]) => number.replace(/[^0-9]/g, '') + '@s.whatsapp.net' === m.sender) || 
+                  global.ownerLid?.some(([number]) => number.replace(/[^0-9]/g, '') + '@lid' === m.sender) ||
+                  m.sender === conn.user.jid
+  
+  if (!isAdminManual && !isRAdmin && !isOwnerManual) {
+    return conn.reply(m.chat, 'ඞ Solo los administradores pueden usar este comando.', m)
+  }
+
   if (!m.isGroup) return conn.sendMessage(m.chat, {
     text: '《✧》Este comando solo puede ser usado en grupos.',
     contextInfo: {

@@ -20,6 +20,7 @@ global.AFBots = true
 global.packname = '𓆩 𝗣𝗔𝗜𝗡 𝗖𝗢𝗠𝗠𝗨𝗡𝗜𝗧𝗬 𓆪'
 global.namebot = 'PAIN BOT'
 global.author = 'Sunkovv'
+global.moneda = 'USD'
 
 
 global.canal = 'https://whatsapp.com/channel/0029Vb5Vinf72WTo11c5hJ3O'

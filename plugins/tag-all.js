@@ -1,6 +1,22 @@
 import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 
 var handler = async (m, { conn, text, participants }) => {
+  
+  const adminCheckMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch(_ => null)) : {}) || {}  
+  const groupParticipants = (m.isGroup ? adminCheckMetadata.participants : []) || []  
+  const user = (m.isGroup ? groupParticipants.find(u => conn.decodeJid(u.id) === m.sender) : {}) || {}  
+  const isRAdmin = user?.admin == 'superadmin' || false  
+  const isAdminManual = isRAdmin || user?.admin == 'admin' || false  
+  
+  
+  const isOwner = global.owner.some(([number]) => number.replace(/[^0-9]/g, '') + '@s.whatsapp.net' === m.sender) || 
+                  global.ownerLid?.some(([number]) => number.replace(/[^0-9]/g, '') + '@lid' === m.sender) ||
+                  m.sender === conn.user.jid
+  
+  if (!isAdminManual && !isRAdmin && !isOwner) {
+    return conn.reply(m.chat, 'ඞ Solo los administradores pueden usar este comando.', m)
+  }
+
   if (!m.quoted && !text) 
     return conn.reply(m.chat, 'ඞ Debes enviar un texto o responder a un mensaje para hacer un tag.', m)
 
@@ -47,7 +63,7 @@ var handler = async (m, { conn, text, participants }) => {
   }
 }
 
-handler.help = ['hidetag']
+handler.help = ['hidetag\n→ Solo administradores y owner: Hace un tag a todos los miembros del grupo']
 handler.tags = ['grupo']
 handler.command = ['hidetag', 'notificar', 'notify', 'tag']
 handler.group = true

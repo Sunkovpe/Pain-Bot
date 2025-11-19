@@ -92,13 +92,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
           let txt = `╭─「 ✦ 🎁 ᴅᴀɪʟʏ ✦ 」─╮\n`
       txt += `│\n`
       txt += `╰➺ ✧ *Racha:* ${streak} 🔥\n`
-    txt += `╰➺ ✧ *Premio:* +${premio} coins\n`
-    txt += `╰➺ ✧ *Total:* ${coins + premio} coins\n`
-    txt += `│\n`
-    txt += `╰➺ ✧ ${mensaje}\n`
-    txt += `╰➺ ✧ *Próximo premio:* ${nextPremio} coins\n`
-    txt += `╰➺ ✧ *Próximo claim:* ${nextDate}\n`
-    txt += `\n> PAIN COMMUNITY`
+      txt += `╰➺ ✧ *Premio:* +${premio} ${global.moneda}\n`
+      txt += `╰➺ ✧ *Total:* ${coins + premio} ${global.moneda}\n`
+      txt += `│\n`
+      txt += `╰➺ ✧ ${mensaje}\n`
+      txt += `╰➺ ✧ *Próximo premio:* ${nextPremio} ${global.moneda}\n`
+      txt += `╰➺ ✧ *Próximo claim:* ${nextDate}\n`
+      txt += `\n> PAIN COMMUNITY`
     
     return conn.sendMessage(m.chat, {
       text: txt,
@@ -119,7 +119,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['#daily • #day\n→ Reclama coins diarios y mantén tu racha']
+handler.help = ['#daily • #day\n→ Reclama USD diarios y mantén tu racha']
 handler.tags = ['juegos', 'economía']
 handler.command = ['daily', 'day', 'diario']
 
