@@ -3,7 +3,7 @@
  * Situaciones afortunadas con recompensas aleatorias
  */
 
-const cooldownTime = 5 * 60 * 1000 // 5 minutos
+const cooldownTime = 5 * 60 * 1000
 
 const situacionesSuerte = [
   { descripcion: 'Encontraste una moneda de oro en la calle y la vendiste', recompensa: [500, 800] },
