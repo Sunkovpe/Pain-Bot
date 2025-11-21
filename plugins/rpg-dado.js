@@ -31,9 +31,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
      let perdidaAlta = Math.floor(Math.random() * (1500 - 500 + 1)) + 500
      let perdidaMedia = Math.floor(Math.random() * (1500 - 500 + 1)) + 500
      
-     let gananciaPequena = Math.floor(Math.random() * (200 - 50 + 1)) + 50
-     let gananciaMedia = Math.floor(Math.random() * (600 - 200 + 1)) + 200
-     let gananciaAlta = Math.floor(Math.random() * (1200 - 500 + 1)) + 500
+     let gananciaPequena = Math.floor(Math.random() * (400 - 250 + 1)) + 250
+     let gananciaMedia = Math.floor(Math.random() * (1200 - 800 + 1)) + 800
+     let gananciaAlta = Math.floor(Math.random() * (2500 - 1500 + 1)) + 1500
      let jackpot = Math.floor(Math.random() * (2500 - 1000 + 1)) + 1000
      
      
@@ -50,20 +50,20 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
           resultado = `😔 *¡Mala suerte!* Has perdido ${perdidaMedia} ${global.moneda}`
           break
         case 3:
+          ganancia = -perdidaAlta 
+          resultado = `💸 *¡Qué lástima!* Has perdido ${perdidaAlta} ${global.moneda}`
+          break
+        case 4:
           ganancia = gananciaPequena 
           resultado = `✅ *¡Poco pero seguro!* Ganaste ${gananciaPequena} ${global.moneda}`
           break
-        case 4:
+        case 5:
           ganancia = gananciaMedia 
           resultado = `🎯 *¡Buena tirada!* Ganaste ${gananciaMedia} ${global.moneda}`
           break
-        case 5:
-          ganancia = gananciaAlta 
-          resultado = `🎉 *¡EXCELENTE!* Ganaste ${gananciaAlta} ${global.moneda}`
-          break
         case 6:
-          ganancia = jackpot 
-          resultado = `👑 *¡JACKPOT MÁXIMO!* Ganaste ${jackpot} ${global.moneda}`
+          ganancia = gananciaAlta 
+          resultado = `👑 *¡JACKPOT MÁXIMO!* Ganaste ${gananciaAlta} ${global.moneda}`
           break
       }
     
@@ -103,7 +103,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['#dado\n→ Juega al dado cada 2 minutos. Pérdidas: 500-1500 USD. Ganancias: 50-2500 USD según el número']
+handler.help = ['#dado\n→ Juega al dado cada 2 minutos. 50% chance de perder 500-1500 USD. Ganancias: 250-2500 USD']
 handler.tags = ['juegos', 'economía']
 handler.command = ['dado', 'dice', 'dados']
 
