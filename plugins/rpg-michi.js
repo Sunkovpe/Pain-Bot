@@ -187,13 +187,17 @@ export async function acceptInvite(m, conn, invite) {
       const gameData = global.games && global.games[game.chatId]
       if (gameData && gameData.type === 'tictactoe') {
         console.log(`[DEBUG] Ejecutando handleGameEnd para timeout`)
-        // Crear un objeto m simulado con la información necesaria
-        const simulatedM = {
-          chat: game.chatId,
-          sender: 'system@timeout'
+        // Usar el mensaje original como base y modificarlo
+        const simulatedM = { ...game.originalMessage }
+        simulatedM.sender = 'system@timeout'
+        simulatedM.fromMe = false
+        simulatedM.key = {
+          ...simulatedM.key,
+          fromMe: false,
+          id: 'timeout-' + Date.now()
         }
         
-        // Pasar el objeto del juego completo, no el resultado de cancelGame
+        
         await handleGameEnd(simulatedM, game.conn, game, 'timeout')
       } else {
         console.log(`[DEBUG] No se encontró gameData válido para timeout`)
