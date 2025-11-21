@@ -2,12 +2,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   try {
        
      const allUsers = Object.entries(global.db.data.users)
-       .filter(([jid, user]) => user && typeof user.coins === 'number' && user.coins > 0)
+       .filter(([jid, user]) => user && typeof user.coins === 'number')
        .map(([jid, user]) => ({
          jid: jid,
-         coins: user.coins || 0,
+         coins: (user.coins || 0) + (user.bancoDinero || 0), 
          name: user.name || 'Usuario'
        }))
+      .filter(user => user.coins > 0) 
       .sort((a, b) => b.coins - a.coins) 
       .slice(0, 10) 
 
