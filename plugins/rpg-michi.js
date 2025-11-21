@@ -174,12 +174,26 @@ export async function acceptInvite(m, conn, invite) {
     delete global.pendingInvites[m.chat]
 
     
-    const game = new TicTacToe(invite.challenger, invite.opponent, m.chat, (cancelledGame) => {
-      
-      if (global.games && global.games[m.chat] && global.games[m.chat].type === 'tictactoe') {
-        handleGameEnd(m, conn, cancelledGame, 'timeout')
+    const game = new TicTacToe(invite.challenger, invite.opponent, m.chat, null)
+    
+    // Almacenar la información necesaria en el objeto del juego
+    game.conn = conn
+    game.originalMessage = m
+    
+    // Establecer el callback después de crear el juego
+    game.onTimeout = async (cancelledGame) => {
+      // Callback que se ejecuta cuando hay timeout
+      const gameData = global.games && global.games[cancelledGame.chatId]
+      if (gameData && gameData.type === 'tictactoe') {
+        // Crear un objeto m simulado con la información necesaria
+        const simulatedM = {
+          chat: cancelledGame.chatId,
+          sender: 'system@timeout'
+        }
+        
+        await handleGameEnd(simulatedM, game.conn, cancelledGame, 'timeout')
       }
-    })
+    }
 
     
     if (!global.games) global.games = {}
@@ -298,8 +312,8 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
       const player2 = game.players ? game.players[1] : game.player2
 
       message = `╭─╮  𓍯  𝙅𝙐𝙀𝙂𝙊 𝘾𝘼𝙉𝘾𝙀𝙇𝘼𝘿𝙊  𓍯
-│  𓂃 ࣪ ִֶָ☾.  👤 𝙅𝙪𝙜𝙖𝙙𝙤𝙧 𝙥𝙚𝙣𝙖𝙡𝙞𝙯𝙖𝙙𝙤:
-│  𓂃 ࣪ ִֶָ☾.  ❌ @${inactivePlayer.split('@')[0]} (-${penalty} ${global.moneda})
+│  𓂃 ࣪ ִֶָ☾.   𝙅𝙪𝙜𝙖𝙙𝙤𝙧 𝙥𝙚𝙣𝙖𝙡𝙞𝙯𝙖𝙙𝙤:
+│  𓂃 ࣪ ִֶָ☾.   @${inactivePlayer.split('@')[0]} (-${penalty} ${global.moneda})
 │
 │  𓂃 ࣪ ִֶָ☾.  📝 𝙈𝙤𝙩𝙞𝙫𝙤: 𝙉𝙤 𝙝𝙪𝙗𝙤 𝙖𝙘𝙩𝙞𝙫𝙞𝙙𝙖𝙙 𝙙𝙪𝙧𝙖𝙣𝙩𝙚 1 𝙢𝙞𝙣𝙪𝙩𝙤
 ╰─╯
@@ -320,11 +334,11 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
       const loserName = game.winner === game.player1 ? '𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 2 (⭕)' : '𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 1 (❌)'
 
       message = `╭─╮  𓍯  𝙅𝙐𝙀𝙂𝙊 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝘿𝙊  𓍯  
-│  𓂃 ࣪ ִֶָ☾.  🎉 𝙂𝙖𝙣𝙖𝙙𝙤𝙧: @${game.winner.split('@')[0]} (${winnerName})
-│  𓂃 ࣪ ִֶָ☾.  💔 𝙋𝙚𝙧𝙙𝙚𝙙𝙤𝙧: @${loser.split('@')[0]} (${loserName})
+│  𓂃 ࣪ ִֶָ☾.  𝙂𝙖𝙣𝙖𝙙𝙤𝙧: @${game.winner.split('@')[0]} (${winnerName})
+│  𓂃 ࣪ ִֶָ☾.  𝙋𝙚𝙧𝙙𝙚𝙙𝙤𝙧: @${loser.split('@')[0]} (${loserName})
 │
-│  𓂃 ࣪ ִֶָ☾.  💰 𝙋𝙧𝙚𝙢𝙞𝙤: +${reward} ${global.moneda}
-│  𓂃 ࣪ ִֶָ☾.  💰 𝙏𝙤𝙩𝙖𝙡: ${global.db.data.users[game.winner]?.coins || 0} ${global.moneda}
+│  𓂃 ࣪ ִֶָ☾.  𝙋𝙧𝙚𝙢𝙞𝙤: +${reward} ${global.moneda}
+│  𓂃 ࣪ ִֶָ☾.  𝙏𝙤𝙩𝙖𝙡: ${global.db.data.users[game.winner]?.coins || 0} ${global.moneda}
 ╰─╯
 
 > 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`.trim()
