@@ -91,6 +91,17 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     
     if (userVictima.coins <= 0) {
       
+      if (userVictima.bancoDinero > 0) {
+        return conn.sendMessage(m.chat, {
+          text: `╭─「 ✦ DINERO PROTEGIDO ✦ 」─╮\n│\n╰➺ ✧ El dinero de @${getUserName(victima)} está protegido en ${userVictima.banco ? global.bancos[userVictima.banco].nombre : 'su banco'}\n╰➺ ✧ No puedes robar dinero que está en el banco\n│\n╰➺ ✧ Usa .withdraw para retirar dinero del banco\n\n> PAIN COMMUNITY`,
+          contextInfo: {
+            ...rcanal.contextInfo,
+            mentionedJid: [victima]
+          }
+        }, { quoted: m })
+      }
+
+      
       userLadron.lastRobo = Date.now()
 
       
