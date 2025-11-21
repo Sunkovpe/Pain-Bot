@@ -27,34 +27,15 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     }
 
     
-    let victima = null
-
-    
-    if (m.mentionedJid && m.mentionedJid.length > 0) {
-      victima = m.mentionedJid[0]
-    }
-
-    else if (m.quoted && m.quoted.sender) {
-      victima = m.quoted.sender
-    }
-
-    
-    if (!victima) {
+    if (!m.mentionedJid || m.mentionedJid.length === 0) {
       return conn.sendMessage(m.chat, {
-        text: `《✧》Debes mencionar a quien quieres robar o responder a su mensaje.\nEjemplo: ${usedPrefix + command} @usuario`,
+        text: `《✧》Debes mencionar a quien quieres robar.\nEjemplo: ${usedPrefix + command} @usuario`,
         contextInfo: { ...rcanal.contextInfo }
       }, { quoted: m })
     }
 
+    const victima = m.mentionedJid[0]
     const ladron = m.sender
-
-    
-    if (!victima || typeof victima !== 'string' || !ladron || typeof ladron !== 'string') {
-      return conn.sendMessage(m.chat, {
-        text: '《✧》Error al obtener la información del usuario.',
-        contextInfo: { ...rcanal.contextInfo }
-      }, { quoted: m })
-    }
 
     
     if (victima === ladron) {
