@@ -24,100 +24,126 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
     const pescados = [
     
-      { nombre: '🐟 Pececillo', valor: 1, emoji: '🐟', rareza: 'Común' },
-      { nombre: '🐠 Pez Payaso', valor: 2, emoji: '🐠', rareza: 'Común' },
-      { nombre: '🦐 Camarón', valor: 3, emoji: '🦐', rareza: 'Común' },
-      { nombre: '🦞 Langosta', valor: 4, emoji: '🦞', rareza: 'Común' },
-      { nombre: '🐡 Pez Globo', valor: 5, emoji: '🐡', rareza: 'Común' },
+      { nombre: '🐟 Pececillo', valor: Math.floor(Math.random() * (200 - 150 + 1)) + 150, emoji: '🐟', rareza: 'Común' },
+      { nombre: '🐠 Pez Payaso', valor: Math.floor(Math.random() * (200 - 150 + 1)) + 150, emoji: '🐠', rareza: 'Común' },
+      { nombre: '🦐 Camarón', valor: Math.floor(Math.random() * (200 - 150 + 1)) + 150, emoji: '🦐', rareza: 'Común' },
+      { nombre: '🦞 Langosta', valor: Math.floor(Math.random() * (200 - 150 + 1)) + 150, emoji: '🦞', rareza: 'Común' },
+      { nombre: '🐡 Pez Globo', valor: Math.floor(Math.random() * (200 - 150 + 1)) + 150, emoji: '🐡', rareza: 'Común' },
 
       
-      { nombre: '🐙 Pulpo', valor: 8, emoji: '🐙', rareza: 'Poco Común' },
-      { nombre: '🦑 Calamar', valor: 10, emoji: '🦑', rareza: 'Poco Común' },
-      { nombre: '🦀 Cangrejo', valor: 12, emoji: '🦀', rareza: 'Poco Común' },
-      { nombre: '🐢 Tortuga Marina', valor: 15, emoji: '🐢', rareza: 'Poco Común' },
+      { nombre: '🐙 Pulpo', valor: Math.floor(Math.random() * (300 - 250 + 1)) + 250, emoji: '🐙', rareza: 'Poco Común' },
+      { nombre: '🦑 Calamar', valor: Math.floor(Math.random() * (300 - 250 + 1)) + 250, emoji: '🦑', rareza: 'Poco Común' },
+      { nombre: '🦀 Cangrejo', valor: Math.floor(Math.random() * (300 - 250 + 1)) + 250, emoji: '🦀', rareza: 'Poco Común' },
+      { nombre: '🐢 Tortuga Marina', valor: Math.floor(Math.random() * (300 - 250 + 1)) + 250, emoji: '🐢', rareza: 'Poco Común' },
 
       
-      { nombre: '🦈 Tiburón', valor: 25, emoji: '🦈', rareza: 'Raro' },
-      { nombre: '🐬 Delfín', valor: 30, emoji: '🐬', rareza: 'Raro' },
-      { nombre: '🦭 Foca', valor: 35, emoji: '🦭', rareza: 'Raro' },
+      { nombre: '🦈 Tiburón', valor: Math.floor(Math.random() * (400 - 350 + 1)) + 350, emoji: '🦈', rareza: 'Raro' },
+      { nombre: '🐬 Delfín', valor: Math.floor(Math.random() * (400 - 350 + 1)) + 350, emoji: '🐬', rareza: 'Raro' },
+      { nombre: '🦭 Foca', valor: Math.floor(Math.random() * (400 - 350 + 1)) + 350, emoji: '🦭', rareza: 'Raro' },
 
       
-      { nombre: '🐋 Ballena', valor: 50, emoji: '🐋', rareza: 'Épico' },
-      { nombre: '🦭 León Marino', valor: 60, emoji: '🦭', rareza: 'Épico' },
+      { nombre: '🐋 Ballena', valor: Math.floor(Math.random() * (600 - 450 + 1)) + 450, emoji: '🐋', rareza: 'Épico' },
+      { nombre: '🦭 León Marino', valor: Math.floor(Math.random() * (600 - 450 + 1)) + 450, emoji: '🦭', rareza: 'Épico' },
 
       
-      { nombre: '🦕 Megalodón', valor: 100, emoji: '🦕', rareza: 'Legendario' },
-      { nombre: '🐉 Dragón Marino', valor: 200, emoji: '🐉', rareza: 'Legendario' }
+      { nombre: '🦕 Megalodón', valor: Math.floor(Math.random() * (1150 - 800 + 1)) + 800, emoji: '🦕', rareza: 'Legendario' },
+      { nombre: '🐉 Dragón Marino', valor: Math.floor(Math.random() * (1150 - 800 + 1)) + 800, emoji: '🐉', rareza: 'Legendario' }
     ]
 
     
     const rand = Math.random() * 100
 
     let pescado
-    if (rand < 60) {
-      // 60% - Comunes
+    if (rand < 10) {
+      // 10% - No pescas nada
+      pescado = null
+    } else if (rand < 60) {
+      // 50% - Comunes
       const comunes = pescados.filter(p => p.rareza === 'Común')
       pescado = comunes[Math.floor(Math.random() * comunes.length)]
-    } else if (rand < 85) {
-      // 25% - Poco comunes
+    } else if (rand < 82) {
+      // 22% - Poco comunes
       const pocoComunes = pescados.filter(p => p.rareza === 'Poco Común')
       pescado = pocoComunes[Math.floor(Math.random() * pocoComunes.length)]
-    } else if (rand < 95) {
+    } else if (rand < 92) {
       // 10% - Raros
       const raros = pescados.filter(p => p.rareza === 'Raro')
       pescado = raros[Math.floor(Math.random() * raros.length)]
-    } else if (rand < 99) {
-      // 4% - Épicos
+    } else if (rand < 98) {
+      // 6% - Épicos
       const epicos = pescados.filter(p => p.rareza === 'Épico')
       pescado = epicos[Math.floor(Math.random() * epicos.length)]
     } else {
-      // 1% - Legendarios
+      // 2% - Legendarios
       const legendarios = pescados.filter(p => p.rareza === 'Legendario')
       pescado = legendarios[Math.floor(Math.random() * legendarios.length)]
     }
 
     
-    global.db.data.users[m.sender].coins = coins + pescado.valor
-    global.db.data.users[m.sender].lastPescar = Date.now()
+    if (pescado) {
+      // Pescó algo
+      global.db.data.users[m.sender].coins = coins + pescado.valor
+      global.db.data.users[m.sender].lastPescar = Date.now()
 
-    
-    let mensajeRareza = ''
-    switch (pescado.rareza) {
-      case 'Común':
-        mensajeRareza = '🎣 *¡Buena pesca!*'
-        break
-      case 'Poco Común':
-        mensajeRareza = '🎣 *¡Pesca decente!*'
-        break
-      case 'Raro':
-        mensajeRareza = '🎉 *¡Excelente pesca!*'
-        break
-      case 'Épico':
-        mensajeRareza = '🏆 *¡PESCA ÉPICA!*'
-        break
-      case 'Legendario':
-        mensajeRareza = '👑 *¡PESCA LEGENDARIA!*'
-        break
-    }
-
-    let txt = `╭─「 ✦ 🎣 ᴘᴇsᴄᴀʀ ✦ 」─╮\n`
-    txt += `│\n`
-    txt += `╰➺ ✧ ${mensajeRareza}\n`
-    txt += `╰➺ ✧ *Pez capturado:* ${pescado.nombre} ${pescado.emoji}\n`
-    txt += `╰➺ ✧ *Valor:* +${pescado.valor} ${global.moneda}\n`
-    txt += `╰➺ ✧ *Total:* ${coins + pescado.valor} ${global.moneda}\n`
-    txt += `╰➺ ✧ *Rareza:* ${pescado.rareza}\n`
-    txt += `│\n`
-    txt += `╰➺ ✧ *Próxima pesca: 2 min*\n`
-    txt += `\n> PAIN COMMUNITY`
-
-    return conn.sendMessage(m.chat, {
-      text: txt,
-      contextInfo: {
-        ...rcanal.contextInfo,
-        mentionedJid: [m.sender]
+      
+      let mensajeRareza = ''
+      switch (pescado.rareza) {
+        case 'Común':
+          mensajeRareza = '🎣 *¡Buena pesca!*'
+          break
+        case 'Poco Común':
+          mensajeRareza = '🎣 *¡Pesca decente!*'
+          break
+        case 'Raro':
+          mensajeRareza = '🎉 *¡Excelente pesca!*'
+          break
+        case 'Épico':
+          mensajeRareza = '🏆 *¡PESCA ÉPICA!*'
+          break
+        case 'Legendario':
+          mensajeRareza = '👑 *¡PESCA LEGENDARIA!*'
+          break
       }
-    }, { quoted: m })
+
+      let txt = `╭─「 ✦ 🎣 ᴘᴇsᴄᴀʀ ✦ 」─╮\n`
+      txt += `│\n`
+      txt += `╰➺ ✧ ${mensajeRareza}\n`
+      txt += `╰➺ ✧ *Pez capturado:* ${pescado.nombre} ${pescado.emoji}\n`
+      txt += `╰➺ ✧ *Valor:* +${pescado.valor} ${global.moneda}\n`
+      txt += `╰➺ ✧ *Total:* ${coins + pescado.valor} ${global.moneda}\n`
+      txt += `╰➺ ✧ *Rareza:* ${pescado.rareza}\n`
+      txt += `│\n`
+      txt += `╰➺ ✧ *Próxima pesca: 2 min*\n`
+      txt += `\n> PAIN COMMUNITY`
+
+      return conn.sendMessage(m.chat, {
+        text: txt,
+        contextInfo: {
+          ...rcanal.contextInfo,
+          mentionedJid: [m.sender]
+        }
+      }, { quoted: m })
+    } else {
+      // No pescó nada
+      global.db.data.users[m.sender].lastPescar = Date.now()
+
+      let txt = `╭─「 ✦ 🎣 ᴘᴇsᴄᴀʀ ✦ 」─╮\n`
+      txt += `│\n`
+      txt += `╰➺ ✧ 😔 *¡Mala suerte!*\n`
+      txt += `╰➺ ✧ *No pescaste nada esta vez*\n`
+      txt += `╰➺ ✧ *Total:* ${coins} ${global.moneda}\n`
+      txt += `│\n`
+      txt += `╰➺ ✧ *Próxima pesca: 2 min*\n`
+      txt += `\n> PAIN COMMUNITY`
+
+      return conn.sendMessage(m.chat, {
+        text: txt,
+        contextInfo: {
+          ...rcanal.contextInfo,
+          mentionedJid: [m.sender]
+        }
+      }, { quoted: m })
+    }
 
   } catch (e) {
     console.error('Error en juego de pescar:', e)
@@ -130,7 +156,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['#pescar\n→ Pesca peces aleatorios cada 2 minutos y gana USD según el pez capturado']
+handler.help = ['#pescar\n→ Pesca peces aleatorios cada 2 minutos. Premios: 150-500 USD. 10% chance de no pescar nada']
 handler.tags = ['juegos', 'economía']
 handler.command = ['pescar', 'fish', 'fishing']
 
