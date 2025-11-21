@@ -176,18 +176,16 @@ export async function acceptInvite(m, conn, invite) {
     
     const game = new TicTacToe(invite.challenger, invite.opponent, m.chat, null)
     
-    // Almacenar la información necesaria en el objeto del juego
+    
     game.conn = conn
     game.originalMessage = m
     
-    // Establecer el callback después de crear el juego
+    
     game.onTimeout = async (cancelledGame) => {
-      console.log(`[DEBUG] Callback onTimeout ejecutado para chat ${game.chatId}`)
-      // Callback que se ejecuta cuando hay timeout
+      
       const gameData = global.games && global.games[game.chatId]
       if (gameData && gameData.type === 'tictactoe') {
-        console.log(`[DEBUG] Ejecutando handleGameEnd para timeout`)
-        // Usar el mensaje original como base y modificarlo
+        
         const simulatedM = { ...game.originalMessage }
         simulatedM.sender = 'system@timeout'
         simulatedM.fromMe = false
@@ -199,8 +197,6 @@ export async function acceptInvite(m, conn, invite) {
         
         
         await handleGameEnd(simulatedM, game.conn, game, 'timeout')
-      } else {
-        console.log(`[DEBUG] No se encontró gameData válido para timeout`)
       }
     }
 
@@ -217,7 +213,6 @@ export async function acceptInvite(m, conn, invite) {
 
     
     game.startInactivityTimeout()
-    console.log(`[DEBUG] Timeout iniciado para juego en chat ${m.chat}, primer turno: ${invite.challenger}`)
 
     
     const board = game.getBoard()
@@ -229,7 +224,7 @@ export async function acceptInvite(m, conn, invite) {
 │  𓂃 ࣪ ִֶָ☾.  𝙍𝙚𝙨𝙥𝙤𝙣𝙙𝙚 𝙘𝙤𝙣 𝙚𝙡 𝙣ú𝙢𝙚𝙧𝙤 (1-9)
 │  𓂃 ࣪ ִֶָ☾.  ❌ = 𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 1, ⭕ = 𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 2
 │  𓂃 ࣪ ִֶָ☾.  𝙂𝙖𝙣𝙖 𝙦𝙪𝙞𝙚𝙣 𝙛𝙤𝙧𝙢𝙚 𝙡í𝙣𝙚𝙖 𝙙𝙚 3
-│  𓂃 ࣪ ִֶָ☾.  10 𝙨𝙚𝙜𝙪𝙣𝙙𝙤𝙨 𝙥𝙤𝙧 𝙩𝙪𝙧𝙣𝙤 𝙤 𝙨𝙚 𝙘𝙖𝙣𝙘𝙚𝙡𝙖
+│  𓂃 ࣪ ִֶָ☾.  1 𝙢𝙞𝙣𝙪𝙩𝙤 𝙥𝙤𝙧 𝙩𝙪𝙧𝙣𝙤 𝙤 𝙨𝙚 𝙘𝙖𝙣𝙘𝙚𝙡𝙖
 │
 │  𓂃 ࣪ ִֶָ☾.  𝙋𝙍𝙀𝙈𝙄𝙊: 450-700 ${global.moneda}
 │  𓂃 ࣪ ִֶָ☾.  𝙀𝙈𝙋𝘼𝙏𝙀: 150 ${global.moneda} 𝙘𝙖𝙙𝙖
@@ -310,17 +305,15 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
     let message = ''
 
     if (reason === 'timeout') {
-      console.log(`[DEBUG] Procesando timeout para jugador ${game.currentPlayer} en chat ${chatId}`)
       
       const penalty = getInactivityPenalty()
       const inactivePlayer = game.currentPlayer
 
       if (global.db.data.users[inactivePlayer]) {
         global.db.data.users[inactivePlayer].coins = Math.max(0, (global.db.data.users[inactivePlayer].coins || 0) - penalty)
-        console.log(`[DEBUG] Penalización aplicada: ${penalty} monedas a ${inactivePlayer}`)
       }
 
-      // Para timeout, usar los players del objeto del juego
+      
       const player1 = game.player1
       const player2 = game.player2
 
@@ -328,7 +321,7 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
 │  𓂃 ࣪ ִֶָ☾.   𝙅𝙪𝙜𝙖𝙙𝙤𝙧 𝙥𝙚𝙣𝙖𝙡𝙞𝙯𝙖𝙙𝙤:
 │  𓂃 ࣪ ִֶָ☾.   @${inactivePlayer.split('@')[0]} (-${penalty} ${global.moneda})
 │
-│  𓂃 ࣪ ִֶָ☾.  📝 𝙈𝙤𝙩𝙞𝙫𝙤: 𝙉𝙤 𝙝𝙪𝙗𝙤 𝙖𝙘𝙩𝙞𝙫𝙞𝙙𝙖𝙙 𝙙𝙪𝙧𝙖𝙣𝙩𝙚 10 𝙨𝙚𝙜𝙪𝙣𝙙𝙤𝙨
+│  𓂃 ࣪ ִֶָ☾.  📝 𝙈𝙤𝙩𝙞𝙫𝙤: 𝙉𝙤 𝙝𝙪𝙗𝙤 𝙖𝙘𝙩𝙞𝙫𝙞𝙙𝙖𝙙 𝙙𝙪𝙧𝙖𝙣𝙩𝙚 1 𝙢𝙞𝙣𝙪𝙩𝙤
 ╰─╯
 
 > 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`.trim()
@@ -373,7 +366,7 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
 │  𓂃 ࣪ ִֶָ☾.  ⭕ @${game.player2.split('@')[0]} (+${drawReward} ${global.moneda})
 │
 │  𓂃 ࣪ ִֶָ☾.  📝 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: 𝙉𝙖𝙙𝙞𝙚 𝙜𝙖𝙣ó
-│  𓂃 ࣪ ִֶָ☾.  💰 𝙍𝙚𝙘𝙤𝙢𝙥𝙚𝙣𝙨𝙖: +${drawReward} ${global.moneda} 𝙘𝙖𝙙𝙖
+│  𓂃 ࣪ ִֶָ☾.  💰 𝙍𝙚𝙘𝙤𝙢𝙥𝙚𝙣𝙨𝙖: +${drawReward} ${global.moneda} cada uno
 ╰─╯
 
 > 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`.trim()
@@ -382,7 +375,7 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
     
     let playersToMention = []
     if (reason === 'timeout') {
-      // Para timeout, usar los players del objeto del juego
+      
       playersToMention = [game.player1, game.player2]
     } else if (game.winner) {
       const loser = game.winner === game.player1 ? game.player2 : game.player1
