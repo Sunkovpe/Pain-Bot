@@ -378,7 +378,7 @@ if (m.text && !commandExecuted && global.db.data.adivinanzasActivas && global.db
       let user = global.db.data.users[m.sender]
       if (!user) global.db.data.users[m.sender] = {}
       
-      const premio = 30
+      const premio = Math.floor(Math.random() * (500 - 250 + 1)) + 250
       user.coins = (user.coins || 0) + premio
       
       await this.sendMessage(m.chat, {

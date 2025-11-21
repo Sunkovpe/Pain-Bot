@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     
     let coins = user.coins || 0
     
-    // Cooldown de 3 minutos
+    
     const cooldown = 3 * 60 * 1000 
     const lastAdivinanza = user.lastAdivinanza || 0
     const timeLeft = cooldown - (Date.now() - lastAdivinanza)
@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }, { quoted: m })
     }
     
-    // Cargar adivinanzas desde el JSON
+    
     const adivinanzasPath = join('./storage/databases/adivinanzas.json')
     let adivinanzas = []
     
@@ -41,10 +41,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }, { quoted: m })
     }
     
-    // Seleccionar adivinanza aleatoria
+    
     const adivinanza = adivinanzas[Math.floor(Math.random() * adivinanzas.length)]
     
-    // Guardar la adivinanza activa en la base de datos global
+    
     if (!global.db.data.adivinanzasActivas) global.db.data.adivinanzasActivas = {}
     global.db.data.adivinanzasActivas[m.chat] = {
       pregunta: adivinanza.pregunta,
@@ -55,13 +55,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       respondida: false
     }
     
-    // Actualizar cooldown del usuario
+    
     global.db.data.users[m.sender].lastAdivinanza = Date.now()
     
     let txt = `╭─「 ✦ 🧩 ᴀᴅɪᴠɪɴᴀɴᴢᴀ ✦ 」─╮\n`
     txt += `│\n`
     txt += `╰➺ ✧ *Pregunta:* ${adivinanza.pregunta}\n`
-    txt += `╰➺ ✧ *Premio:* 30 ${global.moneda}\n`
+    txt += `╰➺ ✧ *Premio:* 250-500 ${global.moneda}\n`
     txt += `╰➺ ✧ *Tiempo:* 60 segundos\n`
     txt += `╰➺ ✧ *Categoría:* ${adivinanza.categoria}\n`
     txt += `│\n`
@@ -89,7 +89,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['#adivinanza\n→ Juega a las adivinanzas cada 3 minutos y gana 30 USD si aciertas']
+handler.help = ['#adivinanza\n→ Juega a las adivinanzas cada 3 minutos y gana 250-500 USD si aciertas']
 handler.tags = ['juegos', 'economía']
 handler.command = ['adivinanza', 'adivinanzas', 'riddle']
 
