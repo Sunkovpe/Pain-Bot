@@ -13,8 +13,6 @@ let handler = async (m, { conn, usedPrefix, command, args, text, isOwner }) => {
 ╰➺ ✧ *Iniciado por:* @${m.sender.split('@')[0]}
 ╰➺ ✧ *Estado:* Bot reiniciado con éxito. 
 
-╰────────────────╯
-
 > PAIN COMMUNITY`
 
    
