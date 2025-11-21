@@ -174,7 +174,12 @@ export async function acceptInvite(m, conn, invite) {
     delete global.pendingInvites[m.chat]
 
     
-    const game = new TicTacToe(invite.challenger, invite.opponent, m.chat)
+    const game = new TicTacToe(invite.challenger, invite.opponent, m.chat, (cancelledGame) => {
+      
+      if (global.games && global.games[m.chat] && global.games[m.chat].type === 'tictactoe') {
+        handleGameEnd(m, conn, cancelledGame, 'timeout')
+      }
+    })
 
     
     if (!global.games) global.games = {}
@@ -188,11 +193,7 @@ export async function acceptInvite(m, conn, invite) {
     }
 
     
-    game.startInactivityTimeout((cancelledGame) => {
-      if (global.games && global.games[m.chat] && global.games[m.chat].type === 'tictactoe') {
-        handleGameEnd(m, conn, cancelledGame, 'timeout')
-      }
-    })
+    game.startInactivityTimeout()
 
     
     const board = game.getBoard()
