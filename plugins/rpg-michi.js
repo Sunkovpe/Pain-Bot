@@ -205,8 +205,9 @@ export async function acceptInvite(m, conn, invite) {
 │  𓂃 ࣪ ִֶָ☾.  𝙂𝙖𝙣𝙖 𝙦𝙪𝙞𝙚𝙣 𝙛𝙤𝙧𝙢𝙚 𝙡í𝙣𝙚𝙖 𝙙𝙚 3
 │  𓂃 ࣪ ִֶָ☾.  1 𝙢𝙞𝙣𝙪𝙩𝙤 𝙥𝙤𝙧 𝙩𝙪𝙧𝙣𝙤 𝙤 𝙨𝙚 𝙘𝙖𝙣𝙘𝙚𝙡𝙖
 │
-│  𓂃 ࣪ ִֶָ☾.  𝙋𝙍𝙀𝙈𝙄𝙊: 100-250 ${global.moneda}
-│  𓂃 ࣪ ִֶָ☾.  𝙍𝙄𝙀𝙎𝙂𝙊: 20 ${global.moneda} 𝙥𝙤𝙧 𝙞𝙣𝙖𝙘𝙩𝙞𝙫𝙞𝙙𝙖𝙙
+│  𓂃 ࣪ ִֶָ☾.  𝙋𝙍𝙀𝙈𝙄𝙊: 450-700 ${global.moneda}
+│  𓂃 ࣪ ִֶָ☾.  𝙀𝙈𝙋𝘼𝙏𝙀: 150 ${global.moneda} 𝙘𝙖𝙙𝙖
+│  𓂃 ࣪ ִֶָ☾.  𝙍𝙄𝙀𝙎𝙂𝙊: 150 ${global.moneda} 𝙥𝙤𝙧 𝙞𝙣𝙖𝙘𝙩𝙞𝙫𝙞𝙙𝙖𝙙
 │
 ${board}
 │
@@ -285,21 +286,18 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
     if (reason === 'timeout') {
       
       const penalty = getInactivityPenalty()
+      const inactivePlayer = game.currentPlayer
+
+      if (global.db.data.users[inactivePlayer]) {
+        global.db.data.users[inactivePlayer].coins = Math.max(0, (global.db.data.users[inactivePlayer].coins || 0) - penalty)
+      }
+
       const player1 = game.players ? game.players[0] : game.player1
       const player2 = game.players ? game.players[1] : game.player2
 
-      
-      if (global.db.data.users[player1]) {
-        global.db.data.users[player1].coins = Math.max(0, (global.db.data.users[player1].coins || 0) - penalty)
-      }
-      if (global.db.data.users[player2]) {
-        global.db.data.users[player2].coins = Math.max(0, (global.db.data.users[player2].coins || 0) - penalty)
-      }
-
-      message = `╭─╮  𓍯  𝙅𝙐𝙀𝙂𝙊 𝘾𝘼𝙉𝘾𝙀𝙇𝘼𝘿𝙊  𓍯  
-│  𓂃 ࣪ ִֶָ☾.  👥 𝙅𝙪𝙜𝙖𝙙𝙤𝙧𝙚𝙨 𝙥𝙚𝙣𝙖𝙡𝙞𝙯𝙖𝙙𝙤𝙨:
-│  𓂃 ࣪ ִֶָ☾.  ❌ @${player1.split('@')[0]} (-${penalty} ${global.moneda})
-│  𓂃 ࣪ ִֶָ☾.  ⭕ @${player2.split('@')[0]} (-${penalty} ${global.moneda})
+      message = `╭─╮  𓍯  𝙅𝙐𝙀𝙂𝙊 𝘾𝘼𝙉𝘾𝙀𝙇𝘼𝘿𝙊  𓍯
+│  𓂃 ࣪ ִֶָ☾.  👤 𝙅𝙪𝙜𝙖𝙙𝙤𝙧 𝙥𝙚𝙣𝙖𝙡𝙞𝙯𝙖𝙙𝙤:
+│  𓂃 ࣪ ִֶָ☾.  ❌ @${inactivePlayer.split('@')[0]} (-${penalty} ${global.moneda})
 │
 │  𓂃 ࣪ ִֶָ☾.  📝 𝙈𝙤𝙩𝙞𝙫𝙤: 𝙉𝙤 𝙝𝙪𝙗𝙤 𝙖𝙘𝙩𝙞𝙫𝙞𝙙𝙖𝙙 𝙙𝙪𝙧𝙖𝙣𝙩𝙚 1 𝙢𝙞𝙣𝙪𝙩𝙤
 ╰─╯
@@ -331,12 +329,22 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
 
     } else {
       
-      message = `╭─╮  𓍯  𝙅𝙐𝙀𝙂𝙊 𝙀𝙈𝙋𝘼𝙏𝘼𝘿𝙊  𓍯  
+      const drawReward = 150
+
+      if (global.db.data.users[game.player1]) {
+        global.db.data.users[game.player1].coins = (global.db.data.users[game.player1].coins || 0) + drawReward
+      }
+      if (global.db.data.users[game.player2]) {
+        global.db.data.users[game.player2].coins = (global.db.data.users[game.player2].coins || 0) + drawReward
+      }
+
+      message = `╭─╮  𓍯  𝙅𝙐𝙀𝙂𝙊 𝙀𝙈𝙋𝘼𝙏𝘼𝘿𝙊  𓍯
 │  𓂃 ࣪ ִֶָ☾.  👥 𝙅𝙪𝙜𝙖𝙙𝙤𝙧𝙚𝙨:
-│  𓂃 ࣪ ִֶָ☾.  ❌ @${game.player1.split('@')[0]}
-│  𓂃 ࣪ ִֶָ☾.  ⭕ @${game.player2.split('@')[0]}
+│  𓂃 ࣪ ִֶָ☾.  ❌ @${game.player1.split('@')[0]} (+${drawReward} ${global.moneda})
+│  𓂃 ࣪ ִֶָ☾.  ⭕ @${game.player2.split('@')[0]} (+${drawReward} ${global.moneda})
 │
 │  𓂃 ࣪ ִֶָ☾.  📝 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: 𝙉𝙖𝙙𝙞𝙚 𝙜𝙖𝙣ó
+│  𓂃 ࣪ ִֶָ☾.  💰 𝙍𝙚𝙘𝙤𝙢𝙥𝙚𝙣𝙨𝙖: +${drawReward} ${global.moneda} 𝙘𝙖𝙙𝙖
 ╰─╯
 
 > 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`.trim()
