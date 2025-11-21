@@ -3,40 +3,40 @@
  * Situaciones afortunadas con recompensas aleatorias
  */
 
-const cooldownTime = 10 * 60 * 1000 // 10 minutos
+const cooldownTime = 10 * 60 * 1000 
 
-// Array de situaciones de suerte (todas positivas)
+
 const situacionesSuerte = [
-  { descripcion: 'Encontraste una moneda de oro en la calle y la vendiste', recompensa: [100, 200] },
-  { descripcion: 'Ganaste la lotería local con un boleto olvidado', recompensa: [150, 300] },
-  { descripcion: 'Un turista te dio una propina exagerada por ayudar', recompensa: [120, 250] },
-  { descripcion: 'Encontraste una billetera con dinero y el dueño te recompensó', recompensa: [180, 350] },
-  { descripcion: 'Herenciaste una pequeña fortuna de un familiar lejano', recompensa: [200, 400] },
-  { descripcion: 'Vendiste un objeto viejo que resultó ser valioso', recompensa: [130, 260] },
-  { descripcion: 'Ganaste un concurso de redes sociales', recompensa: [160, 320] },
-  { descripcion: 'Encontraste trabajo freelance bien pagado', recompensa: [190, 380] },
-  { descripcion: 'Un amigo te devolvió una deuda olvidada', recompensa: [140, 280] },
-  { descripcion: 'Recibiste un bono sorpresa en tu trabajo', recompensa: [170, 340] },
-  { descripcion: 'Vendiste fotos tuyas a una revista', recompensa: [110, 220] },
-  { descripcion: 'Ganaste un sorteo en una tienda', recompensa: [125, 250] },
-  { descripcion: 'Encontraste monedas antiguas en una casa vieja', recompensa: [135, 270] },
-  { descripcion: 'Un inversionista notó tu talento y te financió', recompensa: [250, 500] },
-  { descripcion: 'Descubriste que tenías acciones olvidadas', recompensa: [200, 450] },
-  { descripcion: 'Ganaste un premio por ser buen ciudadano', recompensa: [145, 290] },
-  { descripcion: 'Un conocido te regaló entradas para un evento VIP', recompensa: [155, 310] },
-  { descripcion: 'Encontraste un tesoro escondido en el jardín', recompensa: [175, 350] },
-  { descripcion: 'Tu video viralizó y monetizaste', recompensa: [220, 440] },
-  { descripcion: 'Ganaste una beca inesperada', recompensa: [185, 370] },
-  { descripcion: 'Un cliente satisfecho te dio una gratificación extra', recompensa: [165, 330] },
-  { descripcion: 'Descubriste criptomonedas olvidadas', recompensa: [240, 480] },
-  { descripcion: 'Ganaste un viaje pagado por un concurso', recompensa: [195, 390] },
-  { descripcion: 'Encontraste diamantes en una mina abandonada', recompensa: [300, 500] },
-  { descripcion: 'Un famoso te mencionó en sus redes', recompensa: [210, 420] },
-  { descripcion: 'Herenciaste una colección de arte valiosa', recompensa: [280, 500] },
-  { descripcion: 'Ganaste derechos de autor por una canción tuya', recompensa: [230, 460] },
-  { descripcion: 'Un millonario te adoptó como ahijado', recompensa: [350, 500] },
-  { descripcion: 'Descubriste petróleo en tus tierras', recompensa: [400, 500] },
-  { descripcion: 'Ganaste el premio mayor de una rifa', recompensa: [250, 500] }
+  { descripcion: 'Encontraste una moneda de oro en la calle y la vendiste', recompensa: [500, 800] },
+  { descripcion: 'Ganaste la lotería local con un boleto olvidado', recompensa: [700, 1200] },
+  { descripcion: 'Un turista te dio una propina exagerada por ayudar', recompensa: [600, 1000] },
+  { descripcion: 'Encontraste una billetera con dinero y el dueño te recompensó', recompensa: [800, 1300] },
+  { descripcion: 'Herenciaste una pequeña fortuna de un familiar lejano', recompensa: [900, 1500] },
+  { descripcion: 'Vendiste un objeto viejo que resultó ser valioso', recompensa: [650, 1100] },
+  { descripcion: 'Ganaste un concurso de redes sociales', recompensa: [750, 1250] },
+  { descripcion: 'Encontraste trabajo freelance bien pagado', recompensa: [850, 1400] },
+  { descripcion: 'Un amigo te devolvió una deuda olvidada', recompensa: [700, 1150] },
+  { descripcion: 'Recibiste un bono sorpresa en tu trabajo', recompensa: [780, 1300] },
+  { descripcion: 'Vendiste fotos tuyas a una revista', recompensa: [550, 950] },
+  { descripcion: 'Ganaste un sorteo en una tienda', recompensa: [620, 1050] },
+  { descripcion: 'Encontraste monedas antiguas en una casa vieja', recompensa: [670, 1100] },
+  { descripcion: 'Un inversionista notó tu talento y te financió', recompensa: [1200, 2000] },
+  { descripcion: 'Descubriste que tenías acciones olvidadas', recompensa: [1000, 1800] },
+  { descripcion: 'Ganaste un premio por ser buen ciudadano', recompensa: [720, 1200] },
+  { descripcion: 'Un conocido te regaló entradas para un evento VIP', recompensa: [770, 1250] },
+  { descripcion: 'Encontraste un tesoro escondido en el jardín', recompensa: [820, 1350] },
+  { descripcion: 'Tu video viralizó y monetizaste', recompensa: [1100, 1900] },
+  { descripcion: 'Ganaste una beca inesperada', recompensa: [870, 1450] },
+  { descripcion: 'Un cliente satisfecho te dio una gratificación extra', recompensa: [790, 1300] },
+  { descripcion: 'Descubriste criptomonedas olvidadas', recompensa: [1150, 1950] },
+  { descripcion: 'Ganaste un viaje pagado por un concurso', recompensa: [920, 1550] },
+  { descripcion: 'Encontraste diamantes en una mina abandonada', recompensa: [1400, 2300] },
+  { descripcion: 'Un famoso te mencionó en sus redes', recompensa: [1050, 1800] },
+  { descripcion: 'Herenciaste una colección de arte valiosa', recompensa: [1300, 2200] },
+  { descripcion: 'Ganaste derechos de autor por una canción tuya', recompensa: [1120, 1900] },
+  { descripcion: 'Un millonario te adoptó como ahijado', recompensa: [1600, 2500] },
+  { descripcion: 'Descubriste petróleo en tus tierras', recompensa: [1800, 2500] },
+  { descripcion: 'Ganaste el premio mayor de una rifa', recompensa: [1200, 2100] }
 ]
 
 let handler = async (m, { conn, usedPrefix, command }) => {
@@ -79,15 +79,15 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
     user.lastLuck = Date.now()
 
-    // Seleccionar situación aleatoria
+
     const situacionSeleccionada = situacionesSuerte[Math.floor(Math.random() * situacionesSuerte.length)]
 
-    // Calcular recompensa aleatoria
+    
     const [min, max] = situacionSeleccionada.recompensa
     const recompensa = Math.floor(Math.random() * (max - min + 1)) + min
     user.coins += recompensa
 
-    // Mensajes motivacionales
+    
     const mensajesFelicitacion = [
       '¡Qué fortuna tienes!',
       '¡La suerte te sonríe!',
@@ -128,7 +128,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['suerte', 'luck', 'fortuna']
+handler.help = ['suerte', 'luck', 'fortuna → Prueba suerte cada 10 min y gana 500-2500 USD']
 handler.tags = ['juegos', 'economía', 'rpg']
 handler.command = ['suerte', 'luck', 'fortuna']
 
