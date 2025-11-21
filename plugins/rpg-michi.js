@@ -271,6 +271,11 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
     const game = cancelledGame
 
     
+    if (game.clearTimeout && typeof game.clearTimeout === 'function') {
+      game.clearTimeout()
+    }
+
+    
     if (global.games && global.games[chatId]) {
       delete global.games[chatId]
     }
@@ -291,53 +296,53 @@ export async function handleGameEnd(m, conn, cancelledGame, reason = 'finished')
         global.db.data.users[player2].coins = Math.max(0, (global.db.data.users[player2].coins || 0) - penalty)
       }
 
-      message = `⏰ *JUEGO CANCELADO POR INACTIVIDAD* ⏰
+      message = `╭─╮  𓍯  𝙅𝙐𝙀𝙂𝙊 𝘾𝘼𝙉𝘾𝙀𝙇𝘼𝘿𝙊  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  👥 𝙅𝙪𝙜𝙖𝙙𝙤𝙧𝙚𝙨 𝙥𝙚𝙣𝙖𝙡𝙞𝙯𝙖𝙙𝙤𝙨:
+│  𓂃 ࣪ ִֶָ☾.  ❌ @${player1.split('@')[0]} (-${penalty} ${global.moneda})
+│  𓂃 ࣪ ִֶָ☾.  ⭕ @${player2.split('@')[0]} (-${penalty} ${global.moneda})
+│
+│  𓂃 ࣪ ִֶָ☾.  📝 𝙈𝙤𝙩𝙞𝙫𝙤: 𝙉𝙤 𝙝𝙪𝙗𝙤 𝙖𝙘𝙩𝙞𝙫𝙞𝙙𝙖𝙙 𝙙𝙪𝙧𝙖𝙣𝙩𝙚 1 𝙢𝙞𝙣𝙪𝙩𝙤
+╰─╯
 
-👥 *Jugadores penalizados:*
-❌ @${player1.split('@')[0]} (-${penalty} ${global.moneda})
-⭕ @${player2.split('@')[0]} (-${penalty} ${global.moneda})
-
-📝 *Motivo:* No hubo actividad durante 1 minuto
-
-> PAIN COMMUNITY`.trim()
+> 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`.trim()
 
     } else if (game.winner) {
-      // Hay ganador
+      
       const reward = getRandomReward()
 
-      // Dar premio al ganador
+      
       if (global.db.data.users[game.winner]) {
         global.db.data.users[game.winner].coins = (global.db.data.users[game.winner].coins || 0) + reward
       }
 
       const loser = game.winner === game.player1 ? game.player2 : game.player1
-      const winnerName = game.winner === game.player1 ? 'Jugador 1 (❌)' : 'Jugador 2 (⭕)'
-      const loserName = game.winner === game.player1 ? 'Jugador 2 (⭕)' : 'Jugador 1 (❌)'
+      const winnerName = game.winner === game.player1 ? '𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 1 (❌)' : '𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 2 (⭕)'
+      const loserName = game.winner === game.player1 ? '𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 2 (⭕)' : '𝙅𝙪𝙜𝙖𝙖𝙙𝙤𝙧 1 (❌)'
 
-      message = `🏆 *JUEGO TERMINADO* 🏆
+      message = `╭─╮  𓍯  𝙅𝙐𝙀𝙂𝙊 𝙏𝙀𝙍𝙈𝙄𝙉𝘼𝘿𝙊  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  🎉 𝙂𝙖𝙣𝙖𝙙𝙤𝙧: @${game.winner.split('@')[0]} (${winnerName})
+│  𓂃 ࣪ ִֶָ☾.  💔 𝙋𝙚𝙧𝙙𝙚𝙙𝙤𝙧: @${loser.split('@')[0]} (${loserName})
+│
+│  𓂃 ࣪ ִֶָ☾.  💰 𝙋𝙧𝙚𝙢𝙞𝙤: +${reward} ${global.moneda}
+│  𓂃 ࣪ ִֶָ☾.  💰 𝙏𝙤𝙩𝙖𝙡: ${global.db.data.users[game.winner]?.coins || 0} ${global.moneda}
+╰─╯
 
-🎉 *Ganador:* @${game.winner.split('@')[0]} (${winnerName})
-💔 *Perdedor:* @${loser.split('@')[0]} (${loserName})
-
-💰 *Premio:* +${reward} ${global.moneda}
-💰 *Total:* ${global.db.data.users[game.winner]?.coins || 0} ${global.moneda}
-
-> PAIN COMMUNITY`.trim()
+> 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`.trim()
 
     } else {
-      // Empate
-      message = `🤝 *JUEGO TERMINADO EN EMPATE* 🤝
+      
+      message = `╭─╮  𓍯  𝙅𝙐𝙀𝙂𝙊 𝙀𝙈𝙋𝘼𝙏𝘼𝘿𝙊  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  👥 𝙅𝙪𝙜𝙖𝙙𝙤𝙧𝙚𝙨:
+│  𓂃 ࣪ ִֶָ☾.  ❌ @${game.player1.split('@')[0]}
+│  𓂃 ࣪ ִֶָ☾.  ⭕ @${game.player2.split('@')[0]}
+│
+│  𓂃 ࣪ ִֶָ☾.  📝 𝙍𝙚𝙨𝙪𝙡𝙩𝙖𝙙𝙤: 𝙉𝙖𝙙𝙞𝙚 𝙜𝙖𝙣ó
+╰─╯
 
-👥 *Jugadores:*
-❌ @${game.player1.split('@')[0]}
-⭕ @${game.player2.split('@')[0]}
-
-📝 *Resultado:* Nadie ganó
-
-> PAIN COMMUNITY`.trim()
+> 𝙋𝘼𝙄𝙉 𝘾𝙊𝙈𝙈𝙐𝙉𝙄𝙏𝙔`.trim()
     }
 
-    // Determinar los jugadores para mencionar
+    
     let playersToMention = []
     if (reason === 'timeout') {
       const player1 = game.players ? game.players[0] : game.player1

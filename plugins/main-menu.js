@@ -191,6 +191,16 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}adivinanza
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}pescar
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}michi @usuario
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}slot <cantidad>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}moneda <cara/sello> <cantidad>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}work
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}suerte
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}banco
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}deposit <cantidad/all>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}withdraw <cantidad/all>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}change <banco>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}unirsebank <banco>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}robar
 ╰─╯
 
 ╭─╮  𓍯  𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰𝚂  𓍯  

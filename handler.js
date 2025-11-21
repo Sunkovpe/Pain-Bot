@@ -281,6 +281,13 @@ for (let plugin of processedPlugins) {
 
   if (isMatchCommand) {
     
+  
+    if (m.isGroup && global.db.data.soloAdmin && global.db.data.soloAdmin[m.chat] === true) {
+      if (!isAdmin && !isOwner && !isROwner) {
+        
+        continue
+      }
+    }
     
     const allowedPrivateCommands = ['qr', 'code', 'setbotname', 'setbotimg', 'setautoread']
     if (!m.isGroup && !allowedPrivateCommands.includes(command) && !isOwner) {
@@ -330,6 +337,13 @@ for (let plugin of processedPlugins) {
 
 
 if (m.text && !commandExecuted && global.db.data.adivinanzasActivas && global.db.data.adivinanzasActivas[m.chat]) {
+  
+  if (m.isGroup && global.db.data.soloAdmin && global.db.data.soloAdmin[m.chat] === true) {
+    if (!isAdmin && !isOwner && !isROwner) {
+      return 
+    }
+  }
+  
   const adivinanzaActiva = global.db.data.adivinanzasActivas[m.chat]
   
   
@@ -386,6 +400,13 @@ if (m.text && !commandExecuted && global.db.data.adivinanzasActivas && global.db
 
   
   if (m.isGroup && global.pendingInvites && global.pendingInvites[m.chat] && !commandExecuted) {
+    
+    if (global.db.data.soloAdmin && global.db.data.soloAdmin[m.chat] === true) {
+      if (!isAdmin && !isOwner && !isROwner) {
+        return 
+      }
+    }
+    
     const invite = global.pendingInvites[m.chat]
     
     
@@ -413,6 +434,13 @@ if (m.text && !commandExecuted && global.db.data.adivinanzasActivas && global.db
   }
 
   if (m.isGroup && global.games && global.games[m.chat] && global.games[m.chat].type === 'tictactoe' && !commandExecuted) {
+    
+    if (global.db.data.soloAdmin && global.db.data.soloAdmin[m.chat] === true) {
+      if (!isAdmin && !isOwner && !isROwner) {
+        return 
+      }
+    }
+    
     const gameData = global.games[m.chat]
     const game = gameData.game
 

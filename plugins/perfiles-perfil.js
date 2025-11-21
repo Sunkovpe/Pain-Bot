@@ -97,6 +97,14 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     userRole = 'Admin del Grupo'
   }
 
+  
+  let bancoInfo = 'Sin banco'
+  let totalCoins = userData.coins || 0
+  if (userData.banco && global.bancos && global.bancos[userData.banco]) {
+    bancoInfo = global.bancos[userData.banco].nombre || 'Banco desconocido'
+    totalCoins += (userData.bancoDinero || 0)
+  }
+
   const texto = `
 
 𓂃 ࣪ ִֶָ☾. 𝙿𝙴𝚁𝙵𝙸𝙻 𝙳𝙴 𝚄𝚂𝚄𝙰𝚁𝙸𝙾 𓂃 ࣪ ִֶָ☾.
@@ -112,8 +120,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 ╭─╮  𓍯  𝙴𝚂𝚃𝙰𝙳𝙸𝚂𝚃𝙸𝙲𝙰𝚂  𓍯  
 │  𓂃 ࣪ ִֶָ☾.  𝙽𝙸𝚅𝙴𝙻:  ${userData.level || 0}
-│  𓂃 ࣪ ִֶָ☾.  𝙲𝙾𝙸𝙽𝚂:  ${userData.coins || 0} ${global.moneda}
+│  𓂃 ࣪ ִֶָ☾.  𝙲𝙾𝙸𝙽𝚂:  ${totalCoins} ${global.moneda}
 │  𓂃 ࣪ ִֶָ☾.  𝙴𝚇𝙿𝙴𝚁𝙸𝙴𝙽𝙲𝙸𝙰:  ${userData.exp || 0}
+│  𓂃 ࣪ ִֶָ☾.  𝙱𝙰𝙽𝙲𝙾:  ${bancoInfo}
 ╰─╯
 
 ╭─╮  𓍯  𝙸𝙽𝙵𝙾 𝙶𝙴𝙽𝙴𝚁𝙰𝙻  𓍯  
