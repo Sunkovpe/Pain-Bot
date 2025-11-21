@@ -26,36 +26,44 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
      let dado = Math.floor(Math.random() * 6) + 1
      
    
-     let premio = Math.floor(Math.random() * (1500 - 100 + 1)) + 100
+     let premioBase = Math.floor(Math.random() * (1500 - 100 + 1)) + 100
      
-        
+     let perdidaAlta = Math.floor(Math.random() * (1500 - 500 + 1)) + 500
+     let perdidaMedia = Math.floor(Math.random() * (1500 - 500 + 1)) + 500
+     
+     let gananciaPequena = Math.floor(Math.random() * (200 - 50 + 1)) + 50
+     let gananciaMedia = Math.floor(Math.random() * (600 - 200 + 1)) + 200
+     let gananciaAlta = Math.floor(Math.random() * (1200 - 500 + 1)) + 500
+     let jackpot = Math.floor(Math.random() * (2500 - 1000 + 1)) + 1000
+     
+     
       let ganancia = 0
       let resultado = ''
       
       switch (dado) {
         case 1:
-          ganancia = -premio 
-          resultado = `❌ *¡Perdiste!* Has perdido ${global.moneda}`
+          ganancia = -perdidaAlta 
+          resultado = `❌ *¡PÉRDIDA TOTAL!* Has perdido ${perdidaAlta} ${global.moneda}`
           break
         case 2:
-          ganancia = Math.floor(premio * 0.5) 
-          resultado = `😔 *¡Casi!* Has ganado la mitad`
+          ganancia = -perdidaMedia 
+          resultado = `😔 *¡Mala suerte!* Has perdido ${perdidaMedia} ${global.moneda}`
           break
         case 3:
-          ganancia = premio 
-          resultado = `✅ *¡Ganaste!* Premio completo`
+          ganancia = gananciaPequena 
+          resultado = `✅ *¡Poco pero seguro!* Ganaste ${gananciaPequena} ${global.moneda}`
           break
         case 4:
-          ganancia = Math.floor(premio * 1.5) 
-          resultado = `✅ *¡Ganaste!* Premio +50%`
+          ganancia = gananciaMedia 
+          resultado = `🎯 *¡Buena tirada!* Ganaste ${gananciaMedia} ${global.moneda}`
           break
         case 5:
-          ganancia = premio * 2 
-          resultado = `🎉 *¡EXCELENTE!* Premio x2`
+          ganancia = gananciaAlta 
+          resultado = `🎉 *¡EXCELENTE!* Ganaste ${gananciaAlta} ${global.moneda}`
           break
         case 6:
-          ganancia = premio * 3 
-          resultado = `🎉 *¡JACKPOT!* Premio x3`
+          ganancia = jackpot 
+          resultado = `👑 *¡JACKPOT MÁXIMO!* Ganaste ${jackpot} ${global.moneda}`
           break
       }
     
@@ -95,7 +103,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['#dado\n→ Juega al dado cada 2 minutos. Ganancias: 100-4500 USD o pérdidas según el número']
+handler.help = ['#dado\n→ Juega al dado cada 2 minutos. Pérdidas: 500-1500 USD. Ganancias: 50-2500 USD según el número']
 handler.tags = ['juegos', 'economía']
 handler.command = ['dado', 'dice', 'dados']
 
