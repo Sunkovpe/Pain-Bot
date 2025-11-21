@@ -1,52 +1,74 @@
 import fetch from "node-fetch"
+import yts from "yt-search"
 
 const handler = async (m, { conn, text, usedPrefix }) => {
   try {
-    if (!text?.trim()) 
+    if (!text?.trim())
       return conn.sendMessage(m.chat, {
         text: "ඞ Ingresa el nombre o enlace de YouTube.",
         contextInfo: { ...rcanal?.contextInfo }
       }, { quoted: m })
 
-    let apiUrl
+    let videoUrl
+    let searchResult
+
     const isUrl = /youtu\.be|youtube\.com/.test(text)
 
     if (isUrl) {
-
-      apiUrl = `https://api.vreden.my.id/api/v1/download/youtube/audio?url=${encodeURIComponent(text)}&quality=128`
+      
+      videoUrl = text
     } else {
+    
+      const search = await yts(text)
+      if (!search || !search.videos || search.videos.length === 0)
+        throw "⚠︎ No se encontraron resultados para la búsqueda."
 
-      apiUrl = `https://api.vreden.my.id/api/v1/download/play/audio?query=${encodeURIComponent(text)}`
+      
+      searchResult = search.videos[0]
+      videoUrl = searchResult.url
     }
 
+    
+    const apiUrl = `https://api.delirius.store/download/ytmp3?url=${encodeURIComponent(videoUrl)}`
     const res = await fetch(apiUrl).then(r => r.json())
 
-    if (!res?.status || !res.result?.download?.url)
+    if (!res?.status || !res.data?.download?.url)
       throw "⚠︎ No se pudo obtener el audio."
 
-    const meta = res.result.metadata
-    const down = res.result.download
-    const vistas = formatViews(meta.views)
+    const data = res.data
+    const vistas = formatViews(data.views)
+
+    
+    const title = searchResult?.title || data.title
+    const author = searchResult?.author?.name || data.author
+    const thumbnail = searchResult?.thumbnail || data.image
+    const duration = searchResult?.timestamp || formatDuration(data.duration)
+    const ago = searchResult?.ago || "No disponible"
 
     const info = `╭───「 ✦ 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 ✦ 」
-│ ✪ *Título:* ${meta.title}
-│ ✯ *Canal:* ${meta.author.name}
+│ ✪ *Título:* ${title}
+│ ✯ *Canal:* ${author}
 │ ✰ *Vistas:* ${vistas}
-│ ◔ *Duración:* ${meta.timestamp}
-│ ◐ *Publicado:* ${meta.ago}
-│ ➪ *Enlace:* ${meta.url}
+│ ◔ *Duración:* ${duration}
+│ ◐ *Publicado:* ${ago}
+│ ➪ *Enlace:* ${videoUrl}
 ╰─`
 
-    const thumb = (await conn.getFile(meta.thumbnail)).data
+    const thumb = (await conn.getFile(thumbnail)).data
     await conn.sendMessage(
-      m.chat, 
-      { image: thumb, caption: info, contextInfo: { ...rcanal?.contextInfo } }, 
+      m.chat,
+      { image: thumb, caption: info, contextInfo: { ...rcanal?.contextInfo } },
       { quoted: m }
     )
 
+    
     await conn.sendMessage(
       m.chat,
-      { audio: { url: down.url }, fileName: down.filename || `${meta.title}.mp3`, mimetype: "audio/mpeg" },
+      {
+        audio: { url: data.download.url },
+        fileName: data.download.filename || `${title}.mp3`,
+        mimetype: "audio/mpeg"
+      },
       { quoted: m }
     )
 
@@ -65,6 +87,13 @@ handler.tags = ["descargas"]
 handler.group = true
 
 export default handler
+
+function formatDuration(seconds) {
+  if (!seconds || isNaN(seconds)) return "No disponible"
+  const minutes = Math.floor(seconds / 60)
+  const remainingSeconds = seconds % 60
+  return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`
+}
 
 function formatViews(views) {
   if (views === undefined) return "No disponible"
