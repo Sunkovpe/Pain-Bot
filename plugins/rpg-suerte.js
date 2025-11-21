@@ -1,10 +1,9 @@
 /**
- * 🍀 SISTEMA DE SUERTE - PAIN BOT
+ * SISTEMA DE SUERTE - PAIN BOT
  * Situaciones afortunadas con recompensas aleatorias
  */
 
-const cooldownTime = 10 * 60 * 1000 
-
+const cooldownTime = 5 * 60 * 1000 // 5 minutos
 
 const situacionesSuerte = [
   { descripcion: 'Encontraste una moneda de oro en la calle y la vendiste', recompensa: [500, 800] },
@@ -107,7 +106,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     txt += `╰➺ ✧ Recompensa: +${recompensa} ${global.moneda}\n`
     txt += `╰➺ ✧ Total: ${user.coins} ${global.moneda}\n│\n`
     txt += `╰➺ ✧ ${mensajeFelicitacion}\n`
-    txt += `╰➺ ✧  Próxima suerte: 10 min\n`
+    txt += `╰➺ ✧  Próxima suerte: 5 min\n`
     txt += `\n> PAIN COMMUNITY`
 
     return conn.sendMessage(m.chat, {
@@ -128,7 +127,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['suerte', 'luck', 'fortuna → Prueba suerte cada 10 min y gana 500-2500 USD']
+handler.help = ['suerte', 'luck', 'fortuna → Prueba suerte cada 5 min y gana 500-2500 USD']
 handler.tags = ['juegos', 'economía', 'rpg']
 handler.command = ['suerte', 'luck', 'fortuna']
 

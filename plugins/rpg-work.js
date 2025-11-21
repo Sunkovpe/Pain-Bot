@@ -3,42 +3,42 @@
  * 30 trabajos variados con recompensas aleatorias
  */
 
-const cooldownTime = 10 * 60 * 1000 
+const cooldownTime = 5 * 60 * 1000 
 
 const trabajos = [
   
-  { tipo: 'positivo', descripcion: 'Ayudaste a una abuelita a cruzar la calle', recompensa: [150, 300] },
-  { tipo: 'positivo', descripcion: 'Encontraste una billetera perdida y la devolviste', recompensa: [200, 400] },
-  { tipo: 'positivo', descripcion: 'Trabajaste como mesero en un restaurante', recompensa: [180, 350] },
-  { tipo: 'positivo', descripcion: 'Reparaste la computadora de un vecino', recompensa: [220, 450] },
-  { tipo: 'positivo', descripcion: 'Diste clases particulares de matemáticas', recompensa: [250, 500] },
-  { tipo: 'positivo', descripcion: 'Ayudaste a un turista perdido', recompensa: [160, 320] },
-  { tipo: 'positivo', descripcion: 'Vendiste artesanías en el mercado', recompensa: [190, 380] },
-  { tipo: 'positivo', descripcion: 'Trabajaste como niñero por unas horas', recompensa: [170, 340] },
-  { tipo: 'positivo', descripcion: 'Donaste sangre en el banco de sangre', recompensa: [200, 400] },
-  { tipo: 'positivo', descripcion: 'Ayudaste a un amigo con su mudanza', recompensa: [180, 360] },
-  { tipo: 'positivo', descripcion: 'Apoyaste a la comunidad LGTB+ en una marcha', recompensa: [150, 300] },
-  { tipo: 'positivo', descripcion: 'Trabajaste como voluntario en un refugio', recompensa: [210, 420] },
-  { tipo: 'positivo', descripcion: 'Encontraste trabajo como freelance', recompensa: [230, 460] },
-  { tipo: 'positivo', descripcion: 'Ayudaste en una campaña de reciclaje', recompensa: [140, 280] },
-  { tipo: 'positivo', descripcion: 'Distribuiste comida a personas sin hogar', recompensa: [160, 320] },
+  { tipo: 'positivo', descripcion: 'Ayudaste a una abuelita a cruzar la calle', recompensa: [600, 1200] },
+  { tipo: 'positivo', descripcion: 'Encontraste una billetera perdida y la devolviste', recompensa: [800, 1600] },
+  { tipo: 'positivo', descripcion: 'Trabajaste como mesero en un restaurante', recompensa: [700, 1400] },
+  { tipo: 'positivo', descripcion: 'Reparaste la computadora de un vecino', recompensa: [900, 1800] },
+  { tipo: 'positivo', descripcion: 'Diste clases particulares de matemáticas', recompensa: [1000, 2000] },
+  { tipo: 'positivo', descripcion: 'Ayudaste a un turista perdido', recompensa: [650, 1300] },
+  { tipo: 'positivo', descripcion: 'Vendiste artesanías en el mercado', recompensa: [750, 1500] },
+  { tipo: 'positivo', descripcion: 'Trabajaste como niñero por unas horas', recompensa: [680, 1360] },
+  { tipo: 'positivo', descripcion: 'Donaste sangre en el banco de sangre', recompensa: [800, 1600] },
+  { tipo: 'positivo', descripcion: 'Ayudaste a un amigo con su mudanza', recompensa: [720, 1440] },
+  { tipo: 'positivo', descripcion: 'Apoyaste a la comunidad LGTB+ en una marcha', recompensa: [600, 1200] },
+  { tipo: 'positivo', descripcion: 'Trabajaste como voluntario en un refugio', recompensa: [850, 1700] },
+  { tipo: 'positivo', descripcion: 'Encontraste trabajo como freelance', recompensa: [950, 1900] },
+  { tipo: 'positivo', descripcion: 'Ayudaste en una campaña de reciclaje', recompensa: [550, 1100] },
+  { tipo: 'positivo', descripcion: 'Distribuiste comida a personas sin hogar', recompensa: [650, 1300] },
 
 
-  { tipo: 'negativo', descripcion: 'Te han atropellado mientras ayudabas a alguien, perdiste dinero en el hospital', perdida: [150, 300] },
-  { tipo: 'negativo', descripcion: 'Tu prima quiso tener sexo contigo pero le dijiste que eras chipi, perdiste la oportunidad de ganar', perdida: [50, 150] },
-  { tipo: 'negativo', descripcion: 'Intentaste robar un banco pero te cacharon, multa pagada', perdida: [200, 400] },
-  { tipo: 'negativo', descripcion: 'Trabajaste en un casino y perdiste todo apostando', perdida: [180, 360] },
-  { tipo: 'negativo', descripcion: 'Intentaste ser influencer pero nadie te siguió, gastaste en equipo', perdida: [120, 240] },
-  { tipo: 'negativo', descripcion: 'Te caíste en un bache mientras corrías, gastos médicos', perdida: [100, 200] },
-  { tipo: 'negativo', descripcion: 'Compraste criptomonedas en el pico máximo y perdiste todo', perdida: [250, 500] },
-  { tipo: 'negativo', descripcion: 'Intentaste ser comediante pero nadie rió, perdiste en el local', perdida: [80, 160] },
-  { tipo: 'negativo', descripcion: 'Prestaste dinero a un amigo que nunca te pagó', perdida: [130, 260] },
-  { tipo: 'negativo', descripcion: 'Trabajaste en delivery y se te cayó toda la comida', perdida: [90, 180] },
-  { tipo: 'negativo', descripcion: 'Intentaste cultivar marihuana pero la policía la encontró', perdida: [300, 500] },
-  { tipo: 'negativo', descripcion: 'Apostaste en la lotería y perdiste todo tu dinero', perdida: [170, 340] },
-  { tipo: 'negativo', descripcion: 'Te emborrachaste y perdiste la billetera', perdida: [60, 120] },
-  { tipo: 'negativo', descripcion: 'Compraste un auto usado que resultó ser robado', perdida: [400, 500] },
-  { tipo: 'negativo', descripcion: 'Intentaste ser youtuber pero tu video se viralizó por malo', perdida: [110, 220] }
+  { tipo: 'negativo', descripcion: 'Te han atropellado mientras ayudabas a alguien, perdiste dinero en el hospital', perdida: [600, 1200] },
+  { tipo: 'negativo', descripcion: 'Tu prima quiso tener sexo contigo pero le dijiste que eras chipi, perdiste la oportunidad de ganar', perdida: [200, 600] },
+  { tipo: 'negativo', descripcion: 'Intentaste robar un banco pero te cacharon, multa pagada', perdida: [800, 1600] },
+  { tipo: 'negativo', descripcion: 'Trabajaste en un casino y perdiste todo apostando', perdida: [700, 1400] },
+  { tipo: 'negativo', descripcion: 'Intentaste ser influencer pero nadie te siguió, gastaste en equipo', perdida: [500, 1000] },
+  { tipo: 'negativo', descripcion: 'Te caíste en un bache mientras corrías, gastos médicos', perdida: [400, 800] },
+  { tipo: 'negativo', descripcion: 'Compraste criptomonedas en el pico máximo y perdiste todo', perdida: [1000, 2000] },
+  { tipo: 'negativo', descripcion: 'Intentaste ser comediante pero nadie rió, perdiste en el local', perdida: [300, 600] },
+  { tipo: 'negativo', descripcion: 'Prestaste dinero a un amigo que nunca te pagó', perdida: [550, 1100] },
+  { tipo: 'negativo', descripcion: 'Trabajaste en delivery y se te cayó toda la comida', perdida: [350, 700] },
+  { tipo: 'negativo', descripcion: 'Intentaste cultivar marihuana pero la policía la encontró', perdida: [1200, 2000] },
+  { tipo: 'negativo', descripcion: 'Apostaste en la lotería y perdiste todo tu dinero', perdida: [650, 1300] },
+  { tipo: 'negativo', descripcion: 'Te emborrachaste y perdiste la billetera', perdida: [250, 500] },
+  { tipo: 'negativo', descripcion: 'Compraste un auto usado que resultó ser robado', perdida: [1500, 2000] },
+  { tipo: 'negativo', descripcion: 'Intentaste ser youtuber pero tu video se viralizó por malo', perdida: [450, 900] }
 ]
 
 let handler = async (m, { conn, usedPrefix, command }) => {
@@ -132,7 +132,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     txt += `╰➺ ✧ *Total:* ${user.coins} ${global.moneda}\n`
     txt += `│\n`
     txt += `╰➺ ✧ ${mensajeExtra}\n`
-    txt += `╰➺ ✧ *Próximo trabajo:* 10 min\n`
+    txt += `╰➺ ✧ *Próximo trabajo:* 5 min\n`
     txt += `\n> PAIN COMMUNITY`
 
     return conn.sendMessage(m.chat, {
@@ -153,7 +153,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['work', 'trabajar', 'trabajo']
+handler.help = ['work', 'trabajar', 'trabajo → Trabaja cada 5 min y gana/pierde 550-2000 USD']
 handler.tags = ['juegos', 'economía', 'rpg']
 handler.command = ['work', 'trabajar', 'trabajo']
 
