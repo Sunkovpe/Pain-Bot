@@ -26,7 +26,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
      let dado = Math.floor(Math.random() * 6) + 1
      
    
-     let premio = Math.floor(Math.random() * 150) + 1
+     let premio = Math.floor(Math.random() * (1500 - 100 + 1)) + 100
      
         
       let ganancia = 0
@@ -95,7 +95,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['#dado\n→ Juega al dado cada 2 minutos y gana o pierde USD según el número']
+handler.help = ['#dado\n→ Juega al dado cada 2 minutos. Ganancias: 100-4500 USD o pérdidas según el número']
 handler.tags = ['juegos', 'economía']
 handler.command = ['dado', 'dice', 'dados']
 
