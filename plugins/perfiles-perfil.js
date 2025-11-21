@@ -2,16 +2,23 @@ import fs from 'fs'
 import { join } from 'path'
 
 let handler = async (m, { conn, usedPrefix, command }) => {
-  const user = m.sender
-  const data = global.db.data.users[user]
+  
+  let targetUser = m.sender
 
   
+  if (m.mentionedJid && m.mentionedJid.length > 0) {
+    targetUser = m.mentionedJid[0]
+  }
+
+  const data = global.db.data.users[targetUser]
+
+
   if (!data || !data.registered) {
     
-    if (!global.db.data.users[user]) {
-      global.db.data.users[user] = {
+    if (!global.db.data.users[targetUser]) {
+      global.db.data.users[targetUser] = {
         registered: true,
-        name: m.name || m.pushName || 'Usuario',
+        name: 'Usuario', 
         regTime: Date.now(),
         age: -1,
         level: 0,
@@ -25,12 +32,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         banned: false,
         prem: false
       }
-      console.log(`✅ Usuario registrado automáticamente desde perfil: ${user}`)
+      console.log(`✅ Usuario registrado automáticamente desde perfil: ${targetUser}`)
     }
   }
 
-  
-  const userData = global.db.data.users[user]
+  const userData = global.db.data.users[targetUser]
 
 
 
@@ -48,11 +54,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     ...(global.ownerLid || []).flatMap(([number]) => createOwnerIds(number))
   ]
 
-  const isROwner = allOwnerIds.includes(m.sender)
+  const isROwner = allOwnerIds.includes(targetUser)
   const isOwner = isROwner || m.fromMe
-  const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-  const _user = global.db.data?.users?.[m.sender]
-  const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || _user?.prem == true
+  const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(targetUser)
+  const _user = global.db.data?.users?.[targetUser]
+  const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(targetUser) || _user?.prem == true
 
   let isRAdmin = false
   let isAdmin = false
@@ -62,38 +68,49 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       const groupMetadata = conn.chats[m.chat]?.metadata || await conn.groupMetadata(m.chat).catch(_ => null)
       if (groupMetadata) {
         const participants = groupMetadata.participants || []
-        const userData = participants.find(u => conn.decodeJid(u.id) === m.sender) || {}
-        isRAdmin = userData?.admin == 'superadmin' || false
-        isAdmin = isRAdmin || userData?.admin == 'admin' || false
-        isGroupCreator = groupMetadata.owner === m.sender || 
+      
+        const viewerData = participants.find(u => conn.decodeJid(u.id) === m.sender) || {}
+        isRAdmin = viewerData?.admin == 'superadmin' || false
+        isAdmin = isRAdmin || viewerData?.admin == 'admin' || false
+        isGroupCreator = groupMetadata.owner === m.sender ||
                         groupMetadata.subjectOwner === m.sender ||
-                        userData?.admin === 'superadmin'
+                        viewerData?.admin === 'superadmin'
+
+        
+        const targetData = participants.find(u => conn.decodeJid(u.id) === targetUser) || {}
+        const targetIsRAdmin = targetData?.admin == 'superadmin' || false
+        const targetIsAdmin = targetIsRAdmin || targetData?.admin == 'admin' || false
+        const targetIsGroupCreator = groupMetadata.owner === targetUser ||
+                                    groupMetadata.subjectOwner === targetUser ||
+                                    targetData?.admin === 'superadmin'
+
       }
     } catch (error) {
       console.error('Error obteniendo metadata del grupo:', error)
     }
   }
 
+  
   let userRole = 'Miembro'
   if (isROwner || isOwner) {
-    if (isGroupCreator) {
+    if (targetIsGroupCreator) {
       userRole = '👑 Creador del Bot y Grupo'
-    } else if (isRAdmin || isAdmin) {
+    } else if (targetIsRAdmin || targetIsAdmin) {
       userRole = '👑 Creador del Bot y Admin'
     } else {
       userRole = '👑 Creador del Bot'
     }
   } else if (isMods) {
-    if (isGroupCreator) {
+    if (targetIsGroupCreator) {
       userRole = 'Moderador del Bot y Creador'
-    } else if (isRAdmin || isAdmin) {
+    } else if (targetIsRAdmin || targetIsAdmin) {
       userRole = 'Moderador del Bot y Admin'
     } else {
       userRole = 'Moderador del Bot'
     }
-  } else if (isGroupCreator) {
+  } else if (targetIsGroupCreator) {
     userRole = 'Creador del Grupo'
-  } else if (isRAdmin || isAdmin) {
+  } else if (targetIsRAdmin || targetIsAdmin) {
     userRole = 'Admin del Grupo'
   }
 
@@ -126,7 +143,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ╰─╯
 
 ╭─╮  𓍯  𝙸𝙽𝙵𝙾 𝙶𝙴𝙽𝙴𝚁𝙰𝙻  𓍯  
-│  𓂃 ࣪ ִֶָ☾.  𝙸𝙳:  ${user}
+│  𓂃 ࣪ ִֶָ☾.  𝙸𝙳:  ${targetUser}
 │  𓂃 ࣪ ִֶָ☾.  𝚁𝙾𝙻:  ${userRole}
 │  𓂃 ࣪ ִֶָ☾.  𝚁𝙴𝙶𝙸𝚂𝚃𝚁𝙰𝙳𝙾:  ${userData.registered ? 'Sí' : 'No'}
 ╰─╯
@@ -140,7 +157,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let hasUserPP = false
 
   try {
-    const pp = await conn.profilePictureUrl(user, 'image')
+    const pp = await conn.profilePictureUrl(targetUser, 'image')
     if (pp) {
       imgBot = pp
       hasUserPP = true
@@ -160,15 +177,15 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       caption: texto,
       contextInfo: {
         ...rcanal.contextInfo,
-        mentionedJid: [userData.partner || user]
+        mentionedJid: [userData.partner || targetUser]
       }
     }, { quoted: m })
   } else {
-    await conn.sendFile(m.chat, imgBot, 'profile.jpg', texto, m, null, rcanal, { mentions: [userData.partner || user] })
+    await conn.sendFile(m.chat, imgBot, 'profile.jpg', texto, m, null, rcanal, { mentions: [userData.partner || targetUser] })
   }
 }
 
-handler.help = ['#profile • #perfil\n→ Revisa tu perfil completo con estadísticas y logros']
+handler.help = ['#profile • #perfil [mención]\n→ Revisa tu perfil o el de otro usuario mencionado']
 handler.tags = ['perfiles']
 handler.command = ['profile', 'perfil']
 export default handler
