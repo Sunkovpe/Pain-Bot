@@ -63,6 +63,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let isRAdmin = false
   let isAdmin = false
   let isGroupCreator = false
+  
+  let targetIsRAdmin = false
+  let targetIsAdmin = false
+  let targetIsGroupCreator = false
+  
   if (m.isGroup) {
     try {
       const groupMetadata = conn.chats[m.chat]?.metadata || await conn.groupMetadata(m.chat).catch(_ => null)
@@ -78,11 +83,11 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
         
         const targetData = participants.find(u => conn.decodeJid(u.id) === targetUser) || {}
-        const targetIsRAdmin = targetData?.admin == 'superadmin' || false
-        const targetIsAdmin = targetIsRAdmin || targetData?.admin == 'admin' || false
-        const targetIsGroupCreator = groupMetadata.owner === targetUser ||
-                                    groupMetadata.subjectOwner === targetUser ||
-                                    targetData?.admin === 'superadmin'
+        targetIsRAdmin = targetData?.admin == 'superadmin' || false
+        targetIsAdmin = targetIsRAdmin || targetData?.admin == 'admin' || false
+        targetIsGroupCreator = groupMetadata.owner === targetUser ||
+                               groupMetadata.subjectOwner === targetUser ||
+                               targetData?.admin === 'superadmin'
 
       }
     } catch (error) {
