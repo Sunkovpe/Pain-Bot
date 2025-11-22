@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, isOwner }) => {
   await conn.sendMessage(m.chat, {
     contacts: {
       displayName: 'Contactos',
-      contacts: [{ vcard: vcard1 }, { vcard: vcard2 }]
+      contacts: [{ vcard: vcard1 }, { vcard: vcard2 }, {vcard: vcard3 }]
     }
   }, { quoted: m })
 }
