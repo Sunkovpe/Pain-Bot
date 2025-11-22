@@ -27,9 +27,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     
     const admins = participants.filter(p => p.admin === 'admin').map(p => p.id)
 
-    
-    const botOwners = global.owner || []
-    const ownersInGroup = participants.filter(p => botOwners.includes(p.id.split('@')[0])).map(p => p.id)
+    // Verificar owners del bot
+    const ownersList = [...(global.owner || []).map(o => o[0]), ...(global.ownerLid || []).map(o => o[0])]
+    const ownersInGroup = participants.filter(p => ownersList.includes(p.id.split('@')[0].split(':')[0])).map(p => p.id)
     
     
     const creationDate = new Date(creation * 1000).toLocaleString('es-ES')
