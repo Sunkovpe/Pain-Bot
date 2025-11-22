@@ -7,7 +7,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   try {
     if (!args[0]) {
       return conn.sendMessage(m.chat, {
-        text: `《✧》Uso correcto: ${usedPrefix}${command} [@usuario] o [https://www.tiktok.com/@usuario]\n\nEjemplo: ${usedPrefix}${command} @ricardo\n${usedPrefix}${command} https://www.tiktok.com/@ricardo`,
+        text: `《✧》Uso correcto: ${usedPrefix}${command} <usuario>\n\nEjemplo: ${usedPrefix}${command} Sunkovv`,
         contextInfo: {
           ...rcanal.contextInfo
         }
@@ -15,21 +15,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }
 
     let username = args[0].trim()
-
-    // Extraer username de la URL si es proporcionada
-    if (username.startsWith('https://') || username.startsWith('www.')) {
-      const match = username.match(/tiktok\.com\/@([^/?]+)/)
-      if (match) {
-        username = match[1]
-      } else {
-        return conn.sendMessage(m.chat, {
-          text: '《✧》URL de TikTok inválida. Usa el formato: https://www.tiktok.com/@usuario',
-          contextInfo: {
-            ...rcanal.contextInfo
-          }
-        }, { quoted: m })
-      }
-    } else if (username.startsWith('@')) {
+        
+    if (username.startsWith('@')) {
       username = username.slice(1)
     }
 
@@ -43,45 +30,17 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }
 
 
-    const url = `https://www.tiktok.com/@${username}`
-    const response = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-      }
-    })
+    const apiUrl = `https://bytebazz-api.koyeb.app/api/stalker/tiktok2?username=${encodeURIComponent(username)}&apikey=8jkh5icbf05`
+    const response = await fetch(apiUrl)
+    const data = await response.json()
 
-    if (!response.ok) {
-      throw new Error('Perfil no encontrado o privado')
+    if (!data.status || !data.resultado) {
+      throw new Error('Perfil no encontrado o API no disponible')
     }
 
-    const html = await response.text()
+    const profile = data.resultado
 
-    // Buscar el JSON embebido
-    const jsonMatch = html.match(/__UNIVERSAL_DATA_FOR_REHYDRATION__\s*=\s*({.+?});/)
-    if (!jsonMatch) {
-      throw new Error('No se pudo extraer la información del perfil')
-    }
-
-    const data = JSON.parse(jsonMatch[1])
-    const userData = data.__DEFAULT_SCOPE__?.['webapp.user-detail']?.userInfo?.user
-
-    if (!userData) {
-      throw new Error('Perfil no encontrado o privado')
-    }
-
-    // Extraer información
-    const {
-      avatarLarger: profilePic,
-      nickname: displayName,
-      uniqueId: username_,
-      followerCount: followers,
-      followingCount: following,
-      heartCount: likes,
-      videoCount: videos,
-      signature: bio
-    } = userData
-
-    // Formatear números
+    
     const formatNumber = (num) => {
       if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M'
       if (num >= 1000) return (num / 1000).toFixed(1) + 'K'
@@ -91,24 +50,26 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     const infoText = `
 ╭───「 ✦ 𝗧𝗜𝗞𝗧𝗢𝗞 𝗣𝗥𝗢𝗙𝗜𝗟𝗘 ✦ 」
 │
-│  *Nombre:* ${displayName || 'N/A'}
-│  *Usuario:* @${username_ || username}
-│  *Seguidores:* ${followers ? formatNumber(followers) : 'N/A'}
-│  *Siguiendo:* ${following ? formatNumber(following) : 'N/A'}
-│  *Likes:* ${likes ? formatNumber(likes) : 'N/A'}
-│  *Videos:* ${videos ? formatNumber(videos) : 'N/A'}
+│  *Nombre:* ${profile.apodo || 'N/A'}
+│  *Usuario:* @${profile.nombre_usuario || username}
+│  *Seguidores:* ${profile.seguidores ? formatNumber(profile.seguidores) : 'N/A'}
+│  *Siguiendo:* ${profile.siguiendo ? formatNumber(profile.siguiendo) : 'N/A'}
+│  *Likes:* ${profile.me_gusta ? formatNumber(profile.me_gusta) : 'N/A'}
+│  *Videos:* ${profile.videos ? formatNumber(profile.videos) : 'N/A'}
+│  *Verificado:* ${profile.verificado ? '✅ Sí' : '❌ No'}
+│  *Privada:* ${profile.cuenta_privada ? '✅ Sí' : '❌ No'}
 │
 │  *Biografía:*
-│  ${bio || 'Sin biografía'}
+│  ${profile.biografia || 'Sin biografía'}
 │
 ╰───「 ✦ ${global.packname} ✦ 」
 `
 
-    // Enviar imagen del perfil con la información
-    if (profilePic) {
+
+    if (profile.avatar) {
       try {
         await conn.sendMessage(m.chat, {
-          image: { url: profilePic },
+          image: { url: profile.avatar },
           caption: infoText,
           contextInfo: {
             ...rcanal.contextInfo,
@@ -117,7 +78,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         }, { quoted: m })
       } catch (error) {
         console.log('Error al enviar imagen:', error.message)
-        // Si falla la imagen, enviar solo texto
+        
         await conn.sendMessage(m.chat, {
           text: infoText,
           contextInfo: {
@@ -127,7 +88,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         }, { quoted: m })
       }
     } else {
-      // Sin imagen, enviar solo texto
+      
       await conn.sendMessage(m.chat, {
         text: infoText,
         contextInfo: {
@@ -138,7 +99,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }
 
   } catch (error) {
-    console.error('Error en tiktokstalk:', error)
+    console.error('Error en tik:', error)
     conn.sendMessage(m.chat, {
       text: `《✧》Error: ${error.message || 'No se pudo obtener la información del perfil'}`,
       contextInfo: {
@@ -148,7 +109,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['tiktokstalk <@usuario> o <URL>', 'tiktok <@usuario> o <URL> → Obtiene información completa de un perfil de TikTok']
+handler.help = ['tik <usuario> → Obtiene información completa de un perfil de TikTok']
 handler.tags = ['herramientas', 'osint']
 handler.command = ['tik']
 
