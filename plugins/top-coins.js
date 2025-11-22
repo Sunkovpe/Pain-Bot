@@ -38,11 +38,12 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         default: emoji = '💰'; break
       }
       
-             txt += `╰➺ ${emoji} *${position}.* ${user.name}\n`
-       txt += `╰➺ ✧ *${global.moneda}:* ${user.coins.toLocaleString()}\n`
+      txt += `│  𓂃 ࣪ ִֶָ☾. ${emoji} *${position}.* ${user.name}\n`
+      txt += `│  𓂃 ࣪ ִֶָ☾. *${global.moneda}:* ${user.coins.toLocaleString()}\n`
       txt += `│\n`
     })
 
+    txt += `╰─「 ✦ ${global.packname} ✦ 」─╮\n`
     txt += `\n> PAIN COMMUNITY`
 
     return conn.sendMessage(m.chat, {
