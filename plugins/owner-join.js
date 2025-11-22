@@ -38,6 +38,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 
   try {
     
+    // Intentar unirse al grupo
     await conn.groupAcceptInvite(inviteCode)
 
     conn.sendMessage(m.chat, {
@@ -49,12 +50,22 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 
   } catch (error) {
     console.error('Error al unirse al grupo:', error)
-    conn.sendMessage(m.chat, {
-      text: `《✧》Error al unirse al grupo: ${error.message || 'Desconocido'}`,
-      contextInfo: {
-        ...rcanal.contextInfo
-      }
-    }, { quoted: m })
+    
+    if (error.data == 401) {
+      conn.sendMessage(m.chat, {
+        text: '《✧》Código de invitación inválido, expirado o el bot no tiene permisos para unirse.',
+        contextInfo: {
+          ...rcanal.contextInfo
+        }
+      }, { quoted: m })
+    } else {
+      conn.sendMessage(m.chat, {
+        text: `《✧》Error al unirse al grupo: ${error.message || 'Desconocido'}`,
+        contextInfo: {
+          ...rcanal.contextInfo
+        }
+      }, { quoted: m })
+    }
   }
 }
 
