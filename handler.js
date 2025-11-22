@@ -32,6 +32,11 @@ if (m.messageStubType) return
 m.exp = 0
 m.limit = false
 
+// Asegurar que mensajes fake sean extensibles
+if (m.isFake && !Object.isExtensible(m)) {
+  Object.setPrototypeOf(m, Object.prototype)
+}
+
 try {  
   let user = global.db.data.users[m.sender] ||= {}  
   if (!isNumber(user.exp)) user.exp = 0  
