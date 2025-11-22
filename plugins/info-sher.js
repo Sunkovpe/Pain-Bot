@@ -116,6 +116,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['sherlock', 'osint', 'buscar', 'stalk → Busca perfiles en múltiples plataformas sociales']
 handler.tags = ['herramientas', 'utilidades']
-handler.command = ['sherlock', 'osint', 'buscar', 'stalk']
+handler.command = ['dx', 'sher']
 
 export default handler
