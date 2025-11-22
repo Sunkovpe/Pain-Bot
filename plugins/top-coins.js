@@ -45,14 +45,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
     txt += `\n> PAIN COMMUNITY`
 
-   
-    const mentionedJid = allUsers.map(user => user.jid)
-
     return conn.sendMessage(m.chat, {
       text: txt,
       contextInfo: {
-        ...rcanal.contextInfo,
-        mentionedJid: mentionedJid
+        ...rcanal.contextInfo
       }
     }, { quoted: m })
 
