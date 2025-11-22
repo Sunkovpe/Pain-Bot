@@ -43,20 +43,25 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 
     groupInfo = await conn.groupGetInviteInfo(inviteCode)
     
-
-    // Verificar si el bot ya está en el grupo
-    const isBotInGroup = conn.store && conn.store.chats ? !!conn.store.chats[groupInfo.id] : false
     
-    if (isBotInGroup) {
+    try {
+      const metadata = await conn.groupMetadata(groupInfo.id)
+    
       return conn.sendMessage(m.chat, {
-        text: `《✧》El bot ya está en ese grupo: ${groupInfo.subject}`,
+        text: `《✧》El bot ya está en ese grupo: ${metadata.subject}`,
         contextInfo: {
           ...rcanal.contextInfo
         }
       }, { quoted: m })
+    } catch (e) {
+      if (e.data !== 403) {
+        
+        throw e
+      }
+      
     }
     
-    // Intentar unirse al grupo
+    
     await conn.groupAcceptInvite(inviteCode)
 
     if (groupInfo.joinApprovalMode) {
