@@ -213,6 +213,11 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}pinterest <busqueda>
 ╰─╯
 
+╭─╮  𓍯  𝙾𝚂𝙸𝙽𝚃 - 𝙱𝙴𝚃𝙰  𓍯  
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}ip <dirección IP>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}ip2 <dirección IP>
+╰─╯
+
 ╭─╮  𓍯  𝙸𝙽𝚃𝙴𝙻𝙸𝙶𝙴𝙽𝙲𝙸𝙰 𝙰.𝙸  𓍯  
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}gemini <texto>
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}deepseek <texto>

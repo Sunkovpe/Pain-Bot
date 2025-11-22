@@ -1,6 +1,6 @@
 /**
- * COMANDO DE INFORMACIÓN DE IP - PAIN BOT
- * Obtiene información de una dirección IP y muestra su ubicación con Street View
+ * COMANDO DE WHOIS IP SIMPLE - PAIN BOT
+ * Obtiene información básica de una dirección IP sin ubicación
  */
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
@@ -17,11 +17,11 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
     const ipAddress = args[0].trim()
 
-
+    
     const ipRegex = /^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/
     if (!ipRegex.test(ipAddress)) {
       return conn.sendMessage(m.chat, {
-        text: '《✧》Formato de IP inválido. Use una dirección IP válida.',
+        text: '《✧》Formato de IP inválido. Use una dirección válida.',
         contextInfo: {
           ...rcanal.contextInfo
         }
@@ -42,7 +42,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }
 
     
-    let infoText = `╭─「 ✦ INFO IP ✦ 」─╮\n`
+    let infoText = `╭─「 ✦ IP2 ✦ 」─╮\n`
     infoText += `│\n`
     infoText += `╰➺ ✧ *IP:* ${ipData.ip}\n`
     infoText += `╰➺ ✧ *Tipo:* ${ipData.type || 'Desconocido'}\n`
@@ -51,15 +51,13 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     infoText += `╰➺ ✧ *Región:* ${ipData.region || 'Desconocido'}\n`
     infoText += `╰➺ ✧ *Ciudad:* ${ipData.city || 'Desconocida'}\n`
     infoText += `╰➺ ✧ *Código Postal:* ${ipData.zip || 'Desconocido'}\n`
-    infoText += `╰➺ ✧ *Latitud:* ${ipData.latitude}\n`
-    infoText += `╰➺ ✧ *Longitud:* ${ipData.longitude}\n`
     infoText += `╰➺ ✧ *Zona Horaria:* ${ipData.timezone || 'Desconocida'}\n`
     infoText += `╰➺ ✧ *ISP:* ${ipData.isp || 'Desconocido'}\n`
     infoText += `╰➺ ✧ *Organización:* ${ipData.org || 'Desconocida'}\n`
     infoText += `╰➺ ✧ *ASN:* ${ipData.asn || 'Desconocido'}\n`
     infoText += `\n> PAIN COMMUNITY`
 
-
+    
     await conn.sendMessage(m.chat, {
       text: infoText,
       contextInfo: {
@@ -68,16 +66,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     }, { quoted: m })
 
-    
-    await conn.sendMessage(m.chat, {
-      location: {
-        degreesLatitude: parseFloat(ipData.latitude),
-        degreesLongitude: parseFloat(ipData.longitude)
-      }
-    }, { quoted: m })
-
   } catch (error) {
-    console.error('Error en comando IP:', error)
+    console.error('Error en comando IP2:', error)
     return conn.sendMessage(m.chat, {
       text: '❌ Ocurrió un error al consultar la información de la IP.',
       contextInfo: {
@@ -87,8 +77,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   }
 }
 
-handler.help = ['ip', 'ipinfo', 'ipwhois → Consulta información detallada de una dirección IP con ubicación']
+handler.help = ['ip2', 'whois', 'ipwhois2 → Consulta información básica de una dirección IP sin ubicación']
 handler.tags = ['herramientas', 'utilidades']
-handler.command = ['ip', 'ipinfo', 'ipwhois']
+handler.command = ['ip2', 'whois', 'ipwhois2']
 
 export default handler
