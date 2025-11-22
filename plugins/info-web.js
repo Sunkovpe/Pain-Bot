@@ -28,8 +28,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         }
       }, { quoted: m })
     }
-
-
     
     const controller = new AbortController()
     const timeoutId = setTimeout(() => controller.abort(), 20000)
@@ -51,6 +49,14 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       const contentType = response.headers.get('content-type') || ''
       const contentLength = response.headers.get('content-length') || 'Desconocido'
       const server = response.headers.get('server') || 'Desconocido'
+
+      
+      const isHttps = url.startsWith('https://')
+      const hsts = response.headers.get('strict-transport-security') ? '✅ HSTS activado' : '❌ Sin HSTS'
+      const csp = response.headers.get('content-security-policy') ? '✅ CSP configurado' : '❌ Sin CSP'
+      const xFrame = response.headers.get('x-frame-options') || '❌ Sin X-Frame-Options'
+      const xContentType = response.headers.get('x-content-type-options') || '❌ Sin X-Content-Type-Options'
+      const referrerPolicy = response.headers.get('referrer-policy') || '❌ Sin Referrer-Policy'
 
       
       const titleMatch = html.match(/<title[^>]*>([^<]+)<\/title>/i)
@@ -77,38 +83,81 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       
       const sizeKB = Math.round(html.length / 1024)
 
+      
+      let screenshotUrl = null
+      try {
+        
+        screenshotUrl = `https://screenshot.rocks/api/take?url=${encodeURIComponent(url)}&width=1280&height=720&delay=2000`
+      } catch (error) {
+    
+        screenshotUrl = null
+      }
+
       clearTimeout(timeoutId)
 
       
-      let infoText = `╭─「 WEB INFO 」─╮\n`
+      let infoText = `╭─「 INFO WEB 」─╮\n`
       infoText += `│\n`
       infoText += `╰➺ ✧ *URL:* ${url}\n\n`
       infoText += `╰➺ ✧ *Dominio:* ${domain}\n\n`
+      infoText += `╰➺ ✧ *Protocolo:* ${isHttps ? 'HTTPS (Seguro)' : 'HTTP (No seguro)'}\n\n`
       infoText += `╰➺ ✧ *Título:* ${title}\n\n`
       infoText += `╰➺ ✧ *Descripción:* ${description}\n\n`
       infoText += `╰➺ ✧ *Palabras clave:* ${keywords}\n`
       infoText += `│\n`
+      infoText += `╰➺ ✧ SEGURIDAD SSL/TLS: \n`
+      infoText += `╰➺ ✧ ${hsts}\n`
+      infoText += `╰➺ ✧ ${csp}\n`
+      infoText += `╰➺ ✧ ${xFrame === '❌ Sin X-Frame-Options' ? xFrame : '✅ X-Frame-Options: ' + xFrame}\n`
+      infoText += `╰➺ ✧ ${xContentType === '❌ Sin X-Content-Type-Options' ? xContentType : '✅ X-Content-Type-Options: ' + xContentType}\n`
+      infoText += `╰➺ ✧ ${referrerPolicy === '❌ Sin Referrer-Policy' ? referrerPolicy : '✅ Referrer-Policy: ' + referrerPolicy}\n`
+      infoText += `│\n`
       infoText += `╰➺ ✧ ESTADÍSTICAS: \n`
-      infoText += `╰➺ ✧ Tamaño aproximado: ${sizeKB} KB\n`
+      infoText += `╰➺ ✧ Tamaño: ${sizeKB} KB\n`
       infoText += `╰➺ ✧ Imágenes: ${images}\n`
       infoText += `╰➺ ✧ Enlaces: ${links}\n`
       infoText += `╰➺ ✧ Scripts: ${scripts}\n`
-      infoText += `╰➺ ✧ Hojas de estilo: ${styles}\n`
+      infoText += `╰➺ ✧ CSS: ${styles}\n`
       infoText += `│\n`
       infoText += `╰➺ ✧ ADICIONAL: \n`
+      infoText += `╰➺ ✧ Servidor: ${server}\n`
       infoText += `╰➺ ✧ Content-Type: ${contentType}\n`
       infoText += `╰➺ ✧ Content-Length: ${contentLength}\n`
-      infoText += `╰➺ ✧ Servidor: ${server}\n`
       infoText += `╰➺ ✧ Status: ${response.status} ${response.statusText}\n`
       infoText += `\n> PAIN COMMUNITY`
 
-      await conn.sendMessage(m.chat, {
-        text: infoText,
-        contextInfo: {
-          ...rcanal.contextInfo,
-          mentionedJid: [m.sender]
+    
+      if (screenshotUrl) {
+        try {
+          await conn.sendMessage(m.chat, {
+            image: { url: screenshotUrl },
+            caption: infoText,
+            contextInfo: {
+              ...rcanal.contextInfo,
+              mentionedJid: [m.sender]
+            }
+          }, { quoted: m })
+        } catch (screenshotError) {
+          console.log('Error al enviar captura con info:', screenshotError.message)
+          
+          await conn.sendMessage(m.chat, {
+            text: infoText,
+            contextInfo: {
+              ...rcanal.contextInfo,
+              mentionedJid: [m.sender]
+            }
+          }, { quoted: m })
         }
-      }, { quoted: m })
+      } else {
+        
+        await conn.sendMessage(m.chat, {
+          text: infoText,
+          contextInfo: {
+            ...rcanal.contextInfo,
+            mentionedJid: [m.sender]
+          }
+        }, { quoted: m })
+      }
 
     } catch (error) {
       clearTimeout(timeoutId)
