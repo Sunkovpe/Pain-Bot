@@ -15,7 +15,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 
   if (!args[0]) {
     return conn.sendMessage(m.chat, {
-      text: `《✧》Uso correcto: ${usedPrefix}${command} <link del grupo>\n\nEjemplo: ${usedPrefix}${command} https://chat.whatsapp.com/invite/ABC123`,
+      text: `《✧》Uso correcto: ${usedPrefix}${command} <link del grupo>\n\nEjemplo: ${usedPrefix}${command} https://chat.whatsapp.com/ABC123`,
       contextInfo: {
         ...rcanal.contextInfo
       }
@@ -24,12 +24,12 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 
   let link = args[0].trim()
 
- 
-  const inviteCode = link.match(/chat\.whatsapp\.com\/invite\/([A-Za-z0-9]+)/)?.[1]
+  
+  const inviteCode = link.match(/chat\.whatsapp\.com\/([A-Za-z0-9]+)/)?.[1]
 
   if (!inviteCode) {
     return conn.sendMessage(m.chat, {
-      text: '《✧》Link de invitación inválido. Usa el formato: https://chat.whatsapp.com/invite/<código>',
+      text: '《✧》Link de invitación inválido. Usa el formato: https://chat.whatsapp.com/<código>',
       contextInfo: {
         ...rcanal.contextInfo
       }
