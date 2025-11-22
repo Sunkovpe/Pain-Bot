@@ -179,6 +179,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setgenre <hombre/mujer>
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}birthdays
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}setname <nombre>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}owner
 ╰─╯
 
 ╭─╮  𓍯  𝚃𝙾𝙿 𝚁𝙿𝙶  𓍯  
