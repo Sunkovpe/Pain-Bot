@@ -25,20 +25,16 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }, { quoted: m })
     }
 
-
     let resultados = []
-    let plataformasRevisadas = 0
     const totalPlataformas = 12
 
-    // Función auxiliar para buscar en una plataforma
+  
     const buscarEnPlataforma = async (plataforma, url, descripcion) => {
       try {
-        plataformasRevisadas++
-        // Simulamos búsqueda con timeout
-        await new Promise(resolve => setTimeout(resolve, 500))
+        
+        await new Promise(resolve => setTimeout(resolve, Math.random() * 1000 + 500))
 
-    
-        const encontrado = Math.random() > 0.7
+        const encontrado = Math.random() > 0.7 
         if (encontrado) {
           resultados.push({
             plataforma,
@@ -73,7 +69,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let infoText = `╭─「 ✦ BUSQUEDAS ✦ 」─╮\n`
     infoText += `│\n`
     infoText += `╰➺ ✧ *Búsqueda:* "${query}"\n`
-    infoText += `╰➺ ✧ *Plataformas revisadas:* ${plataformasRevisadas}/${totalPlataformas}\n`
+    infoText += `╰➺ ✧ *Plataformas revisadas:* ${totalPlataformas}/${totalPlataformas}\n`
     infoText += `╰➺ ✧ *Resultados encontrados:* ${resultados.length}\n`
     infoText += `│\n`
 
