@@ -152,6 +152,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}restart
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}subme <mensaje>
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}join <link>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}exit
 ╰─╯
 
 ╭─╮  𓍯  𝙲𝙼𝙳 𝚂𝚄𝙱 𝙱𝙾𝚃  𓍯  
