@@ -40,24 +40,38 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 
   try {
     
-    // Verificar información del grupo
+
     groupInfo = await conn.groupGetInviteInfo(inviteCode)
     
     // Intentar unirse al grupo
     await conn.groupAcceptInvite(inviteCode)
 
-    conn.sendMessage(m.chat, {
-      text: '《✧》Bot se ha unido exitosamente al grupo.',
-      contextInfo: {
-        ...rcanal.contextInfo
-      }
-    }, { quoted: m })
+    if (groupInfo.joinApprovalMode) {
+      conn.sendMessage(m.chat, {
+        text: '《✧》Solicitud de unión enviada. El bot está esperando aprobación de un administrador.',
+        contextInfo: {
+          ...rcanal.contextInfo
+        }
+      }, { quoted: m })
+    } else {
+      conn.sendMessage(m.chat, {
+        text: '《✧》Bot se ha unido exitosamente al grupo.',
+        contextInfo: {
+          ...rcanal.contextInfo
+        }
+      }, { quoted: m })
+    }
 
   } catch (error) {
     console.error('Error al unirse al grupo:', error)
     
+    let errorMsg = error.message || 'Desconocido'
+    if (errorMsg === 'not-authorized') {
+      errorMsg = 'El bot fue eliminado del grupo por alguien y no puede unirse.'
+    }
+    
     conn.sendMessage(m.chat, {
-      text: `《✧》Error al unirse al grupo: ${error.message || 'Desconocido'}`,
+      text: `《✧》Error al unirse al grupo: ${errorMsg}`,
       contextInfo: {
         ...rcanal.contextInfo
       }
