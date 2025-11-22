@@ -44,7 +44,8 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
     groupInfo = await conn.groupGetInviteInfo(inviteCode)
     
 
-    const isBotInGroup = !!conn.store.chats[groupInfo.id]
+    // Verificar si el bot ya está en el grupo
+    const isBotInGroup = conn.store && conn.store.chats ? !!conn.store.chats[groupInfo.id] : false
     
     if (isBotInGroup) {
       return conn.sendMessage(m.chat, {
