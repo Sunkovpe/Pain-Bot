@@ -81,10 +81,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       const domain = urlObj.hostname
 
       
-      // Generar captura de pantall
+      
       let screenshotBuffer = null
       try {
-        // Usar API gratuita que devuelve base64
+        
         const screenshotApiUrl = `https://2wg20nrbv4.execute-api.eu-west-1.amazonaws.com/default/screenshot?url=${encodeURIComponent(url)}&width=1280&height=720&delay=2000`
         const screenshotResponse = await fetch(screenshotApiUrl, {
           method: 'GET',
@@ -96,7 +96,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         if (screenshotResponse.ok) {
           const screenshotData = await screenshotResponse.json()
           if (screenshotData.imageBase64) {
-            // Convertir base64 a buffer
+            
             screenshotBuffer = Buffer.from(screenshotData.imageBase64, 'base64')
           }
         }
@@ -141,7 +141,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       infoText += `╰➺ ✧ Status: ${response.status} ${response.statusText}\n`
       infoText += `\n> PAIN COMMUNITY`
 
-      // Enviar todo junto: captura de pantalla con información como caption
+    
       if (screenshotBuffer) {
         try {
           await conn.sendMessage(m.chat, {
@@ -154,7 +154,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
           }, { quoted: m })
         } catch (screenshotError) {
           console.log('Error al enviar captura con info:', screenshotError.message)
-          // Si falla la captura, enviar solo el texto
+          
           await conn.sendMessage(m.chat, {
             text: infoText,
             contextInfo: {
@@ -164,7 +164,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
           }, { quoted: m })
         }
       } else {
-        // Si no hay captura disponible, enviar solo texto
+        
         await conn.sendMessage(m.chat, {
           text: infoText,
           contextInfo: {
