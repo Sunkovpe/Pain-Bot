@@ -27,7 +27,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     
     const admins = participants.filter(p => p.admin === 'admin').map(p => p.id)
 
-    // Verificar owners del bot
+    
     const ownersList = [...(global.owner || []).map(o => o[0]), ...(global.ownerLid || []).map(o => o[0])]
     const ownersInGroup = participants.filter(p => ownersList.includes(p.id.split('@')[0].split(':')[0])).map(p => p.id)
     
@@ -37,7 +37,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     
     const descLength = desc ? desc.length : 0
 
+    // Menciones
     let mentions = []
+    if (owner) mentions.push(owner)
     if (admins.length > 0) mentions.push(...admins)
     if (ownersInGroup.length > 0) mentions.push(...ownersInGroup)
 
