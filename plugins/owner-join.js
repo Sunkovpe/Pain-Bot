@@ -25,7 +25,7 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
   let link = args[0].trim()
 
   
-  const inviteCode = link.match(/chat\.whatsapp\.com\/(?:invite\/)?([A-Za-z0-9]+)$/)?.[1]
+  const inviteCode = link.match(/chat\.whatsapp\.com\/(?:invite\/)?([A-Za-z0-9]+)/)?.[1]
 
   if (!inviteCode) {
     return conn.sendMessage(m.chat, {
