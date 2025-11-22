@@ -217,6 +217,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}ip <dirección IP>
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}ip2 <dirección IP>
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}sher <nombre/apodo>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}webinfo <URL>
 ╰─╯
 
 ╭─╮  𓍯  𝙸𝙽𝚃𝙴𝙻𝙸𝙶𝙴𝙽𝙲𝙸𝙰 𝙰.𝙸  𓍯  
