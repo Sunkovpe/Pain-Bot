@@ -5,12 +5,14 @@ import { fileURLToPath } from 'url'
 global.owner = [
   ['51901437507', 'Sunkovv', true],
   ['5218448582376', 'Fernando', true],
+  ['5219881032907', 'Kevin', true],
 ]
 
 
 global.ownerLid = [
   ['114263544885392', 'Sunkovv', true],
   ['275878953148477', 'Fernando', true],
+  ['164437755457716', 'Kevin', true],
 ]
 
 global.sessions = 'Sessions'
