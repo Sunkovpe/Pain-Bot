@@ -1,8 +1,3 @@
-/**
- * COMANDO OWNER EXIT - PAIN BOT
- * Permite al owner hacer que el bot salga del grupo
- */
-
 let handler = async (m, { conn, usedPrefix, command, isOwner }) => {
   if (!isOwner) {
     return conn.sendMessage(m.chat, {
@@ -13,7 +8,7 @@ let handler = async (m, { conn, usedPrefix, command, isOwner }) => {
     }, { quoted: m })
   }
 
-  // Verificar si es un grupo
+  
   if (!m.chat.endsWith('@g.us')) {
     return conn.sendMessage(m.chat, {
       text: '《✧》Este comando solo funciona en grupos.',
@@ -24,7 +19,7 @@ let handler = async (m, { conn, usedPrefix, command, isOwner }) => {
   }
 
   try {
-    // Enviar mensaje de despedida
+    
     await conn.sendMessage(m.chat, {
       text: 'Quería quedarme más tiempo pero mi dueño me dijo que no por motivos, adiós. 👋',
       contextInfo: {
@@ -32,7 +27,7 @@ let handler = async (m, { conn, usedPrefix, command, isOwner }) => {
       }
     }, { quoted: m })
 
-    // Salir del grupo
+
     await conn.groupLeave(m.chat)
 
   } catch (error) {

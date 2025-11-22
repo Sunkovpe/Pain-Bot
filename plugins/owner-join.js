@@ -1,8 +1,3 @@
-/**
- * COMANDO OWNER JOIN - PAIN BOT
- * Permite al owner hacer que el bot se una a un grupo via link de invitación
- */
-
 let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
   if (!isOwner) {
     return conn.sendMessage(m.chat, {
