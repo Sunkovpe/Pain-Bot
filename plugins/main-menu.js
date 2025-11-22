@@ -305,6 +305,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}toppajeros
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topmancos
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topinfieles
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}topotakus
 ╰─╯
 
 ╭─╮  𓍯  𝙽𝚂𝙵𝚆  𓍯  
