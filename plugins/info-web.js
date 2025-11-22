@@ -82,10 +82,10 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       
       let infoText = `╭─「 WEB INFO 」─╮\n`
       infoText += `│\n`
-      infoText += `╰➺ ✧ *URL:* ${url}\n`
-      infoText += `╰➺ ✧ *Dominio:* ${domain}\n`
-      infoText += `╰➺ ✧ *Título:* ${title}\n`
-      infoText += `╰➺ ✧ *Descripción:* ${description}\n`
+      infoText += `╰➺ ✧ *URL:* ${url}\n\n`
+      infoText += `╰➺ ✧ *Dominio:* ${domain}\n\n`
+      infoText += `╰➺ ✧ *Título:* ${title}\n\n`
+      infoText += `╰➺ ✧ *Descripción:* ${description}\n\n`
       infoText += `╰➺ ✧ *Palabras clave:* ${keywords}\n`
       infoText += `│\n`
       infoText += `╰➺ ✧ ESTADÍSTICAS: \n`
