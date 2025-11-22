@@ -204,6 +204,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}change <banco>
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}unirsebank <banco>
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}robar
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}sorpresa
 ╰─╯
 
 ╭─╮  𓍯  𝙱𝚄𝚂𝚀𝚄𝙴𝙳𝙰𝚂  𓍯  
