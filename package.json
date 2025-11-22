@@ -26,6 +26,7 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@dark-yasiya/scrap": "^1.0.1",
+    "@google/genai": "^1.30.0",
     "@hapi/boom": "^10.0.1",
     "@whiskeysockets/baileys": "^7.0.0-rc.6",
     "awesome-phonenumber": "^3.4.0",
