@@ -8,6 +8,7 @@ import fetch from 'node-fetch'
 
 import { handleAIModes } from './lib/eventHandlers.js'
 import { handleAntiSystems } from './lib/antiHandlers.js'
+import { handleGroupEvents } from './lib/event.js'
 
 const { proto } = (await import('@whiskeysockets/baileys')).default
 const isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -397,6 +398,8 @@ if (m.text && !commandExecuted && global.db.data.adivinanzasActivas && global.db
 
   
   await handleAntiSystems(m, this, isAdmin, isOwner, isRAdmin, isBotAdmin, isPrems, commandExecuted)
+
+  await handleGroupEvents(m, this, isAdmin, isBotAdmin, isOwner, participants)
 
   
   if (m.isGroup && global.pendingInvites && global.pendingInvites[m.chat] && !commandExecuted) {
