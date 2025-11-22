@@ -151,6 +151,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}update
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}restart
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}subme <mensaje>
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}join <link>
 ╰─╯
 
 ╭─╮  𓍯  𝙲𝙼𝙳 𝚂𝚄𝙱 𝙱𝙾𝚃  𓍯  
@@ -289,7 +290,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}modoia on/off
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}modohot on/off
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}modoilegal on/off
-│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}join <link>
 ╰─╯
 
 ╭─╮  𓍯  𝙳𝙸𝚅𝙴𝚁𝚂𝙸𝙾𝙽  𓍯  
