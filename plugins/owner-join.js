@@ -43,6 +43,19 @@ let handler = async (m, { conn, args, usedPrefix, command, isOwner }) => {
 
     groupInfo = await conn.groupGetInviteInfo(inviteCode)
     
+    
+    const botJid = conn.user.id
+    const isBotInGroup = groupInfo.participants.some(p => p.id === botJid)
+    
+    if (isBotInGroup) {
+      return conn.sendMessage(m.chat, {
+        text: `《✧》El bot ya está en ese grupo: ${groupInfo.subject}`,
+        contextInfo: {
+          ...rcanal.contextInfo
+        }
+      }, { quoted: m })
+    }
+    
     // Intentar unirse al grupo
     await conn.groupAcceptInvite(inviteCode)
 
