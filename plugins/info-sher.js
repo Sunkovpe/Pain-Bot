@@ -5,7 +5,7 @@
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   try {
-    // Verificar si se proporcionó un nombre/apodo
+    
     if (!args[0]) {
       return conn.sendMessage(m.chat, {
         text: `《✧》Uso correcto: ${usedPrefix}${command} [nombre/apodo]\n\nEjemplo: ${usedPrefix}${command} Ricardo Perez\n${usedPrefix}${command} @usuario\n\n*Nota:* Puede tardar unos segundos en buscar en todas las plataformas.`,
@@ -25,20 +25,63 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }, { quoted: m })
     }
 
+
     let resultados = []
     const totalPlataformas = 12
 
-  
-    const buscarEnPlataforma = async (plataforma, url, descripcion) => {
+    
+    const buscarEnPlataforma = async (plataforma, url, descripcion, tipo = 'web') => {
       try {
         
-        await new Promise(resolve => setTimeout(resolve, Math.random() * 1000 + 500))
+        const controller = new AbortController()
+        const timeoutId = setTimeout(() => controller.abort(), 10000) 
 
-        const encontrado = Math.random() > 0.7 
+        let encontrado = false
+        let urlFinal = url
+
+        if (tipo === 'github') {
+          
+          try {
+            const apiUrl = `https://api.github.com/search/users?q=${encodeURIComponent(query)}&per_page=5`
+            const response = await fetch(apiUrl, {
+              signal: controller.signal,
+              headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+              }
+            })
+            if (response.ok) {
+              const data = await response.json()
+              encontrado = data.total_count > 0
+              if (encontrado && data.items && data.items.length > 0) {
+                urlFinal = data.items[0].html_url
+              }
+            }
+          } catch (error) {
+            
+            encontrado = false
+          }
+        } else {
+         
+          try {
+            const response = await fetch(url, {
+              method: 'HEAD',
+              signal: controller.signal,
+              headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+              }
+            })
+            encontrado = response.status === 200
+          } catch (error) {
+            encontrado = false
+          }
+        }
+
+        clearTimeout(timeoutId)
+
         if (encontrado) {
           resultados.push({
             plataforma,
-            url,
+            url: urlFinal,
             descripcion,
             estado: 'Encontrado'
           })
@@ -49,9 +92,9 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     }
 
-    // Buscar en múltiples plataformas
+   
     await Promise.all([
-      buscarEnPlataforma('GitHub', `https://github.com/${query.replace(/\s+/g, '')}`, 'Perfil de desarrollador'),
+      buscarEnPlataforma('GitHub', `https://github.com/${query.replace(/\s+/g, '')}`, 'Perfil de desarrollador', 'github'),
       buscarEnPlataforma('Instagram', `https://instagram.com/${query.replace(/\s+/g, '').toLowerCase()}`, 'Perfil de Instagram'),
       buscarEnPlataforma('Twitter/X', `https://twitter.com/${query.replace(/\s+/g, '')}`, 'Cuenta de Twitter/X'),
       buscarEnPlataforma('Reddit', `https://reddit.com/user/${query.replace(/\s+/g, '')}`, 'Usuario de Reddit'),
@@ -116,6 +159,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 
 handler.help = ['sherlock', 'osint', 'buscar', 'stalk → Busca perfiles en múltiples plataformas sociales']
 handler.tags = ['herramientas', 'utilidades']
-handler.command = ['dx', 'sher']
+handler.command = ['sher', 'dx']
 
 export default handler
