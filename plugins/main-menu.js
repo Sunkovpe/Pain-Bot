@@ -247,6 +247,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}delnota <numero>
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}vernotas
 │  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}id
+│  𓂃 ࣪ ִֶָ☾.  ${usedPrefix}infogrupo
 ╰─╯
 
 ╭─╮  𓍯  𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂  𓍯  
